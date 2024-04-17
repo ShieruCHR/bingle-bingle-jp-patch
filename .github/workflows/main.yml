@@ -1,0 +1,104 @@
+name: Build and Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Generate Hiero configuration files
+        run: python gen-hiero.py
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Restore cached hiero jar file
+        uses: actions/cache@v2
+        with:
+          path: executable.jar
+          key: ${{ runner.os }}-executable-jar-${{ hashFiles('executable.jar') }}
+          restore-keys: |
+            ${{ runner.os }}-executable-jar-
+
+      - name: Download hiero if not cached
+        if: steps.restore-cache.outputs.cache-hit != 'true'
+        run: |
+          wget https://libgdx-nightlies.s3.eu-central-1.amazonaws.com/libgdx-runnables/runnable-hiero.jar -O executable.jar
+
+      - name: Cache jar file
+        uses: actions/cache@v2
+        with:
+          path: executable.jar
+          key: ${{ runner.os }}-executable-jar-${{ hashFiles('executable.jar') }}
+
+      - name: "Execute hiero: size 65 (huge)"
+        run: java -jar executable.jar -i 65.hiero -o English_Huge.fnt -b
+
+      - name: "Execute hiero: size 28 (large)"
+        run: java -jar executable.jar -i 28.hiero -o English_Large.fnt -b
+
+      - name: "Execute hiero: size 18 (medium)"
+        run: java -jar executable.jar -i 18.hiero -o English_Medium.fnt -b
+
+      - name: "Execute hiero: size 15 (small)"
+        run: java -jar executable.jar -i 15.hiero -o English_Small.fnt -b
+
+      - name: Normalize fnt files
+        run: python normalize.py
+
+      - name: Rename patch.json
+        run: mv patch.json GameText_ENG.json
+
+      - name: Archive files
+        uses: actions/upload-artifact@v2
+        with:
+          name: release
+          path: |
+            English_Huge.fnt
+            English_Huge.png
+            English_Large.fnt
+            English_Large.png
+            English_Medium.fnt
+            English_Medium.png
+            English_Small.fnt
+            English_Small.png
+            GameText_ENG.json
+            
+
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: release
+
+      - name: Create release zip
+        run: zip -r release.zip English_Huge.fnt English_Huge.png English_Large.fnt English_Large.png English_Medium.fnt English_Medium.png English_Small.fnt English_Small.png GameText_ENG.json
+
+      - name: Upload release
+        uses: actions/upload-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: release.zip
+          release-tag: ${{ github.sha }}
+          release-name: Release ${{ github.sha }}
+          body: |
+            Release for commit ${{ github.sha }}
