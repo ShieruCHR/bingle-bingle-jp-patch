@@ -1,91 +1,91 @@
 name: Build and Release
 
 on:
-  push:
-    branches:
-      - main
+    push:
+        branches:
+            - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
 
-      - name: Generate unique tag name
-        id: generate_tag
-        run: |
-          COMMIT_HASH=$(git rev-parse --short HEAD)
-          TAG_NAME="release-${COMMIT_HASH}"
-          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
+            - name: Generate unique tag name
+              id: generate_tag
+              run: |
+                  COMMIT_HASH=$(git rev-parse --short HEAD)
+                  TAG_NAME="release-${COMMIT_HASH}"
+                  echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              with:
+                  python-version: "3.x"
 
-      - name: Restore cached fontbm
-        uses: actions/cache@v2
-        with:
-          path: fontbm
-          key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
-          restore-keys: |
-            ${{ runner.os }}-executable-
+            - name: Restore cached fontbm
+              uses: actions/cache@v2
+              with:
+                  path: fontbm
+                  key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
+                  restore-keys: |
+                      ${{ runner.os }}-executable-
 
-      - name: Download fontbm if not cached
-        if: steps.restore-cache.outputs.cache-hit != 'true'
-        run: |
-          wget https://github.com/vladimirgamalyan/fontbm/releases/latest/download/fontbm -O fontbm
+            - name: Download fontbm if not cached
+              if: steps.restore-cache.outputs.cache-hit != 'true'
+              run: |
+                  wget https://github.com/vladimirgamalyan/fontbm/releases/latest/download/fontbm -O fontbm
 
-      - name: Cache jar file
-        uses: actions/cache@v2
-        with:
-          path: fontbm
-          key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
+            - name: Cache jar file
+              uses: actions/cache@v2
+              with:
+                  path: fontbm
+                  key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
 
-      - name: Make fontbm executable
-        run: chmod +x ./fontbm
+            - name: Make fontbm executable
+              run: chmod +x ./fontbm
 
-      - name: "Execute fontbm: size 65 (huge)"
-        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 65 --chars-file patch.json --output English_Huge
+            - name: "Execute fontbm: size 65 (huge)"
+              run: ./fontbm --font-file .\NotoSansJP-Regular.ttf --output English_Huge --font-size 65 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
 
-      - name: "Execute fontbm: size 28 (large)"
-        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 28 --chars-file patch.json --output English_Large
+            - name: "Execute fontbm: size 28 (large)"
+              run: ./fontbm --font-file .\NotoSansJP-Regular.ttf --output English_Large --font-size 28 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
 
-      - name: "Execute fontbm: size 18 (medium)"
-        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 18 --chars-file patch.json --output English_Medium
+            - name: "Execute fontbm: size 18 (medium)"
+              run: ./fontbm --font-file .\NotoSansJP-Regular.ttf --output English_Medium --font-size 18 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
 
-      - name: "Execute fontbm: size 15 (small)"
-        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 15 --chars-file patch.json --output English_Small
+            - name: "Execute fontbm: size 15 (small)"
+              run: ./fontbm --font-file .\NotoSansJP-Regular.ttf --output English_Small --font-size 15 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
 
-      # - name: Normalize fnt files
-      #   run: python normalize.py
+            # - name: Normalize fnt files
+            #   run: python normalize.py
 
-      - name: Rename patch.json
-        run: mv patch.json GameText_ENG.json
+            - name: Rename patch.json
+              run: mv patch.json GameText_ENG.json
 
-      - name: Create release zip
-        run: zip -r release.zip English_Huge.fnt English_Huge.png English_Large.fnt English_Large.png English_Medium.fnt English_Medium.png English_Small.fnt English_Small.png GameText_ENG.json
+            - name: Create release zip
+              run: zip -r release.zip English_Huge.fnt English_Huge.png English_Large.fnt English_Large.png English_Medium.fnt English_Medium.png English_Small.fnt English_Small.png GameText_ENG.json
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ env.TAG_NAME }}
-          release_name: "Automated Release: ${{ env.TAG_NAME }}"
-          draft: false
-          prerelease: false
+            - name: Create Release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: ${{ env.TAG_NAME }}
+                  release_name: "Automated Release: ${{ env.TAG_NAME }}"
+                  draft: false
+                  prerelease: false
 
-      - name: Upload Release Asset
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./release.zip
-          asset_name: release.zip
-          asset_content_type: application/zip
+            - name: Upload Release Asset
+              id: upload-release-asset
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./release.zip
+                  asset_name: release.zip
+                  asset_content_type: application/zip
