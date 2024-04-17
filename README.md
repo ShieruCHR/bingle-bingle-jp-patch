@@ -2,7 +2,7 @@
 
 日本語版は[こちら](README-ja.md)を参照してください。
 
-**WARNING: THIS IS WORK-IN-PROGRESS PROJECT.**
+**WARNING: THIS PROJECT IS WORK-IN-PROGRESS.**
 
 This is repository of **unofficial** Bingle Bingle Japanese translation patch.  
 There's no warranty and liablity. Use at your own risk.
