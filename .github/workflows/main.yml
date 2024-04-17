@@ -87,13 +87,24 @@ jobs:
       - name: Create release zip
         run: zip -r release.zip English_Huge.fnt English_Huge.png English_Large.fnt English_Large.png English_Medium.fnt English_Medium.png English_Small.fnt English_Small.png GameText_ENG.json
 
-      - name: Upload release
-        uses: actions/upload-release@v1
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: release.zip
-          release-tag: ${{ github.sha }}
-          release-name: Release ${{ github.sha }}
-          body: |
-            Release for commit ${{ github.sha }}
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: "Automated Release: ${{ env.TAG_NAME }}"
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./release.zip
+          asset_name: release.zip
+          asset_content_type: application/zip
