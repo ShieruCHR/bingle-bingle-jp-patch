@@ -28,32 +28,32 @@
         "version": "0.1.0",
         "name": "リピートボール",
         "shortName": "リピートボール",
-        "description": "ボールを回し、{valueColor}次のボール{clearColor}を同じポケットに入れる",
-        "activeDescription": "ボールを回し、{valueColor}次の{levelValue2}個のボール{clearColor}を同じポケットに入れる\n({ballColor}{levelValue} ポイント{clearColor})"
+        "description": "回した{valueColor}次のボール{clearColor}を\n同じポケットに入れる",
+        "activeDescription": "回した{valueColor}次の{levelValue2}個のボール{clearColor}を\n同じポケットに入れる\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.ICE",
         "version": "0.1.0",
         "name": "フローズンボール",
         "shortName": "フローズンボール",
-        "description": "ボールを回し、近くのベットされていないポケットを{freezeColor}凍らせる{clearColor}",
-        "activeDescription": "ボールを回し、近くのベットされていない{freezeColor}{levelValue2}個のポケットを凍らせる{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})"
+        "description": "近くのベットされていない\nポケットを{freezeColor}凍らせる{clearColor}",
+        "activeDescription": "近くのベットされていない\n{freezeColor}{levelValue2}個のポケットを凍らせる{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.HEART",
         "version": "0.1.0",
         "name": "ハートボール",
         "shortName": "ハートボール",
-        "description": "ボールを回し、どのベットにも当たらなかった場合、{valueColor}ラウンドトークンを取り戻す{clearColor}\n数回発動すると{cautionColor}フラジャイル{clearColor}になる",
-        "activeDescription": "ボールを回し、どのベットにも当たらなかった場合、{valueColor}ラウンドトークンを取り戻す{clearColor}\n{levelValue2}回発動すると{cautionColor}フラジャイル{clearColor}になる\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(残り {currentValue}){clearColor}"
+        "description": "ベットが当たらなかったら\n{valueColor}ラウンドトークンを取り戻す{clearColor}\n数回発動すると{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "ベットが当たらなかったら\n{valueColor}ラウンドトークンを取り戻す{clearColor}\n{levelValue2}回発動すると{cautionColor}フラジャイル{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(残り {currentValue}){clearColor}"
     },
     {
         "code": "TokenSide.LARGE",
         "version": "0.1.0",
         "name": "ラージボール",
         "shortName": "ラージボール",
-        "description": "{valueColor}複数のポケット{clearColor}に影響を与える可能性がある巨大なボールを回す",
-        "activeDescription": "{valueColor}{levelValue2}個のポケット{clearColor}に影響を与える可能性がある巨大なボールを回す\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(同じベットには複数回当てられない){clearColor}"
+        "description": "{valueColor}複数のポケット{clearColor}に影響を与える\n巨大なボールを回す",
+        "activeDescription": "{valueColor}{levelValue2}個のポケット{clearColor}に影響を与える\n巨大なボールを回す\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(同じベットには複数回当てられない){clearColor}"
     },
     {
         "code": "TokenSide.POCKET",
@@ -68,15 +68,15 @@
         "version": "0.1.0",
         "name": "ターゲットボール",
         "shortName": "ターゲットボール",
-        "description": "ボールを回す前に、このボールが落ちるポケットの範囲を決める",
-        "activeDescription": "ボールを回す前に選んだ{pocketColor}{levelValue2}個のポケット{clearColor}の範囲にボールが落ちる\n({ballColor}{levelValue} ポイント{clearColor})"
+        "description": "ボールを回す前に、\nこのボールが落ちるポケットの範囲を決める",
+        "activeDescription": "ボールを回す前に選んだ\n{pocketColor}{levelValue2}個のポケット{clearColor}の範囲に\nボールが落ちる\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.WAVE",
         "version": "0.1.0",
         "name": "ウェーブボール",
         "shortName": "ウェーブボール",
-        "description": "ボールを回すたびに{ballColor}基礎ポイント{clearColor}が上昇する",
+        "description": "ボールを回すたびに\n{ballColor}基礎ポイント{clearColor}が上昇する",
         "activeDescription": "ボールを回すたびに、自身の{ballColor}基礎ポイントを{levelValue2}点{clearColor}上昇させる。\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
@@ -84,80 +84,80 @@
         "version": "0.1.0",
         "name": "ストレートアップ",
         "shortName": "ストレートアップ",
-        "description": "1つの数字にベットする",
-        "activeDescription": "1つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "1つの数字にベット",
+        "activeDescription": "1つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.SPLIT",
         "version": "0.1.0",
         "name": "スプリットベット",
         "shortName": "スプリット",
-        "description": "2つの数字にベットする",
-        "activeDescription": "2つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "2つの数字にベット",
+        "activeDescription": "2つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.STREET",
         "version": "0.1.0",
         "name": "ストリート",
         "shortName": "ストリート",
-        "description": "横に並んだ3つの数字にベットする",
-        "activeDescription": "横に並んだ3つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "横に並んだ\n3つの数字にベット",
+        "activeDescription": "横に並んだ3つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.CORNER",
         "version": "0.1.0",
         "name": "コーナー",
         "shortName": "コーナー",
-        "description": "四角形になるよう4つの数字にベットする",
-        "activeDescription": "四角形になるよう4つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "四角形になるよう\n4つの数字にベット",
+        "activeDescription": "四角形になるよう\n4つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.LINE",
         "version": "0.1.0",
         "name": "ライン",
         "shortName": "ライン",
-        "description": "横に並んだ6つの数字（隣り合う2行）にベットする",
-        "activeDescription": "横に並んだ6つの数字（隣り合う2行）にベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "横に並んだ6つの数字\n（隣り合う2行）にベット",
+        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.COLUMN",
         "version": "0.1.0",
         "name": "カラム",
         "shortName": "カラム",
-        "description": "縦方向に1列ベットする",
-        "activeDescription": "縦方向にベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "縦方向に1列ベット",
+        "activeDescription": "縦方向にベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.DOZEN",
         "version": "0.1.0",
         "name": "ダズン",
         "shortName": "ダズン",
-        "description": "12個の数字のブロックにベットする",
-        "activeDescription": "12個の数字のブロックにベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "12個の数字の\nブロックにベット",
+        "activeDescription": "12個の数字の\nブロックにベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.HIGHORLOW",
         "version": "0.1.0",
         "name": "ハイ・ロー",
         "shortName": "ハイ・ロー",
-        "description": "1~18または19~36のどちらかにベットする",
-        "activeDescription": "1~18または19~36のどちらかにベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "1~18または19~36の\nどちらかにベット",
+        "activeDescription": "1~18または19~36の\nどちらかにベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.EVENORODD",
         "version": "0.1.0",
         "name": "イーブンオッド",
         "shortName": "イーブンオッド",
-        "description": "偶数か奇数どちらかにベットする",
-        "activeDescription": "偶数か奇数どちらかにベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "偶数か奇数どちらかにベット",
+        "activeDescription": "偶数か奇数どちらかにベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.COLOR",
         "version": "0.1.0",
         "name": "カラー",
         "shortName": "カラー",
-        "description": "赤または黒のポケットにベットする",
-        "activeDescription": "赤または黒のポケットにベットする\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "赤または黒のポケットにベット",
+        "activeDescription": "赤または黒のポケットにベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_STRAIGHTUP",
