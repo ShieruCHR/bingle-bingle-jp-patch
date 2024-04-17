@@ -37,6 +37,9 @@ jobs:
           path: fontbm
           key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
 
+      - name: Make fontbm executable
+        run: chmod +x ./fontbm
+
       - name: "Execute fontbm: size 65 (huge)"
         run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 65 --chars-file patch.json --output English_Huge
 
