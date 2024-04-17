@@ -1226,13 +1226,13 @@
     {
         "code": "Achievement.ARCHER",
         "version": "0.1.0",
-        "name": "Archer class Unlocked",
-        "description": "Bull's eye, Knows where the final shot lands"
+        "name": "アーチャー クラスをアンロック",
+        "description": "最後のショットのみ、どのポケットに落ちるかがわかる"
     },
     {
         "code": "Achievement.TRICKSTER",
         "version": "0.1.0",
-        "name": "Trickster Class Unlocked",
+        "name": "トリックスター クラスをアンロック",
         "description": "Masks everywhere, collect 3 for a gift"
     },
     {
@@ -1244,32 +1244,32 @@
     {
         "code": "Achievement.SPECIAL_BET",
         "version": "0.1.0",
-        "name": "Special Bet Unlocked",
-        "description": "From now on, {betColor}Special Bets{clearColor} appear in the shop"
+        "name": "特殊ベットをアンロック",
+        "description": "今後、{betColor}特殊ベット{clearColor}がショップに出現する"
     },
     {
         "code": "Achievement.SPECIAL_POCKET",
         "version": "0.1.0",
-        "name": "x3 Pocket Appeared",
-        "description": "From now on, {pocketColor}x3 pockets{clearColor} appear in the shop"
+        "name": "x3 ポケットが現れた",
+        "description": "今後、{pocketColor}x3 ポケット{clearColor}がショップに出現する"
     },
     {
         "code": "Achievement.ITEM_BOX",
         "version": "0.1.0",
-        "name": "Item Box Unlocked",
-        "description": "From now on, Item Boxes appear in the shop"
+        "name": "アイテムボックスをアンロック",
+        "description": "今後、アイテムボックスがショップに出現する"
     },
     {
         "code": "Achievement.PERK",
         "version": "0.1.0",
-        "name": "Perk Unlocked",
-        "description": "From now on, Token perks appear in the shop"
+        "name": "パークをアンロック",
+        "description": "今後、トークン パークがショップに出現する"
     },
     {
         "code": "Achievement.MORE_SPECIAL_BET",
         "version": "0.1.0",
-        "name": "More Special Bet Unlocked",
-        "description": "From now on, More {betColor}Special Bets{clearColor} appear in the shop"
+        "name": "より多くの特殊ベットをアンロック",
+        "description": "今後、より多くの{betColor}特殊ベット{clearColor}がショップに出現する"
     },
     {
         "code": "Reward.BONUS_ADVANCE_PAYMENT",
