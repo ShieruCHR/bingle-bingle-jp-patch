@@ -18,51 +18,39 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Generate Hiero configuration files
-        run: python gen-hiero.py
-
-      - name: Set up JDK
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Restore cached hiero jar file
+      - name: Restore cached fontbm
         uses: actions/cache@v2
         with:
-          path: executable.jar
-          key: ${{ runner.os }}-executable-jar-${{ hashFiles('executable.jar') }}
+          path: fontbm
+          key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
           restore-keys: |
-            ${{ runner.os }}-executable-jar-
+            ${{ runner.os }}-executable-
 
-      - name: Download hiero if not cached
+      - name: Download fontbm if not cached
         if: steps.restore-cache.outputs.cache-hit != 'true'
         run: |
-          wget https://libgdx-nightlies.s3.eu-central-1.amazonaws.com/libgdx-runnables/runnable-hiero.jar -O executable.jar
+          wget https://github.com/vladimirgamalyan/fontbm/releases/latest/download/fontbm -O fontbm
 
       - name: Cache jar file
         uses: actions/cache@v2
         with:
-          path: executable.jar
-          key: ${{ runner.os }}-executable-jar-${{ hashFiles('executable.jar') }}
+          path: fontbm
+          key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
 
-      - name: "Execute hiero: size 65 (huge)"
-        run: |
-          export DISPLAY=:99
-          sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &
-          java -jar executable.jar -i 65.hiero -o English_Huge.fnt -b
+      - name: "Execute fontbm: size 65 (huge)"
+        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 65 --chars-file patch.json --output English_Huge
 
       - name: "Execute hiero: size 28 (large)"
-        run: java -jar executable.jar -i 28.hiero -o English_Large.fnt -b
+        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 28 --chars-file patch.json --output English_Large
 
       - name: "Execute hiero: size 18 (medium)"
-        run: java -jar executable.jar -i 18.hiero -o English_Medium.fnt -b
+        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 18 --chars-file patch.json --output English_Medium
 
       - name: "Execute hiero: size 15 (small)"
-        run: java -jar executable.jar -i 15.hiero -o English_Small.fnt -b
+        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 15 --chars-file patch.json --output English_Small
 
-      - name: Normalize fnt files
-        run: python normalize.py
+      # - name: Normalize fnt files
+      #   run: python normalize.py
 
       - name: Rename patch.json
         run: mv patch.json GameText_ENG.json
