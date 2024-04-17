@@ -79,13 +79,6 @@ jobs:
     needs: build
 
     steps:
-      - name: Generate unique tag name
-        id: generate_tag
-        run: |
-          COMMIT_HASH=$(git rev-parse --short HEAD)
-          TAG_NAME="release-${COMMIT_HASH}"
-          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
-
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
@@ -100,8 +93,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ env.TAG_NAME }}
-          release_name: "Automated Release: ${{ env.TAG_NAME }}"
+          tag_name: ${{ github.ref }}
+          release_name: "Automated Release: ${{ github.ref }}"
           draft: false
           prerelease: false
 
