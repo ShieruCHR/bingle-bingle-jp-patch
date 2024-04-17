@@ -38,16 +38,16 @@ jobs:
           key: ${{ runner.os }}-executable-${{ hashFiles('fontbm') }}
 
       - name: "Execute fontbm: size 65 (huge)"
-        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 65 --chars-file patch.json --output English_Huge
+        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 65 --chars-file patch.json --output English_Huge
 
-      - name: "Execute hiero: size 28 (large)"
-        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 28 --chars-file patch.json --output English_Large
+      - name: "Execute fontbm: size 28 (large)"
+        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 28 --chars-file patch.json --output English_Large
 
-      - name: "Execute hiero: size 18 (medium)"
-        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 18 --chars-file patch.json --output English_Medium
+      - name: "Execute fontbm: size 18 (medium)"
+        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 18 --chars-file patch.json --output English_Medium
 
-      - name: "Execute hiero: size 15 (small)"
-        run: fontbm --font-file NotoSansJP-Regular.ttf --font-size 15 --chars-file patch.json --output English_Small
+      - name: "Execute fontbm: size 15 (small)"
+        run: ./fontbm --font-file NotoSansJP-Regular.ttf --font-size 15 --chars-file patch.json --output English_Small
 
       # - name: Normalize fnt files
       #   run: python normalize.py
