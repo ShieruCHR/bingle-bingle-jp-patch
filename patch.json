@@ -1,0 +1,1869 @@
+[
+    {
+        "code": "TokenSide.NORMAL",
+        "version": "0.1.0",
+        "name": "Normal Ball",
+        "shortName": "Normal Ball",
+        "description": "Roll a ball",
+        "activeDescription": "Roll a ball\n({ballColor}{levelValue} Points{clearColor})"
+    },
+    {
+        "code": "TokenSide.MULTI",
+        "version": "0.1.0",
+        "name": "Multi Ball",
+        "shortName": "Multi Ball",
+        "description": "Roll multiple balls",
+        "activeDescription": "Roll {valueColor}{levelValue2} balls{clearColor}\n({ballColor}{levelValue} Points{clearColor})"
+    },
+    {
+        "code": "TokenSide.SUPER",
+        "version": "0.1.0",
+        "name": "Super Ball",
+        "shortName": "Super Ball",
+        "description": "Roll a high value ball",
+        "activeDescription": "Roll a high value ball\n({ballColor}{levelValue} Points{clearColor})"
+    },
+    {
+        "code": "TokenSide.REPEAT",
+        "version": "0.1.0",
+        "name": "Repeat Ball",
+        "shortName": "Repeat Ball",
+        "description": "Roll a ball, the {valueColor}next ball{clearColor} will go into the same pocket",
+        "activeDescription": "Roll a ball, {valueColor}next {levelValue2} ball(s){clearColor} will go into the same pocket\n({ballColor}{levelValue} Points{clearColor})"
+    },
+    {
+        "code": "TokenSide.ICE",
+        "version": "0.1.0",
+        "name": "Frozen Ball",
+        "shortName": "Frozen Ball",
+        "description": "Roll a ball, {freezeColor}freeze{clearColor} nearby pockets with no bet",
+        "activeDescription": "Roll a ball, {freezeColor}freeze {levelValue2}{clearColor} nearby pockets with no bet\n({ballColor}{levelValue} Points{clearColor})"
+    },
+    {
+        "code": "TokenSide.HEART",
+        "version": "0.1.0",
+        "name": "Heart Ball",
+        "shortName": "Heart Ball",
+        "description": "Roll a ball, if the ball didn't win any bet, instead of scoring {valueColor}gain a round token back{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Roll a ball, if the ball didn't win any bet, instead of scoring {valueColor}gain a round token back{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({ballColor}{levelValue} Points{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.LARGE",
+        "version": "0.1.0",
+        "name": "Large Ball",
+        "shortName": "Large Ball",
+        "description": "Roll a larger ball, large ball can be affected by {valueColor}multiple pockets{clearColor}",
+        "activeDescription": "Roll a larger ball that can be affected by {valueColor}{levelValue2} pockets{clearColor}\n({ballColor}{levelValue} Points{clearColor})\n{annotationColor}(Cannot win same Bet multiple time){clearColor}"
+    },
+    {
+        "code": "TokenSide.POCKET",
+        "version": "0.1.0",
+        "name": "Pocket Ball",
+        "shortName": "Pocket Ball",
+        "description": "Roll a ball that can change the pocket it lands in\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "First roll is registered, After that {valueColor}change pockets{clearColor} to the registered pocket\n{cautionColor}Fragile{clearColor} after {levelValue2} use(s)\n({ballColor}{levelValue} Points{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.TARGET",
+        "version": "0.1.0",
+        "name": "Target Ball",
+        "shortName": "Target Ball",
+        "description": "Before rolling, select a range of pockets where the ball will land",
+        "activeDescription": "Before rolling, select {pocketColor}{levelValue2} pockets{clearColor} where the ball will land\n({ballColor}{levelValue} Points{clearColor})"
+    },
+    {
+        "code": "TokenSide.WAVE",
+        "version": "0.1.0",
+        "name": "Wave Ball",
+        "shortName": "Wave Ball",
+        "description": "Roll a ball that increases its {ballColor}base Points{clearColor}",
+        "activeDescription": "Every time the ball is rolled, increases its {ballColor}base Point by {levelValue2}{clearColor}\n({ballColor}{levelValue} Points{clearColor})"
+    },
+    {
+        "code": "TokenSide.STRAIGHTUP",
+        "version": "0.1.0",
+        "name": "StraightUp",
+        "shortName": "StraightUp",
+        "description": "Bet on one number",
+        "activeDescription": "Bet on one number\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.SPLIT",
+        "version": "0.1.0",
+        "name": "Split Bet",
+        "shortName": "Split",
+        "description": "Bet on two numbers",
+        "activeDescription": "Bet on two numbers\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.STREET",
+        "version": "0.1.0",
+        "name": "Street",
+        "shortName": "Street",
+        "description": "Bet on three numbers horizontally",
+        "activeDescription": "Bet on three numbers horizontally\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.CORNER",
+        "version": "0.1.0",
+        "name": "Corner",
+        "shortName": "Corner",
+        "description": "Bet on four numbers in a square",
+        "activeDescription": "Bet on four numbers in a square\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.LINE",
+        "version": "0.1.0",
+        "name": "Line",
+        "shortName": "Line",
+        "description": "Bet on six numbers horizontally",
+        "activeDescription": "Bet on six numbers horizontally\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.COLUMN",
+        "version": "0.1.0",
+        "name": "Column",
+        "shortName": "Column",
+        "description": "Bet on one vertical line",
+        "activeDescription": "Bet on one vertical line\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.DOZEN",
+        "version": "0.1.0",
+        "name": "Dozen",
+        "shortName": "Dozen",
+        "description": "Bet on a pack of 12 numbers",
+        "activeDescription": "Bet on a pack of 12 numbers\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.HIGHORLOW",
+        "version": "0.1.0",
+        "name": "High/Low",
+        "shortName": "HighLow",
+        "description": "Bet on 1~18 or 19~36",
+        "activeDescription": "Bet on 1~18 or 19~36\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.EVENORODD",
+        "version": "0.1.0",
+        "name": "Even/Odd",
+        "shortName": "EvenOdd",
+        "description": "Bet on even or odd numbers",
+        "activeDescription": "Bet on even or odd numbers\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.COLOR",
+        "version": "0.1.0",
+        "name": "Color",
+        "shortName": "Color",
+        "description": "Bet on red or black pockets",
+        "activeDescription": "Bet on red or black pockets\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.GOLD_STRAIGHTUP",
+        "version": "0.1.0",
+        "name": "Golden StraightUp",
+        "shortName": "G.StraightUp",
+        "description": "Bet on one number, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on one number, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_SPLIT",
+        "version": "0.1.0",
+        "name": "Golden Split",
+        "shortName": "G.Split",
+        "description": "Bet on two numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on two numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_STREET",
+        "version": "0.1.0",
+        "name": "Golden Street",
+        "shortName": "G.Street",
+        "description": "Bet on three numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on three numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_CORNER",
+        "version": "0.1.0",
+        "name": "Golden Corner",
+        "shortName": "G.Corner",
+        "description": "Bet on four numbers in a square, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on four numbers in a square, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_LINE",
+        "version": "0.1.0",
+        "name": "Golden Line",
+        "shortName": "G.Line",
+        "description": "Bet on six numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on six numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_COLUMN",
+        "version": "0.1.0",
+        "name": "Golden Column",
+        "shortName": "G.Column",
+        "description": "Bet on one vertical line, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on one vertical line, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_DOZEN",
+        "version": "0.1.0",
+        "name": "Golden Dozen",
+        "shortName": "G.Dozen",
+        "description": "Bet on a pack of 12 numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on a pack of 12 numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_HIGHORLOW",
+        "version": "0.1.0",
+        "name": "Golden High/Low",
+        "shortName": "G.HighLow",
+        "description": "Bet on 1~18 or 19~36, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on 1~18 or 19~36, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_EVENORODD",
+        "version": "0.1.0",
+        "name": "Golden Even/Odd",
+        "shortName": "G.EvenOdd",
+        "description": "Bet on even or odd numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on even or odd numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.GOLD_COLOR",
+        "version": "0.1.0",
+        "name": "Golden Color",
+        "shortName": "G.Color",
+        "description": "Bet on red or black pockets, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
+        "activeDescription": "Bet on red or black pockets, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+    },
+    {
+        "code": "TokenSide.ICE_STRAIGHTUP",
+        "version": "0.1.0",
+        "name": "Ice StraightUp",
+        "shortName": "I.StraightUp",
+        "description": "Bet on one number, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on one number, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_SPLIT",
+        "version": "0.1.0",
+        "name": "Ice Split",
+        "shortName": "I.Split",
+        "description": "Bet on two numbers, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on two numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_STREET",
+        "version": "0.1.0",
+        "name": "Ice Street",
+        "shortName": "I.Street",
+        "description": "Bet on three numbers horizontally, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on three numbers horizontally, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_CORNER",
+        "version": "0.1.0",
+        "name": "Ice Corner",
+        "shortName": "I.Corner",
+        "description": "Bet on four numbers in a square, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on four numbers in a square, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_LINE",
+        "version": "0.1.0",
+        "name": "Ice Line",
+        "shortName": "I.Line",
+        "description": "Bet on six numbers horizontally, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on six numbers horizontally, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_COLUMN",
+        "version": "0.1.0",
+        "name": "Ice Column",
+        "shortName": "I.Column",
+        "description": "Bet on one vertical line, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on one vertical line, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_DOZEN",
+        "version": "0.1.0",
+        "name": "Ice Dozen",
+        "shortName": "I.Dozen",
+        "description": "Bet on a pack of 12 numbers, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on a pack of 12 numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_HIGHORLOW",
+        "version": "0.1.0",
+        "name": "Ice High/Low",
+        "shortName": "I.HighLow",
+        "description": "Bet on 1~18 or 19~36, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on 1~18 or 19~36, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_EVENORODD",
+        "version": "0.1.0",
+        "name": "Ice Even/Odd",
+        "shortName": "I.EvenOdd",
+        "description": "Bet on even or odd numbers, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on even or odd numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ICE_COLOR",
+        "version": "0.1.0",
+        "name": "Ice Color",
+        "shortName": "I.Color",
+        "description": "Bet on red or black pockets, {freezeColor}Ice{clearColor}",
+        "activeDescription": "Bet on red or black pockets, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_STRAIGHTUP",
+        "version": "0.1.0",
+        "name": "Echo StraightUp",
+        "shortName": "E.StraightUp",
+        "description": "Bet on one number, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on one number, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_SPLIT",
+        "version": "0.1.0",
+        "name": "Echo Split",
+        "shortName": "E.Split",
+        "description": "Bet on two numbers, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on two numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_STREET",
+        "version": "0.1.0",
+        "name": "Echo Street",
+        "shortName": "E.Street",
+        "description": "Bet on three numbers horizontally, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on three numbers horizontally, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_CORNER",
+        "version": "0.1.0",
+        "name": "Echo Corner",
+        "shortName": "E.Corner",
+        "description": "Bet on four numbers in a square, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on four numbers in a square, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_LINE",
+        "version": "0.1.0",
+        "name": "Echo Line",
+        "shortName": "E.Line",
+        "description": "Bet on six numbers horizontally, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on six numbers horizontally, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_COLUMN",
+        "version": "0.1.0",
+        "name": "Echo Column",
+        "shortName": "E.Column",
+        "description": "Bet on one vertical line, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on one vertical line, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_DOZEN",
+        "version": "0.1.0",
+        "name": "Echo Dozen",
+        "shortName": "E.Dozen",
+        "description": "Bet on a pack of 12 numbers, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on a pack of 12 numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_HIGHORLOW",
+        "version": "0.1.0",
+        "name": "Echo High/Low",
+        "shortName": "E.HighLow",
+        "description": "Bet on 1~18 or 19~36, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on 1~18 or 19~36, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_EVENORODD",
+        "version": "0.1.0",
+        "name": "Echo Even/Odd",
+        "shortName": "E.EvenOdd",
+        "description": "Bet on even or odd numbers, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on even or odd numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.ECHO_COLOR",
+        "version": "0.1.0",
+        "name": "Echo Color",
+        "shortName": "E.Color",
+        "description": "Bet on red or black pockets, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Bet on red or black pockets, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_STRAIGHTUP",
+        "version": "0.1.0",
+        "name": "Flash StraightUp",
+        "shortName": "F.StraightUp",
+        "description": "Bet on one number, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on one number, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_SPLIT",
+        "version": "0.1.0",
+        "name": "Flash Split",
+        "shortName": "F.Split",
+        "description": "Bet on two numbers, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on two numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_STREET",
+        "version": "0.1.0",
+        "name": "Flash Street",
+        "shortName": "F.Street",
+        "description": "Bet on three numbers horizontally, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on three numbers horizontally, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_CORNER",
+        "version": "0.1.0",
+        "name": "Flash Corner",
+        "shortName": "F.Corner",
+        "description": "Bet on four numbers in a square, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on four numbers in a square, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_LINE",
+        "version": "0.1.0",
+        "name": "Flash Line",
+        "shortName": "F.Line",
+        "description": "Bet on six numbers horizontally, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on six numbers horizontally, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_COLUMN",
+        "version": "0.1.0",
+        "name": "Flash Column",
+        "shortName": "F.Column",
+        "description": "Bet on one vertical line, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on one vertical line, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_DOZEN",
+        "version": "0.1.0",
+        "name": "Flash Dozen",
+        "shortName": "F.Dozen",
+        "description": "Bet on a pack of 12 numbers, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on a pack of 12 numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_HIGHORLOW",
+        "version": "0.1.0",
+        "name": "Flash High/Low",
+        "shortName": "F.HighLow",
+        "description": "Bet on 1~18 or 19~36, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on 1~18 or 19~36, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_EVENORODD",
+        "version": "0.1.0",
+        "name": "Flash Even/Odd",
+        "shortName": "F.EvenOdd",
+        "description": "Bet on even or odd numbers, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on even or odd numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.FLASH_COLOR",
+        "version": "0.1.0",
+        "name": "Flash Color",
+        "shortName": "F.Color",
+        "description": "Bet on red or black pockets, {flashColor}Flash{clearColor}",
+        "activeDescription": "Bet on red or black pockets, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_STRAIGHTUP",
+        "version": "0.1.0",
+        "name": "Mirror StraightUp",
+        "shortName": "M.StraightUp",
+        "description": "Select one number, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Bet on one number, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_SPLIT",
+        "version": "0.1.0",
+        "name": "Mirror Split",
+        "shortName": "M.Split",
+        "description": "Select two numbers, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select two numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_STREET",
+        "version": "0.1.0",
+        "name": "Mirror Street",
+        "shortName": "M.Street",
+        "description": "Select three numbers horizontally, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select three numbers horizontally, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_CORNER",
+        "version": "0.1.0",
+        "name": "Mirror Corner",
+        "shortName": "M.Corner",
+        "description": "Select four numbers in a square, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select four numbers in a square, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_LINE",
+        "version": "0.1.0",
+        "name": "Mirror Line",
+        "shortName": "M.Line",
+        "description": "Select six numbers horizontally, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select six numbers horizontally, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_COLUMN",
+        "version": "0.1.0",
+        "name": "Mirror Column",
+        "shortName": "M.Column",
+        "description": "Select one vertical line, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select one vertical line, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_DOZEN",
+        "version": "0.1.0",
+        "name": "Mirror Dozen",
+        "shortName": "M.Dozen",
+        "description": "Select a pack of 12 numbers, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select a pack of 12 numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_HIGHORLOW",
+        "version": "0.1.0",
+        "name": "Mirror High/Low",
+        "shortName": "M.HighLow",
+        "description": "Select 1~18 or 19~36, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select 1~18 or 19~36, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_EVENORODD",
+        "version": "0.1.0",
+        "name": "Mirror Even/Odd",
+        "shortName": "M.EvenOdd",
+        "description": "Select even or odd numbers, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select even or odd numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "TokenSide.MIRROR_COLOR",
+        "version": "0.1.0",
+        "name": "Mirror Color",
+        "shortName": "M.Color",
+        "description": "Select red or black pockets, two times, {mirrorColor}Mirror{clearColor}",
+        "activeDescription": "Select red or black pockets, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+    },
+    {
+        "code": "Perk.ALPHA",
+        "version": "0.1.0",
+        "name": "Alpha Token",
+        "shortName": "Alpha",
+        "description": "Attatched token is {valueColor}always drawn first{clearColor} in each shuffle."
+    },
+    {
+        "code": "Perk.OMEGA",
+        "version": "0.1.0",
+        "name": "Omega Token",
+        "shortName": "Omega",
+        "description": "Attatched token is {valueColor}always drawn last{clearColor} in each shuffle, the token is worth {valueColor}x1.5 value{clearColor}"
+    },
+    {
+        "code": "Perk.METAL",
+        "version": "0.1.0",
+        "name": "Metal Token",
+        "shortName": "Metal",
+        "description": "Attatched token {valueColor}prevent being destroyed{clearColor} once"
+    },
+    {
+        "code": "Perk.WOOD",
+        "version": "0.1.0",
+        "name": "Wood Token",
+        "shortName": "Wood",
+        "description": "Attatched token doesn't cost round token, {cautionColor}Fragile{clearColor}, token have no base value"
+    },
+    {
+        "code": "Perk.DOUBLE",
+        "version": "0.1.0",
+        "name": "Double Token",
+        "shortName": "Double",
+        "description": "Attatched token roll {valueColor}one more ball{clearColor} or {valueColor}bet once more{clearColor},the token is worth {cautionColor}x0.5 value{clearColor}"
+    },
+    {
+        "code": "Perk.COIN",
+        "version": "0.1.0",
+        "name": "Coin Token",
+        "shortName": "Coin",
+        "description": "Attached token gives {coinColor}coin{clearColor} equal to half of it's level when discarded\n{annotationColor}(round up){clearColor}, {cautionColor}Fragile{clearColor} when discarded"
+    },
+    {
+        "code": "Perk.SOFTWOOD",
+        "version": "0.1.0",
+        "name": "Softwood Token",
+        "shortName": "Softwood",
+        "description": "{cautionColor}Fragile{clearColor}"
+    },
+    {
+        "code": "Item.FIRST_BET_VALUE",
+        "version": "0.1.0",
+        "name": "Pioneer",
+        "description": "The first bet of each round have {betColor}+{value} base {clearColor}Chips"
+    },
+    {
+        "code": "Item.ODD_BALL_EVEN_BET",
+        "version": "0.1.0",
+        "name": "Cycle",
+        "description": "When number of round tokens left is even, {betColor}+{value2} base {clearColor}Chips, When it's odd, {ballColor}+{value} base Points{clearColor}"
+    },
+    {
+        "code": "Item.NO_DISCARD_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "No Turning Back",
+        "description": "When no discard is left, {ballColor}+{value} Points{clearColor} to the ball"
+    },
+    {
+        "code": "Item.ICED_BET_VALUE",
+        "version": "0.1.0",
+        "name": "Icing on the Cake",
+        "description": "{percentageValue} of {freezeColor}frozen{clearColor} pocket's {betColor}{clearColor}Chips are always added to the Chips",
+        "activeDescription": "{percentageValue} of {freezeColor}frozen{clearColor} pocket's {betColor}{clearColor}Chips are always added to the Chips\n---\n({betColor}+{currentValue} {clearColor}Chips)"
+    },
+    {
+        "code": "Item.THREE_TOKEN_REVIVE",
+        "version": "0.1.0",
+        "name": "Bailout",
+        "description": "When round tokens run out, revive with 3 additional round tokens\n{cautionColor}Works only once{clearColor}",
+        "activeDescription": "When round tokens run out, revive with 3 additional round tokens\n{cautionColor}Works only once{clearColor}\n---\n(Available : {effectActive})"
+    },
+    {
+        "code": "Item.RANDOM_SUPER_TOKEN",
+        "version": "0.1.0",
+        "name": "The Cavalry",
+        "description": "At each round get a temporary token, 1 level higher than current stage level, the token is worth {valueColor}x{multiplierValue} value{clearColor}"
+    },
+    {
+        "code": "Item.NO_BET_GAIN_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Misfortunate?",
+        "description": "If the ball didn't win any bet, the next ball gets {ballColor}+{value} Points{clearColor}",
+        "activeDescription": "If the ball didn't win any bet, the next ball gets {ballColor}+{value} Points{clearColor}\n---\n( Active : {effectActive} )"
+    },
+    {
+        "code": "Item.DIVERSE_BET_MULTIPLIER",
+        "version": "0.1.0",
+        "name": "Bet Diversity",
+        "description": "From the second unique bet onwards, gain {scoreColor}{percentageValue} extra score{clearColor}.",
+        "activeDescription": "From the second unique bet onwards, gain {scoreColor}{percentageValue} extra score{clearColor}.\n---\n(Current Bonus: {scoreColor}{currentPercentageValue}{clearColor})"
+    },
+    {
+        "code": "Item.REDUCE_PER_PLAY_TOKEN",
+        "version": "0.1.0",
+        "name": "Precious Token",
+        "description": "{ballColor}+{value} Points{clearColor}, if round token is left at end of the round, {cautionColor}decrease it by {value2}{clearColor} permanently",
+        "activeDescription": "{ballColor}+{currentValue} Points{clearColor}, if round token is left at end of the round, {cautionColor}decrease it by {value2}{clearColor} permanently"
+    },
+    {
+        "code": "Item.REDUCE_PER_MONEY_USED",
+        "version": "0.1.0",
+        "name": "Scrooge",
+        "description": "{ballColor}+{value} Points{clearColor}, if less than {value3} gold left after shop, {cautionColor}decrease it by {value2}{clearColor} permanently",
+        "activeDescription": "{ballColor}+{currentValue} Points{clearColor}, if less than {value3} gold left after shop, {cautionColor}decrease it by {value2}{clearColor} permanently"
+    },
+    {
+        "code": "Item.STACK_LITTLE_MONEY_USED",
+        "version": "0.1.0",
+        "name": "Keep the Change",
+        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} permanently after shop, this stack is resetted if you bought or upgraded more than once in the shop",
+        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} permanently after shop, this stack is resetted if you bought or upgraded more than once in the shop\n---\n(Current Stack : {scoreColor}{currentPercentageValue}{clearColor})\n(Buy/Upgrade : {currentValue})"
+    },
+    {
+        "code": "Item.FORCE_ALL_SPECIAL_BET",
+        "version": "0.1.0",
+        "name": "All Special Bet",
+        "description": "On the first page of each shop, every products are Special Bets, the first reroll is always free"
+    },
+    {
+        "code": "Item.FORCE_ALL_SLOT",
+        "version": "0.1.0",
+        "name": "All Pocket",
+        "description": "On the first page of each shop, every products are pockets, the first reroll is always free"
+    },
+    {
+        "code": "Item.FREE_REROLL",
+        "version": "0.1.0",
+        "name": "Free Reroll",
+        "description": "First {value} rerolls are free at each shop"
+    },
+    {
+        "code": "Item.SLOT_EIGHT_DOUBLE",
+        "version": "0.1.0",
+        "name": "8-ball",
+        "description": "When the ball lands in a {pocketColor}pocket 8{clearColor}, the next ball is rolled once more"
+    },
+    {
+        "code": "Item.REDUCE_PER_MOST_SLOT",
+        "version": "0.1.0",
+        "name": "The Commons",
+        "description": "{ballColor}+{value} Points{clearColor}, {cautionColor}decrease it by {value2}{clearColor} for each extra most frequent number on the wheel",
+        "activeDescription": "{ballColor}+{currentValue} Points{clearColor}, {cautionColor}decrease it by {value2}{clearColor} for each extra most frequent number on the wheel"
+    },
+    {
+        "code": "Item.REDUCE_PER_EMPTY_SLOT",
+        "version": "0.1.0",
+        "name": "Bestudo",
+        "description": "{betColor}+{value} {clearColor}Chips, {cautionColor}decrease it by {value2}{clearColor} per the count of numbers removed from the wheel",
+        "activeDescription": "{betColor}+{currentValue} {clearColor}Chips, {cautionColor}decrease it by {value2}{clearColor} per the count of numbers removed from the wheel"
+    },
+    {
+        "code": "Item.INCREASE_PER_EMPTY_SLOT",
+        "version": "0.1.0",
+        "name": "Elite Number",
+        "description": "{ballColor}+{value} Point{clearColor} for every {value2} numbers you have removed from the wheel",
+        "activeDescription": "{ballColor}+{value} Point{clearColor} for every {value2} numbers you have removed from the wheel\n---\n({ballColor}+{currentValue} Points{clearColor})"
+    },
+    {
+        "code": "Item.INCREASE_PER_BOTH_SLOT",
+        "version": "0.1.0",
+        "name": "Duality",
+        "description": "{betColor}+{value} {clearColor}Chips per the numbers with both red and black pockets",
+        "activeDescription": "{betColor}+{value} {clearColor}Chips per the numbers with both red and black pockets\n---\n ({betColor}+{currentValue} {clearColor}Chips)"
+    },
+    {
+        "code": "Item.SLOT_PERFECT_NUMBER",
+        "version": "0.1.0",
+        "name": "Perfect Numbers",
+        "description": "When the ball lands in a {pocketColor}pocket 6 or 28{clearColor}, gain {scoreColor}{percentageValue} more Score{clearColor}"
+    },
+    {
+        "code": "Item.SLOT_PRIME_NUMBER",
+        "version": "0.1.0",
+        "name": "Prime Numbers",
+        "description": "When the ball lands in a {pocketColor}pocket 2,3,5,7,11,13,17,19,23,29 or 31{clearColor}, {betColor}+{value} {clearColor}Chips"
+    },
+    {
+        "code": "Item.SLOT_FOUR_DISCARD",
+        "version": "0.1.0",
+        "name": "Abjicere Four",
+        "description": "When the ball lands in a {pocketColor}pocket containing number 4{clearColor}, gain +{value} Discards"
+    },
+    {
+        "code": "Item.STACK_SLOT_TWO",
+        "version": "0.1.0",
+        "name": "Struere Two",
+        "description": "When a ball lands in a {pocketColor}pocket containing number 2{clearColor}, {betColor}+{value} {clearColor}Chips permanently",
+        "activeDescription": "When a ball lands in a {pocketColor}pocket containing number 2{clearColor}, {betColor}+{value} {clearColor}Chips permanently\n---\n({betColor}+{currentValue} {clearColor}Chips)"
+    },
+    {
+        "code": "Item.SLOT_SEVEN_COIN",
+        "version": "0.1.0",
+        "name": "Felix Seven",
+        "description": "When the ball lands in a {pocketColor}pocket containing number 7{clearColor}, gain {coinColor}{value} Coin{clearColor}"
+    },
+    {
+        "code": "Item.NEGLECT_MAX_UPGRADE",
+        "version": "0.1.0",
+        "name": "Behind the Throne",
+        "description": "When the highest level token is not used for a round, gain {scoreColor}{percentageValue} more Score{clearColor} permanently",
+        "activeDescription": "When the highest level token is not used for a round, gain {scoreColor}{percentageValue} more Score{clearColor} permanently\n---\n(Current Stack : {scoreColor}{currentPercentageValue}{clearColor})\n(Not Used : {effectActive})"
+    },
+    {
+        "code": "Item.SLOT_MOST_FIXED",
+        "version": "0.1.0",
+        "name": "Favorite Pocket",
+        "description": "Most frequent number on the wheel will always be offered in the shop"
+    },
+    {
+        "code": "Item.STRAIGHT_UP_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "StraightUp Ball Value",
+        "description": "When winning a StraightUp Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.SPLIT_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Split Ball Value",
+        "description": "When winning a Split Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.STREET_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Street Ball Value",
+        "description": "When winning a Street Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.CORNER_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Corner Ball Value",
+        "description": "When winning a Corner Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.LINE_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Line Ball Value",
+        "description": "When winning a Line Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.COLUMN_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Column Ball Value",
+        "description": "When winning a Column Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.DOZEN_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Dozen Ball Value",
+        "description": "When winning a Dozen Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.HIGHLOW_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "High/Low Ball Value",
+        "description": "When winning a High/Low Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.EVENODD_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Even/Odd Ball Value",
+        "description": "When winning a Even/Odd Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.COLOR_BALL_VALUE",
+        "version": "0.1.0",
+        "name": "Color Ball Value",
+        "description": "When winning a Color Bet, {ballColor}+{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.STRAIGHT_UP_SOLO",
+        "version": "0.1.0",
+        "name": "StraightUp Solo",
+        "description": "{betColor}+{value} {clearColor}Chips on StraightUp Bet. Increase it by {betColor}+{value}{clearColor}, when StraightUp Bet is winned on the pocket which you have only one",
+        "activeDescription": "{betColor}+{currentValue} {clearColor}Chips on StraightUp Bet. Increase it by {betColor}+{value}{clearColor}, when StraightUp Bet is winned on the pocket which you have only one"
+    },
+    {
+        "code": "Item.SPLIT_COUNT",
+        "version": "0.1.0",
+        "name": "Split Count",
+        "description": "{betColor}+ count of both numbers x {multiplierValue} {clearColor}Chips to Split Bet, when the both nubers of a split bet have the same count"
+    },
+    {
+        "code": "Item.STREET_CONNECTED",
+        "version": "0.1.0",
+        "name": "Street Connected",
+        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Street Bet, for each adjacent street bets"
+    },
+    {
+        "code": "Item.CORNER_DISTANCE",
+        "version": "0.1.0",
+        "name": "Corner Distance",
+        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Corner Bet, if chips from Corner Bet are placed to 4 or more pockets, and there are at least {value} pockets between them"
+    },
+    {
+        "code": "Item.LINE_OVERLAP",
+        "version": "0.1.0",
+        "name": "Corner Distance",
+        "description": "{betColor}+{multiplierValue} {clearColor}Chips to overlapping pockets, if there are adjacent line bets"
+    },
+    {
+        "code": "Item.DOZEN_DOZEN",
+        "version": "0.1.0",
+        "name": "Dozen dozen",
+        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Dozen Bet, if the number of pockets which Dozen Bet placed {berColor}{clearColor}Chips is 12, 24, and 36"
+    },
+    {
+        "code": "Item.COLUMN_LINKED",
+        "version": "0.1.0",
+        "name": "Column Linked",
+        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Column Bet, if the pockets on which Column Bet placed chips are all adjacent to each other"
+    },
+    {
+        "code": "Item.EVENODD_EVENODD",
+        "version": "0.1.0",
+        "name": "EvenOdd EvenOdd",
+        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Even/Odd Bet, if pockets affected by even bet is even or affected by odd bet is odd"
+    },
+    {
+        "code": "Item.HIGHLOW_DIFFERENCE",
+        "version": "0.1.0",
+        "name": "HighLow Difference",
+        "description": "{betColor}+ difference between highest and lowest number x {multiplierValue} {clearColor}Chips"
+    },
+    {
+        "code": "Item.COLOR_SINGLE",
+        "version": "0.1.0",
+        "name": "Hold My Pocket",
+        "description": "If the landed pocket is the only one of its color, {scoreColor}Score x{multiplierValue}{clearColor}"
+    },
+    {
+        "code": "Item.MIRROR_ONLY_MORE",
+        "version": "0.1.0",
+        "name": "Mirror only more",
+        "description": "Wnen a Mirror Bet is placed, place your {betColor}{clearColor}Chips on the area with more pockets"
+    },
+    {
+        "code": "Item.ICE_INITIAL_FREEZE",
+        "version": "0.1.0",
+        "name": "Early Winter",
+        "description": "When an {freezeColor}Ice Bet{clearColor} is placed, Choose addition random pocket and {freezeColor}freeze{clearColor} nearby pockets"
+    },
+    {
+        "code": "Item.FLASH_DURATION",
+        "version": "0.1.0",
+        "name": "Double Flash",
+        "description": "Flash Bet is retained for one more spin"
+    },
+    {
+        "code": "Item.GOLD_DOUBLE_VALUE_HALF",
+        "version": "0.1.0",
+        "name": "Midas",
+        "description": "Change every bets into {coinColor}Golden{clearColor} Bet"
+    },
+    {
+        "code": "Item.ECHO_ONE_MORE",
+        "version": "0.1.0",
+        "name": "Longer Echo",
+        "description": "Echo Bet effect lasts one more round"
+    },
+    {
+        "code": "Item.POCKET_NO_OVERLAP",
+        "version": "0.1.0",
+        "name": "Repulsion",
+        "description": "Pocket Ball does not land in the same pocket as the registered pocket"
+    },
+    {
+        "code": "Item.POCKET_PRECHANGE",
+        "version": "0.1.0",
+        "name": "Harbinger Ball",
+        "description": "Pocket Ball changes pockets before score calculation"
+    },
+    {
+        "code": "Item.HEART_MULTIPLIER",
+        "version": "0.1.0",
+        "name": "Growing Love",
+        "description": "When Heart Ball ability activate, all Heart Balls gain {ballColor}{value} Points{clearColor} for that round",
+        "activeDescription": "When Heart Ball ability activate, all Heart Balls gain {ballColor}{value} Points{clearColor} for that round\n---\n(Current Stack : {ballColor}{currentValue} Points{clearColor})"
+    },
+    {
+        "code": "Item.HEART_DISCARD_REFUND",
+        "version": "0.1.0",
+        "name": "Love and Hate",
+        "description": "Gain 1 discard when you draw Heart Ball after discarding"
+    },
+    {
+        "code": "Item.WAVE_DOUBLE",
+        "version": "0.1.0",
+        "name": "Aftershock",
+        "description": "Wave Ball's base Points are increased once more per spin"
+    },
+    {
+        "code": "Item.WAVE_BET",
+        "version": "0.1.0",
+        "name": "Wave Bet",
+        "description": "Wave Ball also increases {betColor}Chips{clearColor} of bet it won permanently"
+    },
+    {
+        "code": "Item.REPEAT_PREREPEAT",
+        "version": "0.1.0",
+        "name": "Repeat Repeat",
+        "description": "Repeat Ball repeated by Repeat Ball effect gain {ballColor}{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.REPEAT_ADD_POINT",
+        "version": "0.1.0",
+        "name": "Get Over here!",
+        "description": "Bets placed while Repeat Ball effect is active gain {betColor}{value} base Chips{clearColor}"
+    },
+    {
+        "code": "Item.SUPER_FINAL_TOKEN",
+        "version": "0.1.0",
+        "name": "Super Hero",
+        "description": "Super Ball used at 0 discard and 1 round Token earn {scoreColor}{percentageValue} Score{clearColor}"
+    },
+    {
+        "code": "Item.SUPER_NO_BET",
+        "version": "0.1.0",
+        "name": "Splendor",
+        "description": "Super Ball used while no bet is placed earn {scoreColor}{percentageValue} Score{clearColor}"
+    },
+    {
+        "code": "Item.MULTI_REVERSE_SCORE",
+        "version": "0.1.0",
+        "name": "Prince and the Pauper",
+        "description": "When Multi Ball is rolled, balls with most score earn no score and balls with least score earn {scoreColor}{percentageValue2} Score{clearColor}"
+    },
+    {
+        "code": "Item.MULTI_SAME_POCKET",
+        "version": "0.1.0",
+        "name": "Hold My Ball",
+        "description": "When Multi Ball is rolled, If there is another multi ball landed in same pocket it earns {scoreColor}{percentageValue} Score{clearColor}"
+    },
+    {
+        "code": "Item.TARGET_CENTER",
+        "version": "0.1.0",
+        "name": "Bullseye",
+        "description": "When Target Ball land in center of selected range, Gain x{ballColor}{multiplierValue} Points{clearColor}"
+    },
+    {
+        "code": "Item.TARGET_DIVERSITY",
+        "version": "0.1.0",
+        "name": "Too Many Targets",
+        "description": "If there is no duplicate number in selected range of Target Ball, Gain {ballColor}{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.LARGE_ALL_POCKET",
+        "version": "0.1.0",
+        "name": "Betting Fraud",
+        "description": "Large ball can earn chips from same bet in different pocket as {betColor}{percentageValue} value{clearColor}"
+    },
+    {
+        "code": "Item.LARGE_OVERLAP",
+        "version": "0.1.0",
+        "name": "Too Big to be Called",
+        "description": "If Large Ball earn chips from at least two bets that does not affect same pocket at all, Gain {ballColor}{value} Points{clearColor}"
+    },
+    {
+        "code": "Item.FROZEN_ALREADY",
+        "version": "0.1.0",
+        "name": "Frozen Sandwich",
+        "description": "When Frozen Ball lands, Gain {ballColor}{value} Points{clearColor} for each pocket already frozen"
+    },
+    {
+        "code": "Item.FROZEN_EXTEND",
+        "version": "0.1.0",
+        "name": "Subzero",
+        "description": "When Frozen Ball activates, extend freeze area for each pockets already frozen or pockets with bet"
+    },
+    {
+        "code": "Item.STACK_POCKET",
+        "version": "0.1.0",
+        "name": "Indecisive Pocket",
+        "description": "Gain {betColor}{value} chips{clearColor} permanently when changing pockets at the shop",
+        "activeDescription": "Gain {betColor}{value} chips{clearColor} permanently when changing pockets at the shop\n---\n(Current Chips : {betColor}{currentValue}{clearColor})"
+    },
+    {
+        "code": "Item.TOKEN_IN_ORDER",
+        "version": "0.1.0",
+        "name": "Ascending Order",
+        "description": "Gain {scoreColor}({percentageValue} x Token Level) more score{clearColor} when next sequential level token is used, starts at 0",
+        "activeDescription": "Gain {scoreColor}({percentageValue} x Token Level) more score{clearColor} when next sequential level token is used, starts at 0\n---\n(Current : {scoreColor}{currentPercentageValue}{clearColor})\n(Next Level: {currentValue})"
+    },
+    {
+        "code": "Item.BALL_DIVERSITY",
+        "version": "0.1.0",
+        "name": "Bag of Balls",
+        "description": "Gain {ballColor}{value} points{clearColor} for each different balls in the deck",
+        "activeDescription": "Gain {ballColor}{value} points{clearColor} for each different balls in the deck\n---\n(Current Points: {ballColor}{currentValue}{clearColor})"
+    },
+    {
+        "code": "Item.STACK_REROLL",
+        "version": "0.1.0",
+        "name": "Do a Barrel Reroll!",
+        "description": "Gain {ballColor}{value} point{clearColor} permanently when rerolling at the shop",
+        "activeDescription": "Gain {ballColor}{value} point{clearColor} permanently when rerolling at the shop\n---\n(Current Points : {ballColor}{currentValue}{clearColor})"
+    },
+    {
+        "code": "ItemBox.NORMAL",
+        "version": "0.1.0",
+        "name": "Normal Item Box",
+        "description": "Select 1 out of 3 items, more likely to be Normal Item"
+    },
+    {
+        "code": "ItemBox.RARE",
+        "version": "0.1.0",
+        "name": "Rare Item Box",
+        "description": "Select 1 out of 3 items, more likely to be Rare Item"
+    },
+    {
+        "code": "ItemBox.UNIQUE",
+        "version": "0.1.0",
+        "name": "Unique Item Box",
+        "description": "Select 1 out of 3 items, more likely to be Unique Item"
+    },
+    {
+        "code": "Round.NORMAL",
+        "version": "0.1.0",
+        "name": "Normal Round",
+        "description": "Normal Round"
+    },
+    {
+        "code": "Round.RANDOM_FREEZE",
+        "version": "0.1.0",
+        "name": "Cold Wind",
+        "description": "{freezeColor}Freeze{clearColor} {value} random pockets after using token"
+    },
+    {
+        "code": "Round.MOST_SLOT_FREEZE",
+        "version": "0.1.0",
+        "name": "Winter",
+        "description": "{freezeColor}Freeze{clearColor} all pockets containing the number you have the most",
+        "difficultDescription": "{freezeColor}Freeze{clearColor} all pockets containing the number you have the most and the second most"
+    },
+    {
+        "code": "Round.BET_FREEZE",
+        "version": "0.1.0",
+        "name": "Rapid Cooling",
+        "description": "{freezeColor}Freeze{clearColor} {percentageValue} of the pockets that you have just bet on, every time a bet is placed",
+        "difficultDescription": "{freezeColor}Freeze{clearColor} {percentageValue} of the pockets that you have just bet on, every time a bet is placed"
+    },
+    {
+        "code": "Round.DISCARD_SHUFFLE",
+        "version": "0.1.0",
+        "name": "Tantrum",
+        "description": "Every time you Discard a token, tokens are shuffled",
+        "difficultDescription": "Every time you Discard a token, tokens are shuffled. {cautionColor}{value} round token{clearColor}"
+    },
+    {
+        "code": "Round.BASIC_TOKEN",
+        "version": "0.1.0",
+        "name": "Roots Around",
+        "description": "Add {value} rotten tokens into your tokens for this round"
+    },
+    {
+        "code": "Round.ALWAYS_SHUFFLE",
+        "version": "0.1.0",
+        "name": "Outrage",
+        "description": "Every time you use a token, tokens are shuffled",
+        "difficultDescription": "Every time you use a token, tokens are shuffled, {cautionColor}{value} discard{clearColor}"
+    },
+    {
+        "code": "Round.WEAKEN_AFTER_FIRST_BALL",
+        "version": "0.1.0",
+        "name": "Distracted",
+        "description": "From the second {ballColor}Ball{clearColor}, only score {scoreColor}{percentageValue}{clearColor}"
+    },
+    {
+        "code": "Round.WEAKEN_BALL_MULTI",
+        "version": "0.1.0",
+        "name": "Simplist",
+        "description": "When multiple {ballColor}Balls{clearColor} are rolled at once, only the highest score Ball gets scored",
+        "difficultDescription": "When multiple {ballColor}Balls{clearColor} are rolled at once, only the lowest score Ball gets scored"
+    },
+    {
+        "code": "Round.WEAKEN_BALL_REPEAT",
+        "version": "0.1.0",
+        "name": "Fickle",
+        "description": "After a {ballColor}Ball{clearColor} get scored, the score from a ball of same type only score {scoreColor}{percentageValue}{clearColor}"
+    },
+    {
+        "code": "Round.WEAKEN_BET_REPEAT",
+        "version": "0.1.0",
+        "name": "Keen eye",
+        "description": "After Bet placed, same type of Bet only place {betColor}{percentageValue} {clearColor}Chips"
+    },
+    {
+        "code": "Round.WEAKEN_SPECIAL_BET",
+        "version": "0.1.0",
+        "name": "Sharp Beak",
+        "description": "Convert up to {value} {betColor}Special Bets{clearColor} into normal bets for this round"
+    },
+    {
+        "code": "Round.WEAKEN_AFTER_FIRST_BET",
+        "version": "0.1.0",
+        "name": "Strong Claw",
+        "description": "From the second bet, bet will have only {betColor}{percentageValue} {clearColor}Chips"
+    },
+    {
+        "code": "Round.MAX_SCORE_RESTRICTION",
+        "version": "0.1.0",
+        "name": "Oppression",
+        "description": "Can only score up to 1/{value} of {targetScoreColor}Target Score{clearColor} at once"
+    },
+    {
+        "code": "Round.ONLY_INCREASING_SCORE",
+        "version": "0.1.0",
+        "name": "Tyranny",
+        "description": "After each spin, half of pockets matching the number where the balls have landed will be converted into a green 0 pocket",
+        "difficultDescription": "After each spin, pockets matching the number where the balls have landed will be converted into a green 0 pocket"
+    },
+    {
+        "code": "Round.SCORE_ADD_RESTRICTION",
+        "version": "0.1.0",
+        "name": "Depredation",
+        "description": "For every {value} enabled Items disable 1 Item, disabled items are changed after token is used"
+    },
+    {
+        "code": "Achievement.TUTORIAL",
+        "version": "0.1.0",
+        "name": "Boss Appeared",
+        "description": "From now on, Boss will appear every 4 rounds",
+        "firstRoundStart": "Select the {ballColor}Ball{clearColor} side of the token to spin the wheel.",
+        "firstRoundScore": "Your {scoreColor}Score{clearColor} will be displayed here.\nYou will {scoreColor}Score{clearColor} each time you roll a {ballColor}Ball{clearColor}.\nThe {scoreColor}Score{clearColor} is calculated by {ballColor}Points{clearColor} x {betColor}{clearColor}Chips placed.",
+        "firstRoundTargetScore": "This is the {targetScoreColor}Target Score{clearColor} for this round.\nIf you reach {targetScoreColor}Target Score{clearColor}, the round will be cleared,\nand you will be able to move on to the next round.",
+        "firstRoundBet": "Select the {betColor}Bet{clearColor} side of the token to place {betColor}{clearColor}Chips.\nIf the {ballColor}Ball{clearColor} goes into pocket with {betColor}{clearColor}Chips,\nyou will get a higher {scoreColor}Score{clearColor}.",
+        "firstRoundBetSelect": "Each pocket has {betColor}10 {clearColor}Chips placed by default.\nSelect a color to place {betColor}20 {clearColor}Chips.",
+        "firstRoundBetSelectInformation": "Now, {betColor}20 {clearColor}Chips are added to the selected color.\nMeaning, you will get a higher Score\nwhen the {ballColor}Ball{clearColor} goes into pockets of that color.",
+        "firstRoundBetInformation": "The bets placed in each round is shown here.\n{betColor}{clearColor}Chips placed by bets last until the end of round,\nso you can score multiple times with those {betColor}{clearColor}Chips\nfor that round.",
+        "firstRoundSecondBall": "Now roll a {ballColor}Ball{clearColor} again.",
+        "firstShopCalculation": "After each round, you get some {coinColor}Coins{clearColor}, and visit the shop.\n{coinColor}Coins{clearColor} can be spent to upgrade your tokens and wheel.",
+        "firstShopBall": "Buy one of the {ballColor}Balls{clearColor}\n with special abilities.",
+        "firstShopSelect": "Select a token to apply the new {ballColor}Ball{clearColor}.",
+        "firstShopUpgrade": "You can also upgrade the level of tokens\nto increase the token's base {ballColor}Points{clearColor} and {betColor}{clearColor}Chips.",
+        "firstShopNextRound": "After you are done with shopping,\nclick this button to move on to the next round.",
+        "secondRoundBet": "Since the {betColor}{clearColor}Chips placed last until end of the round,\nit's usually better to place bets first.",
+        "secondRoundDiscard": "The Discard button allows you to discard tokens and draw new ones.",
+        "secondRoundBall": "Now, you can test your new {ballColor}Ball{clearColor}.",
+        "secondShopPocket": "You can also upgrade your wheel\n by buying a new {pocketColor}Pocket{clearColor}",
+        "secondShopPocketSelect": "Choose a {pocketColor}Pocket{clearColor} on the wheel,\nand replace it with the new one.",
+        "secondShopUpgrade": "When a token reaches a certain level,\n It's abilities are also enhanced.",
+        "secondShopBet": "Also, bets are sold in the shop, which you can apply to tokens.",
+        "secondShopReroll": "If none of the options appeal to you\nreroll the shop with {coinColor}2 Coins{clearColor}.",
+        "thirdRoundToken": "When round tokens run out before\nyou reach the {targetScoreColor}Target Score{clearColor},\nyou will lose the game.",
+        "thirdShopItem": "There are items available for you to buy in the shop.\nThe items assist your gameplay with their own abilities.",
+        "thirdShopItemInformation": "There are many items to find.\nWith those items, you can create many special builds.",
+        "thirdShopLock": "If you don't have enough {coinColor}Coins{clearColor} to buy\nthe item you want, you can lock the shop\nto purchase it in the shop next round.",
+        "shopGoldInformation": "Remember, all {coinColor}Coins{clearColor} disappear\nwhen you leave the shop.\nSo, you cannot save {coinColor}Coins{clearColor} for next round",
+        "playTokenInformation": "When round tokens run out, you will lose the game,\nif you haven't reached the {targetScoreColor}Target Score{clearColor}.\nSo, make sure to use the last token for the {ballColor}Ball{clearColor} at least."
+    },
+    {
+        "code": "Achievement.BOSS_INFORMATION",
+        "version": "0.1.0",
+        "information": "Hover over the target score to see this stage's Boss Ability.\nBoss will appear at the final round of this stage.\nSome of them can be deadly to your build, so prepare yourself."
+    },
+    {
+        "code": "Achievement.ARCHER",
+        "version": "0.1.0",
+        "name": "Archer class Unlocked",
+        "description": "Bull's eye, Knows where the final shot lands"
+    },
+    {
+        "code": "Achievement.TRICKSTER",
+        "version": "0.1.0",
+        "name": "Trickster Class Unlocked",
+        "description": "Masks everywhere, collect 3 for a gift"
+    },
+    {
+        "code": "Achievement.THIEF",
+        "version": "0.1.0",
+        "name": "Thief Class Unlocked",
+        "description": "Shadow lurker, where reversal is your key"
+    },
+    {
+        "code": "Achievement.SPECIAL_BET",
+        "version": "0.1.0",
+        "name": "Special Bet Unlocked",
+        "description": "From now on, {betColor}Special Bets{clearColor} appear in the shop"
+    },
+    {
+        "code": "Achievement.SPECIAL_POCKET",
+        "version": "0.1.0",
+        "name": "x3 Pocket Appeared",
+        "description": "From now on, {pocketColor}x3 pockets{clearColor} appear in the shop"
+    },
+    {
+        "code": "Achievement.ITEM_BOX",
+        "version": "0.1.0",
+        "name": "Item Box Unlocked",
+        "description": "From now on, Item Boxes appear in the shop"
+    },
+    {
+        "code": "Achievement.PERK",
+        "version": "0.1.0",
+        "name": "Perk Unlocked",
+        "description": "From now on, Token perks appear in the shop"
+    },
+    {
+        "code": "Achievement.MORE_SPECIAL_BET",
+        "version": "0.1.0",
+        "name": "More Special Bet Unlocked",
+        "description": "From now on, More {betColor}Special Bets{clearColor} appear in the shop"
+    },
+    {
+        "code": "Reward.BONUS_ADVANCE_PAYMENT",
+        "version": "0.1.0",
+        "name": "Loan"
+    },
+    {
+        "code": "Item.BONUS_ADVANCE_PAYMENT",
+        "version": "0.1.0",
+        "name": "Loan",
+        "description": "{ballColor}+{value} Points{clearColor} in the first Round\nGain {coinColor}{value2} Coins{clearColor} in the first shop\nLose {cautionColor}{value3} Coins{clearColor} in the shop after the first Boss"
+    },
+    {
+        "code": "Reward.BONUS_INITIAL_REROLL",
+        "version": "0.1.0",
+        "name": "Search Party"
+    },
+    {
+        "code": "Item.BONUS_INITIAL_REROLL",
+        "version": "0.1.0",
+        "name": "Search Party",
+        "description": "{ballColor}+{value} Points{clearColor} in the first Round\n{value2} rerolls are free at first shop"
+    },
+    {
+        "code": "Reward.BONUS_FORCED_TOKEN",
+        "version": "0.1.0",
+        "name": "Rainbow Token"
+    },
+    {
+        "code": "Item.BONUS_FORCED_TOKEN",
+        "version": "0.1.0",
+        "name": "Rainbow Token",
+        "description": "Replace a normal token with a {valueColor}random token with alpha perk{clearColor}\n{cautionColor}0 discard{clearColor} for first 3 rounds"
+    },
+    {
+        "code": "Reward.BONUS_SLOT_FIXER",
+        "version": "0.1.0",
+        "name": "Pocket Fixer"
+    },
+    {
+        "code": "Item.BONUS_SLOT_FIXER",
+        "version": "0.1.0",
+        "name": "Pocket Fixer",
+        "description": "Get {valueColor}{value} identical pockets{clearColor}\nThe pocket's number will {cautionColor}no longer appear{clearColor} in the shop",
+        "activeDescription": "Get {valueColor}{value} identical pockets{clearColor}\nThe pocket's number will {cautionColor}no longer appear{clearColor} in the shop\n(number : {currentValue})"
+    },
+    {
+        "code": "Reward.BONUS_RUSHED_UPGRADE",
+        "version": "0.1.0",
+        "name": "Rushed Upgrade"
+    },
+    {
+        "code": "Item.BONUS_RUSHED_UPGRADE",
+        "version": "0.1.0",
+        "name": "Rushed Upgrade",
+        "description": "First token become {valueColor}level 2 token{clearColor}\nThis token {cautionColor}cost +1 Coin{clearColor} to be upgraded"
+    },
+    {
+        "code": "Reward.BONUS_RANDOM_RARE_ITEM",
+        "version": "0.1.0",
+        "name": "Random Box"
+    },
+    {
+        "code": "Item.BONUS_RANDOM_RARE_ITEM",
+        "version": "0.1.0",
+        "name": "Random Box",
+        "description": "Gain a {valueColor}rare item{clearColor}\nGet {cautionColor}{percentageValue} less score{clearColor} for first 3 rounds"
+    },
+    {
+        "code": "Reward.REWARD_MORE_PLAY_TOKEN",
+        "version": "0.1.0",
+        "name": "Stake Raise"
+    },
+    {
+        "code": "Item.REWARD_MORE_PLAY_TOKEN",
+        "version": "0.1.0",
+        "name": "Stake Raise",
+        "description": "Can play {value} more token per round, {cautionColor}-1 coin{clearColor} every round"
+    },
+    {
+        "code": "Reward.REWARD_MORE_DISCARD",
+        "version": "0.1.0",
+        "name": "Discard Pack"
+    },
+    {
+        "code": "Item.REWARD_MORE_DISCARD",
+        "version": "0.1.0",
+        "name": "Discard Pack",
+        "description": "{value} more discards per round"
+    },
+    {
+        "code": "Reward.REWARD_REMOVE_TOKEN",
+        "version": "0.1.0",
+        "name": "Token Burner",
+        "description": "Remove {value} token from deck"
+    },
+    {
+        "code": "Item.REWARD_REMOVE_TOKEN",
+        "version": "0.1.0",
+        "name": "Token Burner",
+        "description": "Token removed from deck"
+    },
+    {
+        "code": "Reward.REWARD_PERMAFROST",
+        "version": "0.1.0",
+        "name": "Permafrost",
+        "description": "Freeze {value} pockets."
+    },
+    {
+        "code": "Item.REWARD_PERMAFROST",
+        "version": "0.1.0",
+        "name": "Permafrost",
+        "description": "{value} pockets frozen."
+    },
+    {
+        "code": "Reward.REWARD_COPY_TOKEN",
+        "version": "0.1.0",
+        "name": "Token Cloner",
+        "description": "Copy a token from your deck"
+    },
+    {
+        "code": "Item.REWARD_COPY_TOKEN",
+        "version": "0.1.0",
+        "name": "Token Cloner",
+        "description": "Selected token is copied"
+    },
+    {
+        "code": "Reward.REWARD_MORE_GOLD",
+        "version": "0.1.0",
+        "name": "Money Dispenser",
+        "description": "Gain {coinColor}{value} Coins{clearColor} every round"
+    },
+    {
+        "code": "Item.REWARD_MORE_GOLD",
+        "version": "0.1.0",
+        "name": "Money Dispenser",
+        "description": "Gain {coinColor}{value} Coins{clearColor} every round"
+    },
+    {
+        "code": "Reward.QUEST_NATURAL_SELECTION",
+        "version": "0.1.0",
+        "name": "Natural Selection",
+        "condition": "Every round, your first used token is registered, Clear {roundColor}{targetConditionCount} round{clearColor} using only the registered token",
+        "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor}, this change is permanent"
+    },
+    {
+        "code": "Quest.NATURAL_SELECTION",
+        "version": "0.1.0",
+        "name": "Natural Selection",
+        "condition": "Every round, your first used token is registered, Clear {roundColor}{targetConditionCount} rounds{clearColor} using only the registered token\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Used Token : {conditionMet})",
+        "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently",
+        "activeDescription": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently"
+    },
+    {
+        "code": "Reward.QUEST_MONOCHROME",
+        "version": "0.1.0",
+        "name": "Monochrome",
+        "condition": "Have {pocketColor}{targetConditionCount} pockets{clearColor} of the same color",
+        "description": "Bets on the majority color add {betColor}x{value} {clearColor}Chips"
+    },
+    {
+        "code": "Quest.MONOCHROME",
+        "version": "0.1.0",
+        "name": "Monochrome",
+        "condition": "Have {pocketColor}{targetConditionCount} pockets{clearColor} of the same color\n---\n{annotationColor}(Slot : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "Bets on the majority color add {betColor}x{value} {clearColor}Chips",
+        "activeDescription": "Bets on the majority color add {betColor}x{value} {clearColor}Chips\n---\n{annotationColor}(Chips : {betColor}{currentValue}{annotationColor})"
+    },
+    {
+        "code": "Reward.QUEST_HOLE_IN_ONE",
+        "version": "0.1.0",
+        "name": "Hole in One",
+        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with only spinning the wheel once",
+        "description": "The first ball is rolled {value} times"
+    },
+    {
+        "code": "Quest.HOLE_IN_ONE",
+        "version": "0.1.0",
+        "name": "Hole in One",
+        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with only spinning the wheel once\n---\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Spin : {currentValue}){clearColor}",
+        "description": "The first ball is rolled {value} times",
+        "activeDescription": "The first ball is rolled {value} times {annotationColor}(Active : {effectActive}){clearColor}"
+    },
+    {
+        "code": "Reward.QUEST_RELAY_RACE",
+        "version": "0.1.0",
+        "name": "Relay Race",
+        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with spinning at least {targetConditionCount2} times",
+        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per wheel spun this round"
+    },
+    {
+        "code": "Quest.RELAY_RACE",
+        "version": "0.1.0",
+        "name": "Relay Race",
+        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with spinning at least {targetConditionCount2} times\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Spin : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
+        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per wheel spun this round",
+        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} per wheel spun this round\n---\n(Current : {scoreColor}{currentPercentageValue}{clearColor})"
+    },
+    {
+        "code": "Reward.QUEST_ROUND_ROBIN",
+        "version": "0.1.0",
+        "name": "Round Robin",
+        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} without using discard",
+        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per different token used this round\nIf a round is cleared without using discard, {valueColor}{value} lowest level tokens are upgraded{clearColor}"
+    },
+    {
+        "code": "Quest.ROUND_ROBIN",
+        "version": "0.1.0",
+        "name": "Round Robin",
+        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} without using discard\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Active : {conditionMet}){clearColor}",
+        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per different token used this round\nIf a round is cleared without using discard, {valueColor}{value} lowest level tokens are upgraded{clearColor}",
+        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} per different token used this round\nIf a round is cleared without using discard, {valueColor}{value} lowest level tokens are upgraded{clearColor}\n---\n{annotationColor}(Token Used : {effectActive}){clearColor}\n(Current : {scoreColor}{currentPercentageValue}{clearColor})\n{annotationColor}(Upgrade : {effectActive2}){clearColor}"
+    },
+    {
+        "code": "Reward.QUEST_SNOWDROP",
+        "version": "0.1.0",
+        "name": "Snowdrop",
+        "condition": "Change {value} tokens' normal bet into {freezeColor}Ice Bet{clearColor} upon pickup\nClear {roundColor}{targetConditionCount} rounds{clearColor} while having {targetConditionCount2} pockets {freezeColor}frozen{clearColor}",
+        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per frozen pocket"
+    },
+    {
+        "code": "Quest.SNOWDROP",
+        "version": "0.1.0",
+        "name": "Snowdrop",
+        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} while having {targetConditionCount2} pockets {freezeColor}frozen{clearColor}\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Frozen Pocket : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
+        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per frozen pocket",
+        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} per frozen pocket\n---\n(Current : {scoreColor}{currentPercentageValue}{clearColor})"
+    },
+    {
+        "code": "Reward.QUEST_TWO_MARSHMALLOW",
+        "version": "0.1.0",
+        "name": "Two Marshmallow",
+        "condition": "Do not buy anything in the shop for {valueColor}{targetConditionCount} rounds{clearColor}\n{annotationColor}(Upgrade is allowed){clearColor}",
+        "description": "Gain {coinColor}{value} Coins{clearColor} Once"
+    },
+    {
+        "code": "Quest.TWO_MARSHMALLOW",
+        "version": "0.1.0",
+        "name": "Two Marshmallow",
+        "condition": "Do not buy anything in the shop for {valueColor}{targetConditionCount} rounds{clearColor}\n{annotationColor}(Upgrade is allowed){clearColor}\n{annotationColor}(Count : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "Gain {coinColor}{value} Coins{clearColor} Once",
+        "activeDescription": "Gained {coinColor}{value} Coins{clearColor}"
+    },
+    {
+        "code": "Reward.QUEST_INVESTMENT",
+        "version": "0.1.0",
+        "name": "Investment",
+        "condition": "Accumulate {coinColor}{targetConditionCount} unused coins{clearColor}",
+        "description": "{betColor}+7 Chips{clearColor} per unused {coinColor}coin{clearColor}.\n{coinColor}Coins{clearColor} from class ability is doubled"
+    },
+    {
+        "code": "Quest.INVESTMENT",
+        "version": "0.1.0",
+        "name": "Investment",
+        "condition": "Accumulate {coinColor}{targetConditionCount} unused coins{clearColor}\n{annotationColor}(Unused Coins : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "{betColor}+7 Chips{clearColor} per unused {coinColor}coin{clearColor}\n{coinColor}Coins{clearColor} from class ability is doubled",
+        "activeDescription": "{betColor}+7 Chips{clearColor} per unused {coinColor}coin{clearColor}\n{coinColor}Coins{clearColor} from class ability is doubled\n{annotationColor}(Unused Coins : {currentConditionCount}){clearColor}"
+    },
+    {
+        "code": "Reward.QUEST_FRAGILE_LEGACY",
+        "version": "0.1.0",
+        "name": "Fragile Legacy",
+        "condition": "Destroy {targetConditionCount} tokens",
+        "description": "Add {percentageValue} of {ballColor}points{clearColor} and {betColor}{clearColor}Chips from each destroyed token"
+    },
+    {
+        "code": "Quest.FRAGILE_LEGACY",
+        "version": "0.1.0",
+        "name": "Fragile Legacy",
+        "condition": "Destroy {targetConditionCount} tokens\n{annotationColor}(Destroyed : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "Add {percentageValue} of {ballColor}points{clearColor} and {betColor}{clearColor}Chips from each destroyed token",
+        "activeDescription": "Add {percentageValue} of {ballColor}points{clearColor} and {betColor}{clearColor}Chips from each destroyed token\n({ballColor}{currentValue} points{clearColor})\n({betColor}{currentValue2} {clearColor}Chips)"
+    },
+    {
+        "code": "Class.ARCHER",
+        "version": "0.1.0",
+        "name": "Archer",
+        "description": "When you have only one round token left, you {valueColor}can see where next ball will land{clearColor}\n{annotationColor}(Discarding changes it){clearColor}",
+        "goldAbilityName": "Unused Round Tokens",
+        "goldAbilityDescription": "Gain {coinColor}1 Coin{clearColor} per every round token left at end of the round",
+        "unlockDescription": "Finish the tutorial"
+    },
+    {
+        "code": "Class.TRICKSTER",
+        "version": "0.1.0",
+        "name": "Trickster",
+        "description": "Buying {valueColor}3 marked item{clearColor} in shop gives you {valueColor}random effect{clearColor}\nUnused {valueColor}round token is saved{clearColor} up to 3 for next round",
+        "goldAbilityName": "Unused Discard",
+        "goldAbilityDescription": "Gain {coinColor}1 coin{clearColor} per 2 discard left at end of the round",
+        "modifierName": "Modifier",
+        "modifierDescription": "-1 round token\n+3 discard",
+        "unlockDescription": "Reach the final round with first Class"
+    },
+    {
+        "code": "Class.THIEF",
+        "version": "0.1.0",
+        "name": "Thief",
+        "description": "You score when bet is placed rather than after you spin the wheel, ball will last over round and bet will disappear after score",
+        "goldAbilityName": "Surpassed Target Score",
+        "goldAbilityDescription": "Gain 4 coins if your score is more than double the target score",
+        "unlockDescription": "Will be updated soon!"
+    },
+    {
+        "code": "Class.TUTORIAL_CLASS",
+        "version": "0.1.0",
+        "name": "Tutorial Class",
+        "description": "",
+        "goldAbilityName": "Tutorial Bonus"
+    },
+    {
+        "code": "HouseEdge.BASE",
+        "version": "0.1.0",
+        "name": "Pizza",
+        "description": "For every 5 pockets with same number, that number pocket cost 1 coin more\n\n{targetScoreColor}Target score increased{clearColor} and gain {coinColor}+1 coin{clearColor} every round\n{annotationColor}(This effect stacks upon reaching House Edge 100% and 200%){clearColor}\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.ZERO_POCKET_ADD",
+        "version": "0.1.0",
+        "name": "Zero Verde",
+        "description": "Randomly add 0 pocket every two round{targetScoreColor}\n\nHouse Edge 20%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.QUEST_DIFFICULTY",
+        "version": "0.1.0",
+        "name": "Quest Varoni",
+        "description": "Quest conditions get harder\n\n{targetScoreColor}House Edge 20%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.UNLUCKY",
+        "version": "0.1.0",
+        "name": "Unlucky Martini",
+        "description": "Player become unlucky from stage 3\n\n{targetScoreColor}House Edge 30%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.TOKEN_MORE",
+        "version": "0.1.0",
+        "name": "Floodwater Tonic",
+        "description": "Start game with one more basic token\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.DISCARD_LESS",
+        "version": "0.1.0",
+        "name": "Discard Tonic",
+        "description": "Player have one less discard every round\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.TOKEN_DISENHANCE",
+        "version": "0.1.0",
+        "name": "Dwindling Rose Drink",
+        "description": "After every round, random token's base chips and points decrease\n{annotationColor}(Changing ball or bet reset debuff){clearColor}\n\n{targetScoreColor}House Edge 20%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.ITEM_EXPENSIVE",
+        "version": "0.1.0",
+        "name": "On the Coins",
+        "description": "Balls and Special Bets cost 1 more coin\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.TOKEN_BASIC",
+        "version": "0.1.0",
+        "name": "Wood Gimlet",
+        "description": "Add temporary fragile token every round\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.REROLL_EXPENSIVE",
+        "version": "0.1.0",
+        "name": "Reroll Bellini",
+        "description": "Rerolls cost 1 more coin\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.COIN_LESS",
+        "version": "0.1.0",
+        "name": "Coinless Martini",
+        "description": "At boss stage Gain 2 less coin from round reward\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.BOSS_SNIPE",
+        "version": "0.1.0",
+        "name": "Sazerac Snipe",
+        "description": "Stage 3 and Stage 4 bosses are more likely to counter you\n\n{targetScoreColor}House Edge 20%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.BOSS_ENHANCE",
+        "version": "0.1.0",
+        "name": "Boss Kir",
+        "description": "Bosses have stronger ability\n\n{targetScoreColor}House Edge 30%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.BOSS_MULTIPLE",
+        "version": "0.1.0",
+        "name": "Double Mimosa",
+        "description": "Bosses also have ability of previous boss\n\n{targetScoreColor}House Edge 30%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.TOKEN_LOCK",
+        "version": "0.1.0",
+        "name": "Sealing Hipflask",
+        "description": "Half of the tokens you own will be randomly locked in the shop, locked tokens cannot be selected or upgraded\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.ITEM_REMOVAL",
+        "version": "0.1.0",
+        "name": "Molotov Cocktail",
+        "description": "Before proceeding to next stage, choose 1 from 3 items you have to remove permanently\n\n{targetScoreColor}House Edge 20%{clearColor}",
+        "title": "Remove Item"
+    },
+    {
+        "code": "HouseEdge.WIN_STREAK_FIRST",
+        "version": "0.1.0",
+        "name": "Star Whisky",
+        "description": "Failed to clear while this is in effect, reduce Max House Edge by 10%\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.WIN_STREAK_SECOND",
+        "version": "0.1.0",
+        "name": "Double Star Whisky",
+        "description": "Failed to clear while this is in effect, reduce Max House Edge by 10%\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "HouseEdge.WIN_STREAK_THIRD",
+        "version": "0.1.0",
+        "name": "Triple Star Daiquiri",
+        "description": "Failed to clear while this is in effect, reduce Max House Edge by 10%\n\n{targetScoreColor}House Edge 10%{clearColor}"
+    },
+    {
+        "code": "Keyword.FRAGILE",
+        "version": "0.1.0",
+        "name": "{cautionColor}Fragile{clearColor}",
+        "description": "Token is {cautionColor}destroyed{clearColor}, destroyed token cannot be drawn again in that round",
+        "activeName": "{cautionColor}Fragile{clearColor}",
+        "activeDescription": "Token is {cautionColor}destroyed{clearColor}, destroyed token cannot be drawn again in that round"
+    },
+    {
+        "code": "Keyword.FREEZE",
+        "version": "0.1.0",
+        "name": "{freezeColor}Freeze{clearColor}",
+        "description": "If pocket is frozen, ball will not go into that pocket",
+        "activeName": "{freezeColor}Freeze{clearColor}",
+        "activeDescription": "If pocket is frozen, ball will not go into that pocket"
+    },
+    {
+        "code": "Keyword.GOLDEN_BET",
+        "version": "0.1.0",
+        "activeName": "{coinColor}Golden{clearColor}",
+        "activeDescription": "When you win the bet, gain {coinColor}1 Coin{clearColor} once\n{annotationColor}(Won bet changed to normal version){clearColor}",
+        "name": "{coinColor}Golden{clearColor}",
+        "description": "When you win the bet, gain {coinColor}1 Coin{clearColor} once\n{annotationColor}(Won bet changed to normal version){clearColor}"
+    },
+    {
+        "code": "Keyword.ECHO_BET",
+        "version": "0.1.0",
+        "activeName": "{echoColor}Echo(X){clearColor}",
+        "activeDescription": "Add normal version of same bet that worth X times at the start of next round",
+        "name": "{echoColor}Echo{clearColor}",
+        "description": "At the start of next round add the normal version of same bet with different value"
+    },
+    {
+        "code": "Keyword.FLASH_BET",
+        "version": "0.1.0",
+        "activeName": "{flashColor}Flash(X){clearColor}",
+        "activeDescription": "Bet is {valueColor}Worth X times{clearColor}, bet is {cautionColor}removed after spin{clearColor}",
+        "name": "{flashColor}Flash{clearColor}",
+        "description": "Bet is worth more than the normal version, bet is {cautionColor}removed after spin{clearColor}"
+    },
+    {
+        "code": "Keyword.MIRROR_BET",
+        "version": "0.1.0",
+        "activeName": "{mirrorColor}Mirror(X){clearColor}",
+        "activeDescription": "Increase the chips on one area X times the normal value, decrease the chips on the other",
+        "name": "{mirrorColor}Mirror{clearColor}",
+        "description": "Increase the chips on one area significantly, decrease the chips on the other"
+    },
+    {
+        "code": "Keyword.ICE_BET",
+        "version": "0.1.0",
+        "activeName": "{freezeColor}Ice(X){clearColor}",
+        "activeDescription": "When you add or win the bet, Freeze nearby x pockets, excluding pockets affected by this bet.\n{annotationColor}(Upon adding bet pocket is randomly selected){clearColor}",
+        "name": "{freezeColor}Ice{clearColor}",
+        "description": "When you add or win the bet, Freeze nearby pockets, excluding pockets affected by this bet."
+    },
+    {
+        "code": "Ui.QUEUED_TEXT",
+        "version": "0.1.0",
+        "nextBoss": "Next Boss",
+        "boss": "Boss",
+        "achievementUnlocked": "Achievement Unlocked",
+        "retry": "Life -1, Retry Level",
+        "gameOver": "Game Over",
+        "gameOverRoundToken": "You run out of round tokens",
+        "gameOverPlayToken": "Your tokens are all destroyed",
+        "gameOverFreeze": "Your wheel is completely frozen",
+        "targetScore": "Target Score",
+        "gameClear": "Game Clear",
+        "gameClearDescription": "Click to continue to Challenge Mode",
+        "roundClear": "Round Clear",
+        "handLeft": "Round tokens unused"
+    },
+    {
+        "code": "Ui.MENU",
+        "version": "0.2.0",
+        "newGame": "New Game",
+        "continue": "Continue",
+        "options": "Settings",
+        "exit": "Exit",
+        "start": "START",
+        "unlock": "Unlock",
+        "highScore": "High Score",
+        "maxRound": "Max Challenge Round"
+    },
+    {
+        "code": "Ui.BETLAYOUT",
+        "version": "0.1.0",
+        "even": "Even",
+        "odd": "Odd",
+        "1st12": "1st 12",
+        "2nd12": "2nd 12",
+        "3rd12": "3rd 12",
+        "1to18": "1-18",
+        "19to36": "19-36",
+        "1stCol": "1st\nCOL",
+        "2ndCol": "2nd\nCOL",
+        "3rdCol": "3rd\nCOL",
+        "red": "Red",
+        "black": "Black",
+        "count": "Count"
+    },
+    {
+        "code": "Ui.DECK",
+        "version": "0.1.0",
+        "tokens": "Tokens",
+        "draw": "Draw",
+        "discard": "Discarded",
+        "destroyed": "Destroyed",
+        "discardButton": "Discard",
+        "quest": "Quest",
+        "ballPoint": "base Points",
+        "betChip": "Chips"
+    },
+    {
+        "code": "Ui.SHOP",
+        "version": "0.1.0",
+        "shop": "Shop",
+        "pocket": "Pocket",
+        "pocketDescription": "Select a pocket and change it",
+        "specialPocket": "Special Pocket",
+        "specialPocketDescription": "Select 3 pockets and change them",
+        "bet": "Bet",
+        "ball": "Ball",
+        "perk": "Perk",
+        "item": "Item",
+        "roundGoldName": "Clear Reward",
+        "total": "Total"
+    },
+    {
+        "code": "Ui.INFORMATION",
+        "version": "0.1.0",
+        "score": "Score",
+        "stage": "Stage",
+        "challenge": "Challenge",
+        "round": "Round",
+        "bets": "Bets",
+        "balls": "Balls"
+    },
+    {
+        "code": "Ui.REWARD",
+        "version": "0.1.0",
+        "titleBonus": "Select Bonus",
+        "titleQuest": "Select Quest",
+        "titleReward": "Select Reward",
+        "titleItem": "Select Item",
+        "smallBonusDescription": "Reach at least first boss to get different bonus choices",
+        "quest": "Quest",
+        "reward": "Reward"
+    },
+    {
+        "code": "Ui.OPTION",
+        "version": "0.1.0",
+        "resume": "Resume",
+        "restart": "Restart",
+        "options": "Options",
+        "exit": "Exit",
+        "masterVolume": "Master Volume",
+        "musicVolume": "Music Volume",
+        "soundVolume": "Sound Volume",
+        "windowMode": "Window Mode",
+        "fullscreen": "Fullscreen",
+        "windowed": "Windowed",
+        "borderless": "Borderless",
+        "language": "Language",
+        "spinSpeed": "Spin Speed",
+        "scoreSpeed": "Score Speed",
+        "crt": "CRT Effect",
+        "on": "On",
+        "off": "Off",
+        "restartNeeded": "Need Restart to Apply Changes"
+    }
+]
