@@ -2,162 +2,162 @@
     {
         "code": "TokenSide.NORMAL",
         "version": "0.1.0",
-        "name": "Normal Ball",
-        "shortName": "Normal Ball",
-        "description": "Roll a ball",
-        "activeDescription": "Roll a ball\n({ballColor}{levelValue} Points{clearColor})"
+        "name": "ノーマルボール",
+        "shortName": "ノーマルボール",
+        "description": "ボールを回す",
+        "activeDescription": "ボールを回す\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.MULTI",
         "version": "0.1.0",
-        "name": "Multi Ball",
-        "shortName": "Multi Ball",
-        "description": "Roll multiple balls",
-        "activeDescription": "Roll {valueColor}{levelValue2} balls{clearColor}\n({ballColor}{levelValue} Points{clearColor})"
+        "name": "マルチボール",
+        "shortName": "マルチボール",
+        "description": "複数個のボールを回す",
+        "activeDescription": "{valueColor}{levelValue2} 個のボール{clearColor}を回す\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.SUPER",
         "version": "0.1.0",
-        "name": "Super Ball",
-        "shortName": "Super Ball",
-        "description": "Roll a high value ball",
-        "activeDescription": "Roll a high value ball\n({ballColor}{levelValue} Points{clearColor})"
+        "name": "スーパーボール",
+        "shortName": "スーパーボール",
+        "description": "スコアの高いボールを回す",
+        "activeDescription": "スコアの高いボールを回す\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.REPEAT",
         "version": "0.1.0",
-        "name": "Repeat Ball",
-        "shortName": "Repeat Ball",
-        "description": "Roll a ball, the {valueColor}next ball{clearColor} will go into the same pocket",
-        "activeDescription": "Roll a ball, {valueColor}next {levelValue2} ball(s){clearColor} will go into the same pocket\n({ballColor}{levelValue} Points{clearColor})"
+        "name": "リピートボール",
+        "shortName": "リピートボール",
+        "description": "ボールを回し、{valueColor}次のボール{clearColor}を同じポケットに入れる",
+        "activeDescription": "ボールを回し、{valueColor}次の{levelValue2}個のボール{clearColor}を同じポケットに入れる\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.ICE",
         "version": "0.1.0",
-        "name": "Frozen Ball",
-        "shortName": "Frozen Ball",
-        "description": "Roll a ball, {freezeColor}freeze{clearColor} nearby pockets with no bet",
-        "activeDescription": "Roll a ball, {freezeColor}freeze {levelValue2}{clearColor} nearby pockets with no bet\n({ballColor}{levelValue} Points{clearColor})"
+        "name": "フローズンボール",
+        "shortName": "フローズンボール",
+        "description": "ボールを回し、近くのベットされていないポケットを{freezeColor}凍らせる{clearColor}",
+        "activeDescription": "ボールを回し、近くのベットされていない{freezeColor}{levelValue2}個のポケットを凍らせる{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.HEART",
         "version": "0.1.0",
-        "name": "Heart Ball",
-        "shortName": "Heart Ball",
-        "description": "Roll a ball, if the ball didn't win any bet, instead of scoring {valueColor}gain a round token back{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Roll a ball, if the ball didn't win any bet, instead of scoring {valueColor}gain a round token back{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({ballColor}{levelValue} Points{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
+        "name": "ハートボール",
+        "shortName": "ハートボール",
+        "description": "ボールを回し、どのベットにも当たらなかった場合、{valueColor}ラウンドトークンを取り戻す{clearColor}\n数回発動すると{cautionColor}フラジャイル{clearColor}になる",
+        "activeDescription": "ボールを回し、どのベットにも当たらなかった場合、{valueColor}ラウンドトークンを取り戻す{clearColor}\n{levelValue2}回発動すると{cautionColor}フラジャイル{clearColor}になる\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(残り {currentValue}){clearColor}"
     },
     {
         "code": "TokenSide.LARGE",
         "version": "0.1.0",
-        "name": "Large Ball",
-        "shortName": "Large Ball",
-        "description": "Roll a larger ball, large ball can be affected by {valueColor}multiple pockets{clearColor}",
-        "activeDescription": "Roll a larger ball that can be affected by {valueColor}{levelValue2} pockets{clearColor}\n({ballColor}{levelValue} Points{clearColor})\n{annotationColor}(Cannot win same Bet multiple time){clearColor}"
+        "name": "ラージボール",
+        "shortName": "ラージボール",
+        "description": "{valueColor}複数のポケット{clearColor}に影響を与える可能性がある巨大なボールを回す",
+        "activeDescription": "{valueColor}{levelValue2}個のポケット{clearColor}に影響を与える可能性がある巨大なボールを回す\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(同じベットには複数回当てられない){clearColor}"
     },
     {
         "code": "TokenSide.POCKET",
         "version": "0.1.0",
-        "name": "Pocket Ball",
-        "shortName": "Pocket Ball",
+        "name": "ポケットボール",
+        "shortName": "ポケットボール",
         "description": "Roll a ball that can change the pocket it lands in\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "First roll is registered, After that {valueColor}change pockets{clearColor} to the registered pocket\n{cautionColor}Fragile{clearColor} after {levelValue2} use(s)\n({ballColor}{levelValue} Points{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "First roll is registered, After that {valueColor}change pockets{clearColor} to the registered pocket\n{cautionColor}Fragile{clearColor} after {levelValue2} use(s)\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.TARGET",
         "version": "0.1.0",
-        "name": "Target Ball",
-        "shortName": "Target Ball",
-        "description": "Before rolling, select a range of pockets where the ball will land",
-        "activeDescription": "Before rolling, select {pocketColor}{levelValue2} pockets{clearColor} where the ball will land\n({ballColor}{levelValue} Points{clearColor})"
+        "name": "ターゲットボール",
+        "shortName": "ターゲットボール",
+        "description": "ボールを回す前に、このボールが落ちるポケットの範囲を決める",
+        "activeDescription": "ボールを回す前に選んだ{pocketColor}{levelValue2}個のポケット{clearColor}の範囲にボールが落ちる\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.WAVE",
         "version": "0.1.0",
-        "name": "Wave Ball",
-        "shortName": "Wave Ball",
-        "description": "Roll a ball that increases its {ballColor}base Points{clearColor}",
-        "activeDescription": "Every time the ball is rolled, increases its {ballColor}base Point by {levelValue2}{clearColor}\n({ballColor}{levelValue} Points{clearColor})"
+        "name": "ウェーブボール",
+        "shortName": "ウェーブボール",
+        "description": "ボールを回すたびに{ballColor}基礎ポイント{clearColor}が上昇する",
+        "activeDescription": "ボールを回すたびに、自身の{ballColor}基礎ポイントを{levelValue2}点{clearColor}上昇させる。\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.STRAIGHTUP",
         "version": "0.1.0",
-        "name": "StraightUp",
-        "shortName": "StraightUp",
-        "description": "Bet on one number",
-        "activeDescription": "Bet on one number\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "ストレートアップ",
+        "shortName": "ストレートアップ",
+        "description": "1つの数字にベットする",
+        "activeDescription": "1つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.SPLIT",
         "version": "0.1.0",
-        "name": "Split Bet",
-        "shortName": "Split",
-        "description": "Bet on two numbers",
-        "activeDescription": "Bet on two numbers\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "スプリットベット",
+        "shortName": "スプリット",
+        "description": "2つの数字にベットする",
+        "activeDescription": "2つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.STREET",
         "version": "0.1.0",
-        "name": "Street",
-        "shortName": "Street",
-        "description": "Bet on three numbers horizontally",
-        "activeDescription": "Bet on three numbers horizontally\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "ストリート",
+        "shortName": "ストリート",
+        "description": "横に並んだ3つの数字にベットする",
+        "activeDescription": "横に並んだ3つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.CORNER",
         "version": "0.1.0",
-        "name": "Corner",
-        "shortName": "Corner",
-        "description": "Bet on four numbers in a square",
-        "activeDescription": "Bet on four numbers in a square\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "コーナー",
+        "shortName": "コーナー",
+        "description": "四角形になるよう4つの数字にベットする",
+        "activeDescription": "四角形になるよう4つの数字にベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.LINE",
         "version": "0.1.0",
-        "name": "Line",
-        "shortName": "Line",
-        "description": "Bet on six numbers horizontally",
-        "activeDescription": "Bet on six numbers horizontally\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "ライン",
+        "shortName": "ライン",
+        "description": "横に並んだ6つの数字（隣り合う2行）にベットする",
+        "activeDescription": "横に並んだ6つの数字（隣り合う2行）にベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.COLUMN",
         "version": "0.1.0",
-        "name": "Column",
-        "shortName": "Column",
-        "description": "Bet on one vertical line",
-        "activeDescription": "Bet on one vertical line\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "カラム",
+        "shortName": "カラム",
+        "description": "縦方向に1列ベットする",
+        "activeDescription": "縦方向にベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.DOZEN",
         "version": "0.1.0",
-        "name": "Dozen",
-        "shortName": "Dozen",
-        "description": "Bet on a pack of 12 numbers",
-        "activeDescription": "Bet on a pack of 12 numbers\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "ダズン",
+        "shortName": "ダズン",
+        "description": "12個の数字のブロックにベットする",
+        "activeDescription": "12個の数字のブロックにベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.HIGHORLOW",
         "version": "0.1.0",
-        "name": "High/Low",
-        "shortName": "HighLow",
-        "description": "Bet on 1~18 or 19~36",
-        "activeDescription": "Bet on 1~18 or 19~36\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "ハイ・ロー",
+        "shortName": "ハイ・ロー",
+        "description": "1~18または19~36のどちらかにベットする",
+        "activeDescription": "1~18または19~36のどちらかにベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.EVENORODD",
         "version": "0.1.0",
-        "name": "Even/Odd",
-        "shortName": "EvenOdd",
-        "description": "Bet on even or odd numbers",
-        "activeDescription": "Bet on even or odd numbers\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "イーブンオッド",
+        "shortName": "イーブンオッド",
+        "description": "偶数か奇数どちらかにベットする",
+        "activeDescription": "偶数か奇数どちらかにベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.COLOR",
         "version": "0.1.0",
-        "name": "Color",
-        "shortName": "Color",
-        "description": "Bet on red or black pockets",
-        "activeDescription": "Bet on red or black pockets\n({betColor}{levelValue} {clearColor}Chips)"
+        "name": "カラー",
+        "shortName": "カラー",
+        "description": "赤または黒のポケットにベットする",
+        "activeDescription": "赤または黒のポケットにベットする\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_STRAIGHTUP",
@@ -165,7 +165,7 @@
         "name": "Golden StraightUp",
         "shortName": "G.StraightUp",
         "description": "Bet on one number, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on one number, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on one number, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_SPLIT",
@@ -173,7 +173,7 @@
         "name": "Golden Split",
         "shortName": "G.Split",
         "description": "Bet on two numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on two numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on two numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_STREET",
@@ -181,7 +181,7 @@
         "name": "Golden Street",
         "shortName": "G.Street",
         "description": "Bet on three numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on three numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on three numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_CORNER",
@@ -189,7 +189,7 @@
         "name": "Golden Corner",
         "shortName": "G.Corner",
         "description": "Bet on four numbers in a square, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on four numbers in a square, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on four numbers in a square, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_LINE",
@@ -197,7 +197,7 @@
         "name": "Golden Line",
         "shortName": "G.Line",
         "description": "Bet on six numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on six numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on six numbers horizontally, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_COLUMN",
@@ -205,7 +205,7 @@
         "name": "Golden Column",
         "shortName": "G.Column",
         "description": "Bet on one vertical line, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on one vertical line, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on one vertical line, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_DOZEN",
@@ -213,7 +213,7 @@
         "name": "Golden Dozen",
         "shortName": "G.Dozen",
         "description": "Bet on a pack of 12 numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on a pack of 12 numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on a pack of 12 numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_HIGHORLOW",
@@ -221,7 +221,7 @@
         "name": "Golden High/Low",
         "shortName": "G.HighLow",
         "description": "Bet on 1~18 or 19~36, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on 1~18 or 19~36, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on 1~18 or 19~36, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_EVENORODD",
@@ -229,7 +229,7 @@
         "name": "Golden Even/Odd",
         "shortName": "G.EvenOdd",
         "description": "Bet on even or odd numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on even or odd numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on even or odd numbers, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.GOLD_COLOR",
@@ -237,7 +237,7 @@
         "name": "Golden Color",
         "shortName": "G.Color",
         "description": "Bet on red or black pockets, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "Bet on red or black pockets, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}Chips)\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "Bet on red or black pockets, {coinColor}Golden{clearColor}\n{cautionColor}Fragile{clearColor} after {levelValue2} uses\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.ICE_STRAIGHTUP",
@@ -245,7 +245,7 @@
         "name": "Ice StraightUp",
         "shortName": "I.StraightUp",
         "description": "Bet on one number, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on one number, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on one number, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_SPLIT",
@@ -253,7 +253,7 @@
         "name": "Ice Split",
         "shortName": "I.Split",
         "description": "Bet on two numbers, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on two numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on two numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_STREET",
@@ -261,7 +261,7 @@
         "name": "Ice Street",
         "shortName": "I.Street",
         "description": "Bet on three numbers horizontally, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on three numbers horizontally, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on three numbers horizontally, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_CORNER",
@@ -269,7 +269,7 @@
         "name": "Ice Corner",
         "shortName": "I.Corner",
         "description": "Bet on four numbers in a square, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on four numbers in a square, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on four numbers in a square, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_LINE",
@@ -277,7 +277,7 @@
         "name": "Ice Line",
         "shortName": "I.Line",
         "description": "Bet on six numbers horizontally, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on six numbers horizontally, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on six numbers horizontally, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_COLUMN",
@@ -285,7 +285,7 @@
         "name": "Ice Column",
         "shortName": "I.Column",
         "description": "Bet on one vertical line, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on one vertical line, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on one vertical line, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_DOZEN",
@@ -293,7 +293,7 @@
         "name": "Ice Dozen",
         "shortName": "I.Dozen",
         "description": "Bet on a pack of 12 numbers, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on a pack of 12 numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on a pack of 12 numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_HIGHORLOW",
@@ -301,7 +301,7 @@
         "name": "Ice High/Low",
         "shortName": "I.HighLow",
         "description": "Bet on 1~18 or 19~36, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on 1~18 or 19~36, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on 1~18 or 19~36, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_EVENORODD",
@@ -309,7 +309,7 @@
         "name": "Ice Even/Odd",
         "shortName": "I.EvenOdd",
         "description": "Bet on even or odd numbers, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on even or odd numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on even or odd numbers, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_COLOR",
@@ -317,7 +317,7 @@
         "name": "Ice Color",
         "shortName": "I.Color",
         "description": "Bet on red or black pockets, {freezeColor}Ice{clearColor}",
-        "activeDescription": "Bet on red or black pockets, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on red or black pockets, {freezeColor}Ice({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_STRAIGHTUP",
@@ -325,7 +325,7 @@
         "name": "Echo StraightUp",
         "shortName": "E.StraightUp",
         "description": "Bet on one number, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on one number, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on one number, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_SPLIT",
@@ -333,7 +333,7 @@
         "name": "Echo Split",
         "shortName": "E.Split",
         "description": "Bet on two numbers, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on two numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on two numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_STREET",
@@ -341,7 +341,7 @@
         "name": "Echo Street",
         "shortName": "E.Street",
         "description": "Bet on three numbers horizontally, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on three numbers horizontally, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on three numbers horizontally, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_CORNER",
@@ -349,7 +349,7 @@
         "name": "Echo Corner",
         "shortName": "E.Corner",
         "description": "Bet on four numbers in a square, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on four numbers in a square, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on four numbers in a square, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_LINE",
@@ -357,7 +357,7 @@
         "name": "Echo Line",
         "shortName": "E.Line",
         "description": "Bet on six numbers horizontally, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on six numbers horizontally, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on six numbers horizontally, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_COLUMN",
@@ -365,7 +365,7 @@
         "name": "Echo Column",
         "shortName": "E.Column",
         "description": "Bet on one vertical line, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on one vertical line, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on one vertical line, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_DOZEN",
@@ -373,7 +373,7 @@
         "name": "Echo Dozen",
         "shortName": "E.Dozen",
         "description": "Bet on a pack of 12 numbers, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on a pack of 12 numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on a pack of 12 numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_HIGHORLOW",
@@ -381,7 +381,7 @@
         "name": "Echo High/Low",
         "shortName": "E.HighLow",
         "description": "Bet on 1~18 or 19~36, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on 1~18 or 19~36, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on 1~18 or 19~36, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_EVENORODD",
@@ -389,7 +389,7 @@
         "name": "Echo Even/Odd",
         "shortName": "E.EvenOdd",
         "description": "Bet on even or odd numbers, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on even or odd numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on even or odd numbers, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_COLOR",
@@ -397,7 +397,7 @@
         "name": "Echo Color",
         "shortName": "E.Color",
         "description": "Bet on red or black pockets, {echoColor}Echo{clearColor}\n{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Bet on red or black pockets, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on red or black pockets, {echoColor}Echo(x{levelMultiplierValue}){clearColor}\n{cautionColor}Fragile{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_STRAIGHTUP",
@@ -405,7 +405,7 @@
         "name": "Flash StraightUp",
         "shortName": "F.StraightUp",
         "description": "Bet on one number, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on one number, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on one number, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_SPLIT",
@@ -413,7 +413,7 @@
         "name": "Flash Split",
         "shortName": "F.Split",
         "description": "Bet on two numbers, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on two numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on two numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_STREET",
@@ -421,7 +421,7 @@
         "name": "Flash Street",
         "shortName": "F.Street",
         "description": "Bet on three numbers horizontally, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on three numbers horizontally, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on three numbers horizontally, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_CORNER",
@@ -429,7 +429,7 @@
         "name": "Flash Corner",
         "shortName": "F.Corner",
         "description": "Bet on four numbers in a square, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on four numbers in a square, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on four numbers in a square, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_LINE",
@@ -437,7 +437,7 @@
         "name": "Flash Line",
         "shortName": "F.Line",
         "description": "Bet on six numbers horizontally, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on six numbers horizontally, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on six numbers horizontally, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_COLUMN",
@@ -445,7 +445,7 @@
         "name": "Flash Column",
         "shortName": "F.Column",
         "description": "Bet on one vertical line, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on one vertical line, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on one vertical line, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_DOZEN",
@@ -453,7 +453,7 @@
         "name": "Flash Dozen",
         "shortName": "F.Dozen",
         "description": "Bet on a pack of 12 numbers, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on a pack of 12 numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on a pack of 12 numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_HIGHORLOW",
@@ -461,7 +461,7 @@
         "name": "Flash High/Low",
         "shortName": "F.HighLow",
         "description": "Bet on 1~18 or 19~36, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on 1~18 or 19~36, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on 1~18 or 19~36, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_EVENORODD",
@@ -469,7 +469,7 @@
         "name": "Flash Even/Odd",
         "shortName": "F.EvenOdd",
         "description": "Bet on even or odd numbers, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on even or odd numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on even or odd numbers, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_COLOR",
@@ -477,7 +477,7 @@
         "name": "Flash Color",
         "shortName": "F.Color",
         "description": "Bet on red or black pockets, {flashColor}Flash{clearColor}",
-        "activeDescription": "Bet on red or black pockets, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on red or black pockets, {flashColor}Flash(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_STRAIGHTUP",
@@ -485,7 +485,7 @@
         "name": "Mirror StraightUp",
         "shortName": "M.StraightUp",
         "description": "Select one number, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Bet on one number, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Bet on one number, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_SPLIT",
@@ -493,7 +493,7 @@
         "name": "Mirror Split",
         "shortName": "M.Split",
         "description": "Select two numbers, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select two numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select two numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_STREET",
@@ -501,7 +501,7 @@
         "name": "Mirror Street",
         "shortName": "M.Street",
         "description": "Select three numbers horizontally, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select three numbers horizontally, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select three numbers horizontally, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_CORNER",
@@ -509,7 +509,7 @@
         "name": "Mirror Corner",
         "shortName": "M.Corner",
         "description": "Select four numbers in a square, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select four numbers in a square, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select four numbers in a square, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_LINE",
@@ -517,7 +517,7 @@
         "name": "Mirror Line",
         "shortName": "M.Line",
         "description": "Select six numbers horizontally, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select six numbers horizontally, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select six numbers horizontally, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_COLUMN",
@@ -525,7 +525,7 @@
         "name": "Mirror Column",
         "shortName": "M.Column",
         "description": "Select one vertical line, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select one vertical line, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select one vertical line, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_DOZEN",
@@ -533,7 +533,7 @@
         "name": "Mirror Dozen",
         "shortName": "M.Dozen",
         "description": "Select a pack of 12 numbers, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select a pack of 12 numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select a pack of 12 numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_HIGHORLOW",
@@ -541,7 +541,7 @@
         "name": "Mirror High/Low",
         "shortName": "M.HighLow",
         "description": "Select 1~18 or 19~36, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select 1~18 or 19~36, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select 1~18 or 19~36, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_EVENORODD",
@@ -549,7 +549,7 @@
         "name": "Mirror Even/Odd",
         "shortName": "M.EvenOdd",
         "description": "Select even or odd numbers, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select even or odd numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select even or odd numbers, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_COLOR",
@@ -557,7 +557,7 @@
         "name": "Mirror Color",
         "shortName": "M.Color",
         "description": "Select red or black pockets, two times, {mirrorColor}Mirror{clearColor}",
-        "activeDescription": "Select red or black pockets, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}Chips)"
+        "activeDescription": "Select red or black pockets, two times, {mirrorColor}Mirror(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "Perk.ALPHA",
