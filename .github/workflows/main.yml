@@ -48,16 +48,16 @@ jobs:
               run: chmod +x ./fontbm
 
             - name: "Execute fontbm: size 65 (huge)"
-              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Huge --font-size 65 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
+              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Huge --font-size 65 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none --chars-file patch.json
 
             - name: "Execute fontbm: size 28 (large)"
-              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Large --font-size 28 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
+              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Large --font-size 28 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none --chars-file patch.json
 
             - name: "Execute fontbm: size 18 (medium)"
-              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Medium --font-size 18 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
+              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Medium --font-size 18 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none --chars-file patch.json
 
             - name: "Execute fontbm: size 15 (small)"
-              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Small --font-size 15 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none
+              run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Small --font-size 15 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none --chars-file patch.json
 
             - name: Normalize fnt files
               run: python normalize.py
