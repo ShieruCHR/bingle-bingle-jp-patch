@@ -562,96 +562,96 @@
     {
         "code": "Perk.ALPHA",
         "version": "0.1.0",
-        "name": "Alpha Token",
-        "shortName": "Alpha",
-        "description": "Attatched token is {valueColor}always drawn first{clearColor} in each shuffle."
+        "name": "アルファトークン",
+        "shortName": "アルファ",
+        "description": "トークンはシャッフルで\n{valueColor}常に最初に{clearColor}ドローされる。"
     },
     {
         "code": "Perk.OMEGA",
         "version": "0.1.0",
-        "name": "Omega Token",
-        "shortName": "Omega",
-        "description": "Attatched token is {valueColor}always drawn last{clearColor} in each shuffle, the token is worth {valueColor}x1.5 value{clearColor}"
+        "name": "オメガトークン",
+        "shortName": "オメガ",
+        "description": "トークンはシャッフルで\n{valueColor}常に最後に{clearColor}ドローされる。\nトークンには{valueColor}x1.5{clearColor}の価値がつく。"
     },
     {
         "code": "Perk.METAL",
         "version": "0.1.0",
-        "name": "Metal Token",
-        "shortName": "Metal",
-        "description": "Attatched token {valueColor}prevent being destroyed{clearColor} once"
+        "name": "メタルトークン",
+        "shortName": "メタル",
+        "description": "トークンは一度だけ{valueColor}破壊から守られる{clearColor}"
     },
     {
         "code": "Perk.WOOD",
         "version": "0.1.0",
-        "name": "Wood Token",
-        "shortName": "Wood",
-        "description": "Attatched token doesn't cost round token, {cautionColor}Fragile{clearColor}, token have no base value"
+        "name": "ウッドトークン",
+        "shortName": "ウッド",
+        "description": "トークンはラウンドトークンを必要とせず、{cautionColor}フラジャイル{clearColor}になり、基礎点がなくなる。"
     },
     {
         "code": "Perk.DOUBLE",
         "version": "0.1.0",
-        "name": "Double Token",
-        "shortName": "Double",
-        "description": "Attatched token roll {valueColor}one more ball{clearColor} or {valueColor}bet once more{clearColor},the token is worth {cautionColor}x0.5 value{clearColor}"
+        "name": "ダブルトークン",
+        "shortName": "ダブル",
+        "description": "トークンは{valueColor}追加のボール{clearColor}または{valueColor}追加のベット{clearColor}を得る。\nトークンは{cautionColor}x0.5{clearColor}の価値になる。"
     },
     {
         "code": "Perk.COIN",
         "version": "0.1.0",
-        "name": "Coin Token",
-        "shortName": "Coin",
-        "description": "Attached token gives {coinColor}coin{clearColor} equal to half of it's level when discarded\n{annotationColor}(round up){clearColor}, {cautionColor}Fragile{clearColor} when discarded"
+        "name": "コイントークン",
+        "shortName": "コイン",
+        "description": "ディスカードされた時、レベルの半分の枚数分{coinColor}コイン{clearColor}を得る。\n{annotationColor}(切り上げ){clearColor}、ディスカードされた時に{cautionColor}フラジャイル{clearColor}になる。"
     },
     {
         "code": "Perk.SOFTWOOD",
         "version": "0.1.0",
-        "name": "Softwood Token",
-        "shortName": "Softwood",
-        "description": "{cautionColor}Fragile{clearColor}"
+        "name": "ソフトウッドトークン",
+        "shortName": "ソフトウッド",
+        "description": "{cautionColor}フラジャイル{clearColor}"
     },
     {
         "code": "Item.FIRST_BET_VALUE",
         "version": "0.1.0",
-        "name": "Pioneer",
-        "description": "The first bet of each round have {betColor}+{value} base {clearColor}Chips"
+        "name": "パイオニア",
+        "description": "各ラウンドの最初のベットに{betColor}+{value} 基礎チップ{clearColor}を与える"
     },
     {
         "code": "Item.ODD_BALL_EVEN_BET",
         "version": "0.1.0",
-        "name": "Cycle",
-        "description": "When number of round tokens left is even, {betColor}+{value2} base {clearColor}Chips, When it's odd, {ballColor}+{value} base Points{clearColor}"
+        "name": "サイクル",
+        "description": "残りのラウンドトークンが偶数なら{betColor}+{value2} 基礎チップ{clearColor}を与え、\n奇数なら{ballColor}+{value}基礎点{clearColor}を与える。"
     },
     {
         "code": "Item.NO_DISCARD_BALL_VALUE",
         "version": "0.1.0",
-        "name": "No Turning Back",
-        "description": "When no discard is left, {ballColor}+{value} Points{clearColor} to the ball"
+        "name": "もう戻れない",
+        "description": "ディスカードが残っていないとき、\nボールに{ballColor}+{value}点{clearColor}を与える"
     },
     {
         "code": "Item.ICED_BET_VALUE",
         "version": "0.1.0",
-        "name": "Icing on the Cake",
-        "description": "{percentageValue} of {freezeColor}frozen{clearColor} pocket's {betColor}{clearColor}Chips are always added to the Chips",
-        "activeDescription": "{percentageValue} of {freezeColor}frozen{clearColor} pocket's {betColor}{clearColor}Chips are always added to the Chips\n---\n({betColor}+{currentValue} {clearColor}Chips)"
+        "name": "ケーキのアイシング",
+        "description": "{freezeColor}凍結{clearColor}されたポケットの{percentageValue} {betColor}チップ{clearColor}が常にチップに加えられる",
+        "activeDescription": "{freezeColor}凍結{clearColor}されたポケットの{percentageValue} {betColor}チップ{clearColor}が常にチップに加えられる\n---\n({betColor}+{currentValue} {clearColor}チップ)"
     },
     {
         "code": "Item.THREE_TOKEN_REVIVE",
         "version": "0.1.0",
-        "name": "Bailout",
-        "description": "When round tokens run out, revive with 3 additional round tokens\n{cautionColor}Works only once{clearColor}",
-        "activeDescription": "When round tokens run out, revive with 3 additional round tokens\n{cautionColor}Works only once{clearColor}\n---\n(Available : {effectActive})"
+        "name": "救済",
+        "description": "ラウンドトークンがなくなると、3つの追加トークンを持って復活する\n{cautionColor}一度だけ発動する{clearColor}",
+        "activeDescription": "ラウンドトークンがなくなると、3つの追加トークンを持って復活する\n{cautionColor}一度だけ発動する{clearColor}\n---\n(Available : {effectActive})"
     },
     {
         "code": "Item.RANDOM_SUPER_TOKEN",
         "version": "0.1.0",
-        "name": "The Cavalry",
-        "description": "At each round get a temporary token, 1 level higher than current stage level, the token is worth {valueColor}x{multiplierValue} value{clearColor}"
+        "name": "騎兵隊",
+        "description": "各ラウンドで、ステージ レベルより1高い一時トークンを得る。The token is worth {valueColor}x{multiplierValue} value{clearColor}"
     },
     {
         "code": "Item.NO_BET_GAIN_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Misfortunate?",
-        "description": "If the ball didn't win any bet, the next ball gets {ballColor}+{value} Points{clearColor}",
-        "activeDescription": "If the ball didn't win any bet, the next ball gets {ballColor}+{value} Points{clearColor}\n---\n( Active : {effectActive} )"
+        "name": "ざんねん？",
+        "description": "ボールがどのベットにも当たらなかったら、次のボールは{ballColor}+{value} ポイント{clearColor}を得る",
+        "activeDescription": "ボールがどのベットにも当たらなかったら、次のボールは{ballColor}+{value} ポイント{clearColor}を得る\n---\n( Active : {effectActive} )"
     },
     {
         "code": "Item.DIVERSE_BET_MULTIPLIER",
@@ -663,47 +663,47 @@
     {
         "code": "Item.REDUCE_PER_PLAY_TOKEN",
         "version": "0.1.0",
-        "name": "Precious Token",
-        "description": "{ballColor}+{value} Points{clearColor}, if round token is left at end of the round, {cautionColor}decrease it by {value2}{clearColor} permanently",
-        "activeDescription": "{ballColor}+{currentValue} Points{clearColor}, if round token is left at end of the round, {cautionColor}decrease it by {value2}{clearColor} permanently"
+        "name": "貴重なトークン",
+        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nラウンド終了時にラウンドトークンが残っていたら、{cautionColor}{value2}{clearColor}減らす",
+        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nラウンド終了時にラウンドトークンが残っていたら、{cautionColor}{value2}{clearColor}減らす"
     },
     {
         "code": "Item.REDUCE_PER_MONEY_USED",
         "version": "0.1.0",
-        "name": "Scrooge",
-        "description": "{ballColor}+{value} Points{clearColor}, if less than {value3} gold left after shop, {cautionColor}decrease it by {value2}{clearColor} permanently",
-        "activeDescription": "{ballColor}+{currentValue} Points{clearColor}, if less than {value3} gold left after shop, {cautionColor}decrease it by {value2}{clearColor} permanently"
+        "name": "けちんぼ",
+        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に残ったゴールドが{value3}未満の場合、{cautionColor}{value2}{clearColor}減らす",
+        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に残ったゴールドが{value3}未満の場合、{cautionColor}{value2}{clearColor}減らす"
     },
     {
         "code": "Item.STACK_LITTLE_MONEY_USED",
         "version": "0.1.0",
-        "name": "Keep the Change",
-        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} permanently after shop, this stack is resetted if you bought or upgraded more than once in the shop",
-        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} permanently after shop, this stack is resetted if you bought or upgraded more than once in the shop\n---\n(Current Stack : {scoreColor}{currentPercentageValue}{clearColor})\n(Buy/Upgrade : {currentValue})"
+        "name": "釣りはいらない",
+        "description": "ショップを離れると{scoreColor}{percentageValue} 追加スコア{clearColor}を得る\nショップで2つ以上買う / アップグレードするとリセットされる",
+        "activeDescription": "ショップを離れると{scoreColor}{percentageValue} 追加スコア{clearColor}を得る\nショップで2つ以上買う / アップグレードするとリセットされる\n---\n(Current Stack : {scoreColor}{currentPercentageValue}{clearColor})\n(Buy/Upgrade : {currentValue})"
     },
     {
         "code": "Item.FORCE_ALL_SPECIAL_BET",
         "version": "0.1.0",
-        "name": "All Special Bet",
-        "description": "On the first page of each shop, every products are Special Bets, the first reroll is always free"
+        "name": "オール特殊ベット",
+        "description": "ショップの最初のページは、全てが特殊ベットになり、最初のリロールが無料になる"
     },
     {
         "code": "Item.FORCE_ALL_SLOT",
         "version": "0.1.0",
-        "name": "All Pocket",
-        "description": "On the first page of each shop, every products are pockets, the first reroll is always free"
+        "name": "オールポケット",
+        "description": "ショップの最初のページは、全てがポケットになり、最初のリロールが無料になる"
     },
     {
         "code": "Item.FREE_REROLL",
         "version": "0.1.0",
-        "name": "Free Reroll",
-        "description": "First {value} rerolls are free at each shop"
+        "name": "フリーリロール",
+        "description": "各ショップで、最初のリロール{value}回が無料になる"
     },
     {
         "code": "Item.SLOT_EIGHT_DOUBLE",
         "version": "0.1.0",
-        "name": "8-ball",
-        "description": "When the ball lands in a {pocketColor}pocket 8{clearColor}, the next ball is rolled once more"
+        "name": "8ボール",
+        "description": "ボールが{pocketColor}8{clearColor}のポケットに落ちた時、\n次のボールをもう一度回す"
     },
     {
         "code": "Item.REDUCE_PER_MOST_SLOT",
@@ -1227,7 +1227,7 @@
         "code": "Achievement.ARCHER",
         "version": "0.1.0",
         "name": "アーチャー クラスをアンロック",
-        "description": "最後のショットのみ、どのポケットに落ちるかがわかる"
+        "description": "最後のショットで落ちるポケットがわかる"
     },
     {
         "code": "Achievement.TRICKSTER",
@@ -1274,274 +1274,274 @@
     {
         "code": "Reward.BONUS_ADVANCE_PAYMENT",
         "version": "0.1.0",
-        "name": "Loan"
+        "name": "ローン"
     },
     {
         "code": "Item.BONUS_ADVANCE_PAYMENT",
         "version": "0.1.0",
-        "name": "Loan",
-        "description": "{ballColor}+{value} Points{clearColor} in the first Round\nGain {coinColor}{value2} Coins{clearColor} in the first shop\nLose {cautionColor}{value3} Coins{clearColor} in the shop after the first Boss"
+        "name": "ローン",
+        "description": "最初のラウンドで{ballColor}+{value} ポイント{clearColor}\n最初のショップで{coinColor}{value2} コイン{clearColor}を得る\n最初のボスを倒すと{cautionColor}{value3} コイン{clearColor}を失う"
     },
     {
         "code": "Reward.BONUS_INITIAL_REROLL",
         "version": "0.1.0",
-        "name": "Search Party"
+        "name": "サーチパーティー"
     },
     {
         "code": "Item.BONUS_INITIAL_REROLL",
         "version": "0.1.0",
-        "name": "Search Party",
-        "description": "{ballColor}+{value} Points{clearColor} in the first Round\n{value2} rerolls are free at first shop"
+        "name": "サーチパーティー",
+        "description": "最初のラウンドで{ballColor}+{value} ポイント{clearColor}\n最初のショップでは{value2}回まで無料でリロールできる"
     },
     {
         "code": "Reward.BONUS_FORCED_TOKEN",
         "version": "0.1.0",
-        "name": "Rainbow Token"
+        "name": "レインボートークン"
     },
     {
         "code": "Item.BONUS_FORCED_TOKEN",
         "version": "0.1.0",
-        "name": "Rainbow Token",
-        "description": "Replace a normal token with a {valueColor}random token with alpha perk{clearColor}\n{cautionColor}0 discard{clearColor} for first 3 rounds"
+        "name": "レインボートークン",
+        "description": "ノーマルトークンを{valueColor}アルファパーク付きのランダムなトークン{clearColor}に置き換える\n最初の3ラウンドは{cautionColor}ディスカードが0になる{clearColor}"
     },
     {
         "code": "Reward.BONUS_SLOT_FIXER",
         "version": "0.1.0",
-        "name": "Pocket Fixer"
+        "name": "ポケットフィクサー"
     },
     {
         "code": "Item.BONUS_SLOT_FIXER",
         "version": "0.1.0",
-        "name": "Pocket Fixer",
-        "description": "Get {valueColor}{value} identical pockets{clearColor}\nThe pocket's number will {cautionColor}no longer appear{clearColor} in the shop",
-        "activeDescription": "Get {valueColor}{value} identical pockets{clearColor}\nThe pocket's number will {cautionColor}no longer appear{clearColor} in the shop\n(number : {currentValue})"
+        "name": "ポケットフィクサー",
+        "description": "{valueColor}{value}個の同一ポケット{clearColor}を得る\nその数字のポケットは{cautionColor}ショップに出現しなくなる{clearColor}",
+        "activeDescription": "{valueColor}{value}個の同一ポケット{clearColor}を得る\nその数字のポケットは{cautionColor}ショップに出現しなくなる{clearColor}\n(数字 : {currentValue})"
     },
     {
         "code": "Reward.BONUS_RUSHED_UPGRADE",
         "version": "0.1.0",
-        "name": "Rushed Upgrade"
+        "name": "ラッシュアップグレード"
     },
     {
         "code": "Item.BONUS_RUSHED_UPGRADE",
         "version": "0.1.0",
-        "name": "Rushed Upgrade",
-        "description": "First token become {valueColor}level 2 token{clearColor}\nThis token {cautionColor}cost +1 Coin{clearColor} to be upgraded"
+        "name": "ラッシュアップグレード",
+        "description": "最初のトークンが{valueColor}レベル2 トークン{clearColor}になる\nこのトークンのアップグレードに{cautionColor}+1 コイン{clearColor}がかかる"
     },
     {
         "code": "Reward.BONUS_RANDOM_RARE_ITEM",
         "version": "0.1.0",
-        "name": "Random Box"
+        "name": "ランダムボックス"
     },
     {
         "code": "Item.BONUS_RANDOM_RARE_ITEM",
         "version": "0.1.0",
-        "name": "Random Box",
-        "description": "Gain a {valueColor}rare item{clearColor}\nGet {cautionColor}{percentageValue} less score{clearColor} for first 3 rounds"
+        "name": "ランダムボックス",
+        "description": "{valueColor}レア アイテム{clearColor}を得る\n最初の3ラウンドで得られるスコアが{cautionColor}{percentageValue} 少なくなる{clearColor}"
     },
     {
         "code": "Reward.REWARD_MORE_PLAY_TOKEN",
         "version": "0.1.0",
-        "name": "Stake Raise"
+        "name": "ステークレイズ"
     },
     {
         "code": "Item.REWARD_MORE_PLAY_TOKEN",
         "version": "0.1.0",
-        "name": "Stake Raise",
-        "description": "Can play {value} more token per round, {cautionColor}-1 coin{clearColor} every round"
+        "name": "ステークレイズ",
+        "description": "トークンを{value}回多くプレイできるが、\n毎ラウンド{cautionColor}-1 コイン{clearColor}"
     },
     {
         "code": "Reward.REWARD_MORE_DISCARD",
         "version": "0.1.0",
-        "name": "Discard Pack"
+        "name": "ディスカードパック"
     },
     {
         "code": "Item.REWARD_MORE_DISCARD",
         "version": "0.1.0",
-        "name": "Discard Pack",
-        "description": "{value} more discards per round"
+        "name": "ディスカードパック",
+        "description": "ディスカードが{value}回多くなる"
     },
     {
         "code": "Reward.REWARD_REMOVE_TOKEN",
         "version": "0.1.0",
-        "name": "Token Burner",
-        "description": "Remove {value} token from deck"
+        "name": "トークンバーナー",
+        "description": "デッキから{value}枚のトークンを取り除く"
     },
     {
         "code": "Item.REWARD_REMOVE_TOKEN",
         "version": "0.1.0",
-        "name": "Token Burner",
-        "description": "Token removed from deck"
+        "name": "トークンバーナー",
+        "description": "トークンをデッキから取り除く"
     },
     {
         "code": "Reward.REWARD_PERMAFROST",
         "version": "0.1.0",
-        "name": "Permafrost",
-        "description": "Freeze {value} pockets."
+        "name": "永久凍土",
+        "description": "{value}個のポケットを凍結させる"
     },
     {
         "code": "Item.REWARD_PERMAFROST",
         "version": "0.1.0",
-        "name": "Permafrost",
-        "description": "{value} pockets frozen."
+        "name": "永久凍土",
+        "description": "{value}個のポケットを凍結させる"
     },
     {
         "code": "Reward.REWARD_COPY_TOKEN",
         "version": "0.1.0",
-        "name": "Token Cloner",
-        "description": "Copy a token from your deck"
+        "name": "トークンコピー",
+        "description": "デッキから1枚のトークンをコピーする"
     },
     {
         "code": "Item.REWARD_COPY_TOKEN",
         "version": "0.1.0",
-        "name": "Token Cloner",
-        "description": "Selected token is copied"
+        "name": "トークンコピー",
+        "description": "選択したトークンがコピーされる"
     },
     {
         "code": "Reward.REWARD_MORE_GOLD",
         "version": "0.1.0",
-        "name": "Money Dispenser",
-        "description": "Gain {coinColor}{value} Coins{clearColor} every round"
+        "name": "お金ディスペンサー",
+        "description": "各ラウンドで{coinColor}{value} コイン{clearColor}を得る"
     },
     {
         "code": "Item.REWARD_MORE_GOLD",
         "version": "0.1.0",
-        "name": "Money Dispenser",
-        "description": "Gain {coinColor}{value} Coins{clearColor} every round"
+        "name": "お金ディスペンサー",
+        "description": "各ラウンドで{coinColor}{value} コイン{clearColor}を得る"
     },
     {
         "code": "Reward.QUEST_NATURAL_SELECTION",
         "version": "0.1.0",
         "name": "Natural Selection",
-        "condition": "Every round, your first used token is registered, Clear {roundColor}{targetConditionCount} round{clearColor} using only the registered token",
+        "condition": "各ラウンドで最初に使ったトークンが「登録」され、{roundColor}{targetConditionCount} ラウンド{clearColor}を登録されたトークンのみでクリアする",
         "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor}, this change is permanent"
     },
     {
         "code": "Quest.NATURAL_SELECTION",
         "version": "0.1.0",
         "name": "Natural Selection",
-        "condition": "Every round, your first used token is registered, Clear {roundColor}{targetConditionCount} rounds{clearColor} using only the registered token\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Used Token : {conditionMet})",
+        "condition": "各ラウンドで最初に使ったトークンが「登録」され、{roundColor}{targetConditionCount} ラウンド{clearColor}を登録されたトークンのみでクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(Used Token : {conditionMet})",
         "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently",
         "activeDescription": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently"
     },
     {
         "code": "Reward.QUEST_MONOCHROME",
         "version": "0.1.0",
-        "name": "Monochrome",
-        "condition": "Have {pocketColor}{targetConditionCount} pockets{clearColor} of the same color",
-        "description": "Bets on the majority color add {betColor}x{value} {clearColor}Chips"
+        "name": "モノクローム",
+        "condition": "{pocketColor}{targetConditionCount} ポケット{clearColor}を同じ色にする",
+        "description": "多い方の色にベットすると{betColor}x{value} {clearColor}チップを得る"
     },
     {
         "code": "Quest.MONOCHROME",
         "version": "0.1.0",
-        "name": "Monochrome",
-        "condition": "Have {pocketColor}{targetConditionCount} pockets{clearColor} of the same color\n---\n{annotationColor}(Slot : {currentConditionCount} / {targetConditionCount}){clearColor}",
-        "description": "Bets on the majority color add {betColor}x{value} {clearColor}Chips",
-        "activeDescription": "Bets on the majority color add {betColor}x{value} {clearColor}Chips\n---\n{annotationColor}(Chips : {betColor}{currentValue}{annotationColor})"
+        "name": "モノクローム",
+        "condition": "{pocketColor}{targetConditionCount} ポケット{clearColor}を同じ色にする\n---\n{annotationColor}(スロット : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "多い方の色にベットすると{betColor}x{value} {clearColor}チップを得る",
+        "activeDescription": "多い方の色にベットすると{betColor}x{value} {clearColor}チップを得る\n---\n{annotationColor}(チップ : {betColor}{currentValue}{annotationColor})"
     },
     {
         "code": "Reward.QUEST_HOLE_IN_ONE",
         "version": "0.1.0",
-        "name": "Hole in One",
-        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with only spinning the wheel once",
-        "description": "The first ball is rolled {value} times"
+        "name": "ホールインワン",
+        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}をホイール一回転でクリアする",
+        "description": "最初のボールは{value}度まわる"
     },
     {
         "code": "Quest.HOLE_IN_ONE",
         "version": "0.1.0",
-        "name": "Hole in One",
-        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with only spinning the wheel once\n---\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Spin : {currentValue}){clearColor}",
-        "description": "The first ball is rolled {value} times",
-        "activeDescription": "The first ball is rolled {value} times {annotationColor}(Active : {effectActive}){clearColor}"
+        "name": "ホールインワン",
+        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}をホイール一回転でクリアする\n---\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(Spin : {currentValue}){clearColor}",
+        "description": "最初のボールは{value}度まわる",
+        "activeDescription": "最初のボールは{value}度まわる {annotationColor}(アクティブ : {effectActive}){clearColor}"
     },
     {
         "code": "Reward.QUEST_RELAY_RACE",
         "version": "0.1.0",
-        "name": "Relay Race",
-        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with spinning at least {targetConditionCount2} times",
-        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per wheel spun this round"
+        "name": "リレーレース",
+        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}を少なくとも{targetConditionCount2}回まわしてクリアする",
+        "description": "このラウンドで回転したホイールごとに {scoreColor}{percentageValue} の追加スコア{clearColor}"
     },
     {
         "code": "Quest.RELAY_RACE",
         "version": "0.1.0",
-        "name": "Relay Race",
-        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} with spinning at least {targetConditionCount2} times\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Spin : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
-        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per wheel spun this round",
-        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} per wheel spun this round\n---\n(Current : {scoreColor}{currentPercentageValue}{clearColor})"
+        "name": "リレーレース",
+        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}を少なくとも{targetConditionCount2}回まわしてクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(回転 : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
+        "description": "このラウンドで回転したホイールごとに {scoreColor}{percentageValue} の追加スコア{clearColor}",
+        "activeDescription": "このラウンドで回転したホイールごとに {scoreColor}{percentageValue} の追加スコア{clearColor}\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})"
     },
     {
         "code": "Reward.QUEST_ROUND_ROBIN",
         "version": "0.1.0",
-        "name": "Round Robin",
-        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} without using discard",
-        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per different token used this round\nIf a round is cleared without using discard, {valueColor}{value} lowest level tokens are upgraded{clearColor}"
+        "name": "ラウンドロビン",
+        "condition": "ディスカードを使わずに{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする",
+        "description": "このラウンドで使われた違うトークンごとに {scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずにラウンドをクリアした場合、{valueColor}{value} 個の一番低いレベルのトークン{clearColor}がアップグレードされる"
     },
     {
         "code": "Quest.ROUND_ROBIN",
         "version": "0.1.0",
-        "name": "Round Robin",
-        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} without using discard\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Active : {conditionMet}){clearColor}",
-        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per different token used this round\nIf a round is cleared without using discard, {valueColor}{value} lowest level tokens are upgraded{clearColor}",
-        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} per different token used this round\nIf a round is cleared without using discard, {valueColor}{value} lowest level tokens are upgraded{clearColor}\n---\n{annotationColor}(Token Used : {effectActive}){clearColor}\n(Current : {scoreColor}{currentPercentageValue}{clearColor})\n{annotationColor}(Upgrade : {effectActive2}){clearColor}"
+        "name": "ラウンドロビン",
+        "condition": "ディスカードを使わずに{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(アクティブ : {conditionMet}){clearColor}",
+        "description": "このラウンドで使われた違うトークンごとに {scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずにラウンドをクリアした場合、{valueColor}{value} 個の一番低いレベルのトークン{clearColor}がアップグレードされる",
+        "activeDescription": "このラウンドで使われた違うトークンごとに {scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずにラウンドをクリアした場合、{valueColor}{value} 個の一番低いレベルのトークン{clearColor}がアップグレードされる\n---\n{annotationColor}(Token Used : {effectActive}){clearColor}\n(Current : {scoreColor}{currentPercentageValue}{clearColor})\n{annotationColor}(Upgrade : {effectActive2}){clearColor}"
     },
     {
         "code": "Reward.QUEST_SNOWDROP",
         "version": "0.1.0",
-        "name": "Snowdrop",
-        "condition": "Change {value} tokens' normal bet into {freezeColor}Ice Bet{clearColor} upon pickup\nClear {roundColor}{targetConditionCount} rounds{clearColor} while having {targetConditionCount2} pockets {freezeColor}frozen{clearColor}",
-        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per frozen pocket"
+        "name": "スノードロップ",
+        "condition": "選択すると{value}トークンのノーマルベットが{freezeColor}アイスベット{clearColor}になる\n{targetConditionCount2} ポケットが{freezeColor}凍結された{clearColor}状態で{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする",
+        "description": "凍結されたポケットごとに{scoreColor}{percentageValue} 追加スコア{clearColor}を得る"
     },
     {
         "code": "Quest.SNOWDROP",
         "version": "0.1.0",
-        "name": "Snowdrop",
-        "condition": "Clear {roundColor}{targetConditionCount} rounds{clearColor} while having {targetConditionCount2} pockets {freezeColor}frozen{clearColor}\n{annotationColor}(Round : {currentConditionCount} / {targetConditionCount})\n(Frozen Pocket : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
-        "description": "Gain {scoreColor}{percentageValue} more Score{clearColor} per frozen pocket",
-        "activeDescription": "Gain {scoreColor}{percentageValue} more Score{clearColor} per frozen pocket\n---\n(Current : {scoreColor}{currentPercentageValue}{clearColor})"
+        "name": "スノードロップ",
+        "condition": "{targetConditionCount2} ポケットが{freezeColor}凍結された{clearColor}状態で{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(凍結ポケット : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
+        "description": "凍結されたポケットごとに{scoreColor}{percentageValue} 追加スコア{clearColor}を得る",
+        "activeDescription": "凍結されたポケットごとに{scoreColor}{percentageValue} 追加スコア{clearColor}を得る\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})"
     },
     {
         "code": "Reward.QUEST_TWO_MARSHMALLOW",
         "version": "0.1.0",
-        "name": "Two Marshmallow",
-        "condition": "Do not buy anything in the shop for {valueColor}{targetConditionCount} rounds{clearColor}\n{annotationColor}(Upgrade is allowed){clearColor}",
-        "description": "Gain {coinColor}{value} Coins{clearColor} Once"
+        "name": "2つのマシュマロ",
+        "condition": "{valueColor}{targetConditionCount} ラウンド{clearColor}ショップで何も買わない\n{annotationColor}(アップグレードは許可){clearColor}",
+        "description": "{coinColor}{value} コイン{clearColor}を一度だけ得る"
     },
     {
         "code": "Quest.TWO_MARSHMALLOW",
         "version": "0.1.0",
-        "name": "Two Marshmallow",
-        "condition": "Do not buy anything in the shop for {valueColor}{targetConditionCount} rounds{clearColor}\n{annotationColor}(Upgrade is allowed){clearColor}\n{annotationColor}(Count : {currentConditionCount} / {targetConditionCount}){clearColor}",
-        "description": "Gain {coinColor}{value} Coins{clearColor} Once",
-        "activeDescription": "Gained {coinColor}{value} Coins{clearColor}"
+        "name": "2つのマシュマロ",
+        "condition": "{valueColor}{targetConditionCount} ラウンド{clearColor}ショップで何も買わない\n{annotationColor}(アップグレードは許可){clearColor}\n{annotationColor}(カウント : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "{coinColor}{value} コイン{clearColor}を一度だけ得る",
+        "activeDescription": "{coinColor}{value} コイン{clearColor}を得た"
     },
     {
         "code": "Reward.QUEST_INVESTMENT",
         "version": "0.1.0",
-        "name": "Investment",
-        "condition": "Accumulate {coinColor}{targetConditionCount} unused coins{clearColor}",
-        "description": "{betColor}+7 Chips{clearColor} per unused {coinColor}coin{clearColor}.\n{coinColor}Coins{clearColor} from class ability is doubled"
+        "name": "投資",
+        "condition": "未使用コインを{coinColor}{targetConditionCount} 枚{clearColor}貯める",
+        "description": "未使用の{coinColor}コイン{clearColor}につき{betColor}+7 チップ{clearColor}\nクラスアビリティの{coinColor}コイン{clearColor}が2倍"
     },
     {
         "code": "Quest.INVESTMENT",
         "version": "0.1.0",
-        "name": "Investment",
-        "condition": "Accumulate {coinColor}{targetConditionCount} unused coins{clearColor}\n{annotationColor}(Unused Coins : {currentConditionCount} / {targetConditionCount}){clearColor}",
-        "description": "{betColor}+7 Chips{clearColor} per unused {coinColor}coin{clearColor}\n{coinColor}Coins{clearColor} from class ability is doubled",
-        "activeDescription": "{betColor}+7 Chips{clearColor} per unused {coinColor}coin{clearColor}\n{coinColor}Coins{clearColor} from class ability is doubled\n{annotationColor}(Unused Coins : {currentConditionCount}){clearColor}"
+        "name": "投資",
+        "condition": "未使用コインを{coinColor}{targetConditionCount} 枚{clearColor}貯める\n{annotationColor}(未使用のコイン : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "未使用の{coinColor}コイン{clearColor}につき{betColor}+7 チップ{clearColor}\nクラスアビリティの{coinColor}コイン{clearColor}が2倍",
+        "activeDescription": "未使用の{coinColor}コイン{clearColor}につき{betColor}+7 チップ{clearColor}\nクラスアビリティの{coinColor}コイン{clearColor}が2倍\n{annotationColor}(未使用のコイン : {currentConditionCount}){clearColor}"
     },
     {
         "code": "Reward.QUEST_FRAGILE_LEGACY",
         "version": "0.1.0",
-        "name": "Fragile Legacy",
-        "condition": "Destroy {targetConditionCount} tokens",
+        "name": "フラジャイル レガシー",
+        "condition": "{targetConditionCount} トークンを破壊する",
         "description": "Add {percentageValue} of {ballColor}points{clearColor} and {betColor}{clearColor}Chips from each destroyed token"
     },
     {
         "code": "Quest.FRAGILE_LEGACY",
         "version": "0.1.0",
-        "name": "Fragile Legacy",
-        "condition": "Destroy {targetConditionCount} tokens\n{annotationColor}(Destroyed : {currentConditionCount} / {targetConditionCount}){clearColor}",
-        "description": "Add {percentageValue} of {ballColor}points{clearColor} and {betColor}{clearColor}Chips from each destroyed token",
-        "activeDescription": "Add {percentageValue} of {ballColor}points{clearColor} and {betColor}{clearColor}Chips from each destroyed token\n({ballColor}{currentValue} points{clearColor})\n({betColor}{currentValue2} {clearColor}Chips)"
+        "name": "フラジャイル レガシー",
+        "condition": "{targetConditionCount} トークンを破壊する\n{annotationColor}(破壊回数 : {currentConditionCount} / {targetConditionCount}){clearColor}",
+        "description": "破壊されたトークンごとに{percentageValue}の{ballColor}ポイント{clearColor}と{betColor}チップ{clearColor}を得る",
+        "activeDescription": "破壊されたトークンごとに{percentageValue}の{ballColor}ポイント{clearColor}と{betColor}チップ{clearColor}を得る\n({ballColor}{currentValue} ポイント{clearColor})\n({betColor}{currentValue2} {clearColor}チップ)"
     },
     {
         "code": "Class.ARCHER",
@@ -1697,33 +1697,33 @@
     {
         "code": "Keyword.FRAGILE",
         "version": "0.1.0",
-        "name": "{cautionColor}Fragile{clearColor}",
-        "description": "Token is {cautionColor}destroyed{clearColor}, destroyed token cannot be drawn again in that round",
-        "activeName": "{cautionColor}Fragile{clearColor}",
-        "activeDescription": "Token is {cautionColor}destroyed{clearColor}, destroyed token cannot be drawn again in that round"
+        "name": "{cautionColor}フラジャイル{clearColor}",
+        "description": "トークンは{cautionColor}破壊され{clearColor}、そのラウンドではもう引けなくなる",
+        "activeName": "{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "トークンは{cautionColor}破壊され{clearColor}、そのラウンドではもう引けなくなる"
     },
     {
         "code": "Keyword.FREEZE",
         "version": "0.1.0",
-        "name": "{freezeColor}Freeze{clearColor}",
-        "description": "If pocket is frozen, ball will not go into that pocket",
-        "activeName": "{freezeColor}Freeze{clearColor}",
-        "activeDescription": "If pocket is frozen, ball will not go into that pocket"
+        "name": "{freezeColor}凍結{clearColor}",
+        "description": "凍結されたポケットにはボールが落ちなくなる",
+        "activeName": "{freezeColor}凍結{clearColor}",
+        "activeDescription": "凍結されたポケットにはボールが落ちなくなる"
     },
     {
         "code": "Keyword.GOLDEN_BET",
         "version": "0.1.0",
-        "activeName": "{coinColor}Golden{clearColor}",
-        "activeDescription": "When you win the bet, gain {coinColor}1 Coin{clearColor} once\n{annotationColor}(Won bet changed to normal version){clearColor}",
-        "name": "{coinColor}Golden{clearColor}",
-        "description": "When you win the bet, gain {coinColor}1 Coin{clearColor} once\n{annotationColor}(Won bet changed to normal version){clearColor}"
+        "activeName": "{coinColor}ゴールデン{clearColor}",
+        "activeDescription": "ベットが当たると、{coinColor}1 コイン{clearColor}を一度だけ得る。\n{annotationColor}(当たったベットは通常に戻る){clearColor}",
+        "name": "{coinColor}ゴールデン{clearColor}",
+        "description": "ベットが当たると、{coinColor}1 コイン{clearColor}を一度だけ得る。\n{annotationColor}(当たったベットは通常に戻る){clearColor}"
     },
     {
         "code": "Keyword.ECHO_BET",
         "version": "0.1.0",
-        "activeName": "{echoColor}Echo(X){clearColor}",
+        "activeName": "{echoColor}エコー(X){clearColor}",
         "activeDescription": "Add normal version of same bet that worth X times at the start of next round",
-        "name": "{echoColor}Echo{clearColor}",
+        "name": "{echoColor}エコー{clearColor}",
         "description": "At the start of next round add the normal version of same bet with different value"
     },
     {
