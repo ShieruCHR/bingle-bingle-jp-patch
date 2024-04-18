@@ -1546,22 +1546,22 @@
     {
         "code": "Class.ARCHER",
         "version": "0.1.0",
-        "name": "Archer",
-        "description": "When you have only one round token left, you {valueColor}can see where next ball will land{clearColor}\n{annotationColor}(Discarding changes it){clearColor}",
-        "goldAbilityName": "Unused Round Tokens",
-        "goldAbilityDescription": "Gain {coinColor}1 Coin{clearColor} per every round token left at end of the round",
-        "unlockDescription": "Finish the tutorial"
+        "name": "アーチャー",
+        "description": "ラウンドトークンが一つしか残っていない時、{valueColor}次のボールの落下ポケットが見える{clearColor}\n{annotationColor}(ディスカードで変更){clearColor}",
+        "goldAbilityName": "未使用ラウンドトークン",
+        "goldAbilityDescription": "ラウンド終了時、未使用のラウンドトークンにつき{coinColor}1 コイン{clearColor}を得る",
+        "unlockDescription": "チュートリアルを完了"
     },
     {
         "code": "Class.TRICKSTER",
         "version": "0.1.0",
-        "name": "Trickster",
-        "description": "Buying {valueColor}3 marked item{clearColor} in shop gives you {valueColor}random effect{clearColor}\nUnused {valueColor}round token is saved{clearColor} up to 3 for next round",
-        "goldAbilityName": "Unused Discard",
-        "goldAbilityDescription": "Gain {coinColor}1 coin{clearColor} per 2 discard left at end of the round",
+        "name": "トリックスター",
+        "description": "ショップで{valueColor}3 つのマークアイテム{clearColor}を購入すると{valueColor}ランダム効果{clearColor}を付与する\n未使用の{valueColor}ラウンドトークン{clearColor}を3ラウンドまで{valueColor}引き継げる{clearColor}",
+        "goldAbilityName": "未使用ディスカード",
+        "goldAbilityDescription": "ラウンド終了時、未使用のディスカード2回につき{coinColor}1 コイン{clearColor}を得る",
         "modifierName": "Modifier",
-        "modifierDescription": "-1 round token\n+3 discard",
-        "unlockDescription": "Reach the final round with first Class"
+        "modifierDescription": "-1 ラウンドトークン\n+3 ディスカード",
+        "unlockDescription": "最初のクラスで最終ラウンドに到達する"
     },
     {
         "code": "Class.THIEF",
@@ -1570,14 +1570,14 @@
         "description": "You score when bet is placed rather than after you spin the wheel, ball will last over round and bet will disappear after score",
         "goldAbilityName": "Surpassed Target Score",
         "goldAbilityDescription": "Gain 4 coins if your score is more than double the target score",
-        "unlockDescription": "Will be updated soon!"
+        "unlockDescription": "アップデートで追加予定！"
     },
     {
         "code": "Class.TUTORIAL_CLASS",
         "version": "0.1.0",
-        "name": "Tutorial Class",
+        "name": "チュートリアルクラス",
         "description": "",
-        "goldAbilityName": "Tutorial Bonus"
+        "goldAbilityName": "チュートリアルボーナス"
     },
     {
         "code": "HouseEdge.BASE",
