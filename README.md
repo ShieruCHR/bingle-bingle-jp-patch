@@ -11,7 +11,7 @@ You can download latest patch from Releases. No Releases? Well... yeah, you know
 
 ## Font
 
-You need to replace font files to use this patch. We'll use [Noto Sans JP Regular](https://fonts.google.com/noto/specimen/Noto+Sans+JP) by [Google Fonts](https://fonts.google.com/) as the replacement font.
+You need to replace font files to use this patch. We'll use [Noto Sans JP Regular](https://fonts.google.com/noto/specimen/Noto+Sans+JP) and [BIZ UDGothic](https://fonts.google.com/specimen/BIZ+UDGothic) (as small font) by [Google Fonts](https://fonts.google.com/) as the replacement font.
 
 ## Issues?
 

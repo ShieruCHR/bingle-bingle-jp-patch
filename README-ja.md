@@ -11,7 +11,7 @@ English version is [here](README.md).
 
 ## フォント
 
-パッチを適用するにはフォントの置き換えが必要です。代替フォントとして、[Google Fonts](https://fonts.google.com/) が提供する [Noto Sans JP Regular](https://fonts.google.com/noto/specimen/Noto+Sans+JP) を使用します。
+パッチを適用するにはフォントの置き換えが必要です。代替フォントとして、[Google Fonts](https://fonts.google.com/) が提供する [Noto Sans JP Regular](https://fonts.google.com/noto/specimen/Noto+Sans+JP) 及び [BIZ UDGothic](https://fonts.google.com/specimen/BIZ+UDGothic)（小サイズ用）を使用します。
 
 ## 問題がありますか？
 

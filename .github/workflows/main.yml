@@ -54,7 +54,7 @@ jobs:
               run: ./fontbm --font-file NotoSansJP-Regular.ttf --output English_Medium --font-size 16 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none --chars-file patch.json
 
             - name: "Execute fontbm: size 12 (small)"
-              run: ./fontbm --font-file NotoSansJP-Medium.ttf --output English_Small --font-size 12 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none --chars-file patch.json
+              run: ./fontbm --font-file BIZUDGothic-Regular.ttf --output English_Small --font-size 12 --kerning-pairs extended --padding-up 1 --padding-right 1 --padding-down 1 --padding-left 1 --spacing-vert 1 --spacing-horiz 1 --texture-name-suffix none --chars-file patch.json
 
             - name: Normalize fnt files
               run: python normalize.py
