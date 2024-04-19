@@ -671,8 +671,8 @@
         "code": "Item.REDUCE_PER_MONEY_USED",
         "version": "0.1.0",
         "name": "けちんぼ",
-        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に\n{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}ポイント{clearColor}減らす",
-        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に\n{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}ポイント{clearColor}減らす"
+        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}ポイント{clearColor}減らす",
+        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}ポイント{clearColor}減らす"
     },
     {
         "code": "Item.STACK_LITTLE_MONEY_USED",
@@ -708,9 +708,9 @@
     {
         "code": "Item.REDUCE_PER_MOST_SLOT",
         "version": "0.1.0",
-        "name": "The Commons",
-        "description": "{ballColor}+{value} Points{clearColor}, {cautionColor}decrease it by {value2}{clearColor} for each extra most frequent number on the wheel",
-        "activeDescription": "{ballColor}+{currentValue} Points{clearColor}, {cautionColor}decrease it by {value2}{clearColor} for each extra most frequent number on the wheel"
+        "name": "ザ・コモン",
+        "description": "{ballColor}+{value} ポイント{clearColor}\nウィール上の最も多い数字1つにつき\n{cautionColor}{value2} 減らす{clearColor}",
+        "activeDescription": "{ballColor}+{currentValue} ポイント{clearColor}\nウィール上の最も多い数字1つにつき\n{cautionColor}{value2} 減らす{clearColor}"
     },
     {
         "code": "Item.REDUCE_PER_EMPTY_SLOT",
@@ -931,8 +931,8 @@
     {
         "code": "Item.POCKET_NO_OVERLAP",
         "version": "0.1.0",
-        "name": "Repulsion",
-        "description": "Pocket Ball does not land in the same pocket as the registered pocket"
+        "name": "反発力",
+        "description": "ポケットボールが\n登録されたポケットと同じポケットに\n落ちないようになる"
     },
     {
         "code": "Item.POCKET_PRECHANGE",
@@ -981,37 +981,37 @@
         "code": "Item.SUPER_FINAL_TOKEN",
         "version": "0.1.0",
         "name": "Super Hero",
-        "description": "Super Ball used at 0 discard and 1 round Token earn {scoreColor}{percentageValue} Score{clearColor}"
+        "description": "スーパーボールが\n残りディスカードが0かつ\n残りラウンドトークン1で使われたら\n{scoreColor}{percentageValue} 追加スコア{clearColor}を得る"
     },
     {
         "code": "Item.SUPER_NO_BET",
         "version": "0.1.0",
-        "name": "Splendor",
-        "description": "Super Ball used while no bet is placed earn {scoreColor}{percentageValue} Score{clearColor}"
+        "name": "スプレンダー",
+        "description": "ベット無しでスーパーボールが\nプレイされたら\n{scoreColor}{percentageValue} スコア{clearColor}"
     },
     {
         "code": "Item.MULTI_REVERSE_SCORE",
         "version": "0.1.0",
-        "name": "Prince and the Pauper",
-        "description": "When Multi Ball is rolled, balls with most score earn no score and balls with least score earn {scoreColor}{percentageValue2} Score{clearColor}"
+        "name": "王子と乞食",
+        "description": "マルチボールが回された時、\n最もスコアの高いボールはスコアされず、\n最もスコアの低いボールは\n{scoreColor}{percentageValue2} スコア{clearColor}を得る"
     },
     {
         "code": "Item.MULTI_SAME_POCKET",
         "version": "0.1.0",
         "name": "Hold My Ball",
-        "description": "When Multi Ball is rolled, If there is another multi ball landed in same pocket it earns {scoreColor}{percentageValue} Score{clearColor}"
+        "description": "マルチボールが回された時、\n同じポケットに別のマルチボールが落ちると、\n{scoreColor}{percentageValue} スコア{clearColor}を得る"
     },
     {
         "code": "Item.TARGET_CENTER",
         "version": "0.1.0",
-        "name": "Bullseye",
-        "description": "When Target Ball land in center of selected range, Gain x{ballColor}{multiplierValue} Points{clearColor}"
+        "name": "狙撃手",
+        "description": "ターゲットボールが範囲の中央に落ちた時、\nx{ballColor}{multiplierValue} ポイント{clearColor}を得る"
     },
     {
         "code": "Item.TARGET_DIVERSITY",
         "version": "0.1.0",
-        "name": "Too Many Targets",
-        "description": "If there is no duplicate number in selected range of Target Ball, Gain {ballColor}{value} Points{clearColor}"
+        "name": "ターゲット多数",
+        "description": "ターゲットボールの範囲内に\n同じ数字がなかったら\n{ballColor}{value} ポイント{clearColor}を得る"
     },
     {
         "code": "Item.LARGE_ALL_POCKET",
@@ -1028,21 +1028,21 @@
     {
         "code": "Item.FROZEN_ALREADY",
         "version": "0.1.0",
-        "name": "Frozen Sandwich",
-        "description": "When Frozen Ball lands, Gain {ballColor}{value} Points{clearColor} for each pocket already frozen"
+        "name": "凍ったサンドイッチ",
+        "description": "フローズンボールが落ちた時、\nすでに凍っているポケットに対して\n{ballColor}{value} ポイント{clearColor}を得る"
     },
     {
         "code": "Item.FROZEN_EXTEND",
         "version": "0.1.0",
-        "name": "Subzero",
-        "description": "When Frozen Ball activates, extend freeze area for each pockets already frozen or pockets with bet"
+        "name": "サブゼロ",
+        "description": "フローズンボールが発動すると、\nすでに凍っている各ポケットや\nベットされた各ポケットごとに\n凍結範囲を拡張させる"
     },
     {
         "code": "Item.STACK_POCKET",
         "version": "0.1.0",
-        "name": "Indecisive Pocket",
-        "description": "Gain {betColor}{value} chips{clearColor} permanently when changing pockets at the shop",
-        "activeDescription": "Gain {betColor}{value} chips{clearColor} permanently when changing pockets at the shop\n---\n(Current Chips : {betColor}{currentValue}{clearColor})"
+        "name": "優柔不断",
+        "description": "ショップでポケットを変更するたびに\n得られるチップが\n{betColor}{value}{clearColor}増加する",
+        "activeDescription": "ショップでポケットを変更するたびに\n得られるチップが\n{betColor}{value}{clearColor}増加する\n---\n(現在のチップ : {betColor}{currentValue}{clearColor})"
     },
     {
         "code": "Item.TOKEN_IN_ORDER",
@@ -1054,34 +1054,34 @@
     {
         "code": "Item.BALL_DIVERSITY",
         "version": "0.1.0",
-        "name": "Bag of Balls",
-        "description": "Gain {ballColor}{value} points{clearColor} for each different balls in the deck",
-        "activeDescription": "Gain {ballColor}{value} points{clearColor} for each different balls in the deck\n---\n(Current Points: {ballColor}{currentValue}{clearColor})"
+        "name": "ボールのカバン",
+        "description": "デッキにある別々の種類のボールにつき\n{ballColor}{value} ポイント{clearColor}を得る",
+        "activeDescription": "デッキにある別々の種類のボールにつき\n{ballColor}{value} ポイント{clearColor}を得る\n---\n(現在のポイント : {ballColor}{currentValue}{clearColor})"
     },
     {
         "code": "Item.STACK_REROLL",
         "version": "0.1.0",
-        "name": "Do a Barrel Reroll!",
-        "description": "Gain {ballColor}{value} point{clearColor} permanently when rerolling at the shop",
-        "activeDescription": "Gain {ballColor}{value} point{clearColor} permanently when rerolling at the shop\n---\n(Current Points : {ballColor}{currentValue}{clearColor})"
+        "name": "リロール大会！",
+        "description": "ショップでリロールするたびに\n得られるポイントが\n{ballColor}{value}{clearColor}増加する",
+        "activeDescription": "ショップでリロールするたびに\n得られるポイントが\n{ballColor}{value}{clearColor}増加する\n---\n(現在のポイント : {ballColor}{currentValue}{clearColor})"
     },
     {
         "code": "ItemBox.NORMAL",
         "version": "0.1.0",
-        "name": "Normal Item Box",
-        "description": "Select 1 out of 3 items, more likely to be Normal Item"
+        "name": "ノーマルアイテムボックス",
+        "description": "3個のうち1つのアイテムを選ぶ\nほとんどがノーマルアイテム"
     },
     {
         "code": "ItemBox.RARE",
         "version": "0.1.0",
-        "name": "Rare Item Box",
-        "description": "Select 1 out of 3 items, more likely to be Rare Item"
+        "name": "レアアイテムボックス",
+        "description": "3個のうち1つのアイテムを選ぶ\nほとんどがレアアイテム"
     },
     {
         "code": "ItemBox.UNIQUE",
         "version": "0.1.0",
-        "name": "Unique Item Box",
-        "description": "Select 1 out of 3 items, more likely to be Unique Item"
+        "name": "ユニークアイテムボックス",
+        "description": "3個のうち1つのアイテムを選ぶ\nほとんどがユニークアイテム"
     },
     {
         "code": "Round.NORMAL",
@@ -1412,14 +1412,14 @@
         "code": "Reward.QUEST_NATURAL_SELECTION",
         "version": "0.1.0",
         "name": "Natural Selection",
-        "condition": "各ラウンドで最初に使ったトークンが「登録」され、\n{roundColor}{targetConditionCount} ラウンド{clearColor}を登録されたトークンのみでクリアする",
+        "condition": "ラウンドで最初に使ったトークンが\"登録\"され、\n{roundColor}{targetConditionCount} ラウンド{clearColor}を\n登録されたトークンのみでクリアする",
         "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor}, this change is permanent"
     },
     {
         "code": "Quest.NATURAL_SELECTION",
         "version": "0.1.0",
         "name": "Natural Selection",
-        "condition": "各ラウンドで最初に使ったトークンが「登録」され、\n{roundColor}{targetConditionCount} ラウンド{clearColor}を登録されたトークンのみでクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(Used Token : {conditionMet})",
+        "condition": "ラウンドで最初に使ったトークンが\"登録\"され、\n{roundColor}{targetConditionCount} ラウンド{clearColor}を\n登録されたトークンのみでクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(Used Token : {conditionMet})",
         "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently",
         "activeDescription": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently"
     },
@@ -1464,9 +1464,9 @@
         "code": "Quest.RELAY_RACE",
         "version": "0.1.0",
         "name": "リレーレース",
-        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}を少なくとも{targetConditionCount2}回まわしてクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(回転 : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
-        "description": "このラウンドで回転したホイールごとに {scoreColor}{percentageValue} の追加スコア{clearColor}",
-        "activeDescription": "このラウンドで回転したホイールごとに {scoreColor}{percentageValue} の追加スコア{clearColor}\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})"
+        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}を\n少なくとも{targetConditionCount2}回まわしてクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(回転 : {currentConditionCount2} / {targetConditionCount2}){clearColor}",
+        "description": "このラウンドで回転したホイールごとに\n{scoreColor}{percentageValue} の追加スコア{clearColor}",
+        "activeDescription": "このラウンドで回転したホイールごとに\n{scoreColor}{percentageValue} の追加スコア{clearColor}\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})"
     },
     {
         "code": "Reward.QUEST_ROUND_ROBIN",
@@ -1487,7 +1487,7 @@
         "code": "Reward.QUEST_SNOWDROP",
         "version": "0.1.0",
         "name": "スノードロップ",
-        "condition": "選択すると{value}トークンのノーマルベットが{freezeColor}アイスベット{clearColor}になる\n{targetConditionCount2} ポケットが{freezeColor}凍結された{clearColor}状態で{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする",
+        "condition": "選択すると\n{value}トークンのノーマルベットが\n{freezeColor}アイスベット{clearColor}になる\n\n目標: {targetConditionCount2} ポケットが{freezeColor}凍結された{clearColor}状態で\n{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする",
         "description": "凍結されたポケットごとに\n{scoreColor}{percentageValue} 追加スコア{clearColor}を得る"
     },
     {
