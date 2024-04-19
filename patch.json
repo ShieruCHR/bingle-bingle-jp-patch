@@ -1086,91 +1086,91 @@
     {
         "code": "Round.NORMAL",
         "version": "0.1.0",
-        "name": "Normal Round",
-        "description": "Normal Round"
+        "name": "ノーマルラウンド",
+        "description": "ノーマルラウンド"
     },
     {
         "code": "Round.RANDOM_FREEZE",
         "version": "0.1.0",
-        "name": "Cold Wind",
-        "description": "{freezeColor}Freeze{clearColor} {value} random pockets after using token"
+        "name": "冷たい風",
+        "description": "トークン使用後、\n{value}個のランダムなポケットを\n{freezeColor}凍らせる{clearColor}"
     },
     {
         "code": "Round.MOST_SLOT_FREEZE",
         "version": "0.1.0",
-        "name": "Winter",
-        "description": "{freezeColor}Freeze{clearColor} all pockets containing the number you have the most",
-        "difficultDescription": "{freezeColor}Freeze{clearColor} all pockets containing the number you have the most and the second most"
+        "name": "真冬",
+        "description": "最も多く持っているポケットの\n数字を含むポケットを\n{freezeColor}凍らせる{clearColor}",
+        "difficultDescription": "1番目と2番目に多く持っているポケットの\n数字を含むポケットを\n{freezeColor}凍らせる{clearColor}"
     },
     {
         "code": "Round.BET_FREEZE",
         "version": "0.1.0",
-        "name": "Rapid Cooling",
-        "description": "{freezeColor}Freeze{clearColor} {percentageValue} of the pockets that you have just bet on, every time a bet is placed",
-        "difficultDescription": "{freezeColor}Freeze{clearColor} {percentageValue} of the pockets that you have just bet on, every time a bet is placed"
+        "name": "急速冷凍",
+        "description": "ベットするたびに、\nベットしたポケットの{percentageValue}が\n{freezeColor}凍結される{clearColor}",
+        "difficultDescription": "ベットするたびに、\nベットしたポケットの{percentageValue}が\n{freezeColor}凍結される{clearColor}"
     },
     {
         "code": "Round.DISCARD_SHUFFLE",
         "version": "0.1.0",
-        "name": "Tantrum",
-        "description": "Every time you Discard a token, tokens are shuffled",
-        "difficultDescription": "Every time you Discard a token, tokens are shuffled. {cautionColor}{value} round token{clearColor}"
+        "name": "イライラ",
+        "description": "トークンをディスカードするたびに\nシャッフルされる",
+        "difficultDescription": "トークンをディスカードするたびに\nシャッフルされる。{cautionColor}{value} ラウンドトークン{clearColor}"
     },
     {
         "code": "Round.BASIC_TOKEN",
         "version": "0.1.0",
-        "name": "Roots Around",
-        "description": "Add {value} rotten tokens into your tokens for this round"
+        "name": "木の精霊",
+        "description": "このラウンドでは、\n{value}個の腐ったトークンを持ってスタートする"
     },
     {
         "code": "Round.ALWAYS_SHUFFLE",
         "version": "0.1.0",
-        "name": "Outrage",
-        "description": "Every time you use a token, tokens are shuffled",
-        "difficultDescription": "Every time you use a token, tokens are shuffled, {cautionColor}{value} discard{clearColor}"
+        "name": "激怒",
+        "description": "トークンを使うたびにシャッフルされる",
+        "difficultDescription": "トークンを使うたびにシャッフルされる。\n{cautionColor}{value} ディスカード{clearColor}"
     },
     {
         "code": "Round.WEAKEN_AFTER_FIRST_BALL",
         "version": "0.1.0",
-        "name": "Distracted",
-        "description": "From the second {ballColor}Ball{clearColor}, only score {scoreColor}{percentageValue}{clearColor}"
+        "name": "ディストラクション",
+        "description": "2個目の{ballColor}ボール{clearColor}からは、\n{scoreColor}{percentageValue}{clearColor}しかスコアされない"
     },
     {
         "code": "Round.WEAKEN_BALL_MULTI",
         "version": "0.1.0",
-        "name": "Simplist",
-        "description": "When multiple {ballColor}Balls{clearColor} are rolled at once, only the highest score Ball gets scored",
-        "difficultDescription": "When multiple {ballColor}Balls{clearColor} are rolled at once, only the lowest score Ball gets scored"
+        "name": "単純主義",
+        "description": "複数個の{ballColor}ボール{clearColor}が\n一度に回された時、\n一番点数の高いものしかスコアされない",
+        "difficultDescription": "複数個の{ballColor}ボール{clearColor}が\n一度に回された時、\n一番点数の低いものしかスコアされない"
     },
     {
         "code": "Round.WEAKEN_BALL_REPEAT",
         "version": "0.1.0",
-        "name": "Fickle",
-        "description": "After a {ballColor}Ball{clearColor} get scored, the score from a ball of same type only score {scoreColor}{percentageValue}{clearColor}"
+        "name": "気まぐれ",
+        "description": "{ballColor}ボール{clearColor}がスコアされたあとは、\n同じタイプのボールからは\n{scoreColor}{percentageValue}{clearColor}しかスコアされない"
     },
     {
         "code": "Round.WEAKEN_BET_REPEAT",
         "version": "0.1.0",
-        "name": "Keen eye",
-        "description": "After Bet placed, same type of Bet only place {betColor}{percentageValue} {clearColor}Chips"
+        "name": "鋭い目",
+        "description": "ベットが置かれた後は、\n同じ種類のベットは\n{betColor}{percentageValue}{clearColor}チップしか与えない"
     },
     {
         "code": "Round.WEAKEN_SPECIAL_BET",
         "version": "0.1.0",
-        "name": "Sharp Beak",
-        "description": "Convert up to {value} {betColor}Special Bets{clearColor} into normal bets for this round"
+        "name": "鋭いくちばし",
+        "description": "このラウンドでは、\n最大{value}個の{betColor}特殊ベット{clearColor}を\nノーマルベットに変換する"
     },
     {
         "code": "Round.WEAKEN_AFTER_FIRST_BET",
         "version": "0.1.0",
-        "name": "Strong Claw",
-        "description": "From the second bet, bet will have only {betColor}{percentageValue} {clearColor}Chips"
+        "name": "強いツメ",
+        "description": "2回目のベットからは、\n{betColor}{percentageValue} {clearColor}チップしか置かれない"
     },
     {
         "code": "Round.MAX_SCORE_RESTRICTION",
         "version": "0.1.0",
-        "name": "Oppression",
-        "description": "Can only score up to 1/{value} of {targetScoreColor}Target Score{clearColor} at once"
+        "name": "抑圧",
+        "description": "一度に{targetScoreColor}目標スコア{clearScore}の\n1/{value}しかスコアできない"
     },
     {
         "code": "Round.ONLY_INCREASING_SCORE",
@@ -1182,8 +1182,8 @@
     {
         "code": "Round.SCORE_ADD_RESTRICTION",
         "version": "0.1.0",
-        "name": "Depredation",
-        "description": "For every {value} enabled Items disable 1 Item, disabled items are changed after token is used"
+        "name": "強奪",
+        "description": "{value}個の有効なアイテムごとに\n1つが無効化される。\n無効化されたアイテムは\nトークン使用後に変わる。"
     },
     {
         "code": "Achievement.TUTORIAL",
