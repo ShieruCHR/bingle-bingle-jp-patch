@@ -678,8 +678,8 @@
         "code": "Item.STACK_LITTLE_MONEY_USED",
         "version": "0.1.0",
         "name": "釣りはいらない",
-        "description": "ショップを離れると{scoreColor}{percentageValue}の追加スコア{clearColor}を得る\nショップで2つ以上買うまたは\nアップグレードするとリセット",
-        "activeDescription": "ショップを離れると{scoreColor}{percentageValue}の追加スコア{clearColor}を得る\nショップで2つ以上買うまたは\nアップグレードするとリセット\n---\n(Current Stack : {scoreColor}{currentPercentageValue}{clearColor})\n(Buy/Upgrade : {currentValue})"
+        "description": "ショップを離れると\n{scoreColor}{percentageValue}の追加スコア{clearColor}を得る\nショップで2つ以上買うまたは強化で\nリセットされる",
+        "activeDescription": "ショップを離れると{scoreColor}{percentageValue}の追加スコア{clearColor}を得る\nショップで2つ以上買うまたは強化\nリセットされる\n---\n(Current Stack : {scoreColor}{currentPercentageValue}{clearColor})\n(Buy/Upgrade : {currentValue})"
     },
     {
         "code": "Item.FORCE_ALL_SPECIAL_BET",
@@ -1302,7 +1302,7 @@
         "code": "Item.BONUS_FORCED_TOKEN",
         "version": "0.1.0",
         "name": "レインボートークン",
-        "description": "ノーマルトークンを{valueColor}アルファパーク付きのランダムなトークン{clearColor}に置き換える\n最初の3ラウンドは{cautionColor}ディスカードが0になる{clearColor}"
+        "description": "ノーマルトークンを\n{valueColor}アルファパーク付きの{clearColor}\n{valueColor}ランダムなトークン{clearColor}に置き換える\n最初の3ラウンドは\n{cautionColor}ディスカードが0になる{clearColor}"
     },
     {
         "code": "Reward.BONUS_SLOT_FIXER",
@@ -1722,9 +1722,9 @@
         "code": "Keyword.ECHO_BET",
         "version": "0.1.0",
         "activeName": "{echoColor}エコー(X){clearColor}",
-        "activeDescription": "通常バージョンの同じベットをX回\nラウンドのはじめに追加する",
+        "activeDescription": "通常バージョンの同じベットを\nラウンドのはじめに追加する\n追加されたベットの効果 X倍",
         "name": "{echoColor}エコー{clearColor}",
-        "description": "At the start of next round add the normal version of same bet with different value"
+        "description": "通常バージョンの同じベットを\nラウンドのはじめに追加する"
     },
     {
         "code": "Keyword.FLASH_BET",
