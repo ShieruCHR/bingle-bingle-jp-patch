@@ -664,15 +664,15 @@
         "code": "Item.REDUCE_PER_PLAY_TOKEN",
         "version": "0.1.0",
         "name": "貴重なトークン",
-        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nラウンド終了時に\nラウンドトークンが\n残っていたら、\n{cautionColor}{value2}{clearColor}減らす",
-        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nラウンド終了時に\nラウンドトークンが\n残っていたら、\n{cautionColor}{value2}{clearColor}減らす"
+        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nラウンド終了時にラウンドトークンが\n残っていたら、\n{cautionColor}{value2}ポイント{clearColor}減らす",
+        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nラウンド終了時にラウンドトークンが\n残っていたら、\n{cautionColor}{value2}ポイント{clearColor}減らす"
     },
     {
         "code": "Item.REDUCE_PER_MONEY_USED",
         "version": "0.1.0",
         "name": "けちんぼ",
-        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に\n{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}{clearColor}減らす",
-        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に\n{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}{clearColor}減らす"
+        "description": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に\n{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}ポイント{clearColor}減らす",
+        "activeDescription": "{ballColor}+{value} ポイント{clearColor}を得る\nショップ終了時に\n{value3}ゴールド未満が\n残った場合、\n{cautionColor}{value2}ポイント{clearColor}減らす"
     },
     {
         "code": "Item.STACK_LITTLE_MONEY_USED",
@@ -1442,7 +1442,7 @@
         "code": "Reward.QUEST_HOLE_IN_ONE",
         "version": "0.1.0",
         "name": "ホールインワン",
-        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}をホイール一回転でクリアする",
+        "condition": "{roundColor}{targetConditionCount} ラウンド{clearColor}を\nホイール一回転でクリアする",
         "description": "最初のボールは{value}度まわる"
     },
     {
@@ -1549,7 +1549,7 @@
         "name": "アーチャー",
         "description": "ラウンドトークンが残り一つの時、\n{valueColor}次のボールの落下ポケットが見える{clearColor}\n{annotationColor}(ディスカードで変更){clearColor}",
         "goldAbilityName": "未使用ラウンドトークン",
-        "goldAbilityDescription": "ラウンド終了時、未使用のラウンドトークンにつき\n{coinColor}1 コイン{clearColor}を得る",
+        "goldAbilityDescription": "ラウンド終了時、\n未使用のラウンドトークンにつき\n{coinColor}1 コイン{clearColor}を得る",
         "unlockDescription": "チュートリアルを完了"
     },
     {
