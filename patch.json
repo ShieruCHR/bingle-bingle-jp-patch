@@ -715,134 +715,134 @@
     {
         "code": "Item.REDUCE_PER_EMPTY_SLOT",
         "version": "0.1.0",
-        "name": "Bestudo",
-        "description": "{betColor}+{value} {clearColor}Chips, {cautionColor}decrease it by {value2}{clearColor} per the count of numbers removed from the wheel",
-        "activeDescription": "{betColor}+{currentValue} {clearColor}Chips, {cautionColor}decrease it by {value2}{clearColor} per the count of numbers removed from the wheel"
+        "name": "頑張り屋",
+        "description": "{betColor}+{value} {clearColor}チップ\nホイールから除かれた数字につき{cautionColor}{value2}{clearColor}減らす",
+        "activeDescription": "{betColor}+{currentValue} {clearColor}チップ\nホイールから除かれた数字につき{cautionColor}{value2}{clearColor}減らす"
     },
     {
         "code": "Item.INCREASE_PER_EMPTY_SLOT",
         "version": "0.1.0",
-        "name": "Elite Number",
-        "description": "{ballColor}+{value} Point{clearColor} for every {value2} numbers you have removed from the wheel",
-        "activeDescription": "{ballColor}+{value} Point{clearColor} for every {value2} numbers you have removed from the wheel\n---\n({ballColor}+{currentValue} Points{clearColor})"
+        "name": "エリートナンバー",
+        "description": "ホイールから削除した{value2}個の数字ごとに\n{ballColor}+{value}ポイント{clearColor}",
+        "activeDescription": "ホイールから削除した{value2}個の数字ごとに\n{ballColor}+{value}ポイント{clearColor}\n---\n({ballColor}+{currentValue}ポイント{clearColor})"
     },
     {
         "code": "Item.INCREASE_PER_BOTH_SLOT",
         "version": "0.1.0",
-        "name": "Duality",
-        "description": "{betColor}+{value} {clearColor}Chips per the numbers with both red and black pockets",
-        "activeDescription": "{betColor}+{value} {clearColor}Chips per the numbers with both red and black pockets\n---\n ({betColor}+{currentValue} {clearColor}Chips)"
+        "name": "二元性",
+        "description": "赤と黒のポケット両方がある\n数字ごとに{betColor}+{value}チップ{clearColor}",
+        "activeDescription": "赤と黒のポケット両方がある\n数字ごとに{betColor}+{value}チップ{clearColor}\n---\n ({betColor}+{currentValue} {clearColor}チップ)"
     },
     {
         "code": "Item.SLOT_PERFECT_NUMBER",
         "version": "0.1.0",
-        "name": "Perfect Numbers",
-        "description": "When the ball lands in a {pocketColor}pocket 6 or 28{clearColor}, gain {scoreColor}{percentageValue} more Score{clearColor}"
+        "name": "完全数",
+        "description": "ボールが{pocketColor}6または28{clearColor}に落ちた時、\n{scoreColor}{percentageValue} 追加スコアを得る{clearColor}"
     },
     {
         "code": "Item.SLOT_PRIME_NUMBER",
         "version": "0.1.0",
-        "name": "Prime Numbers",
-        "description": "When the ball lands in a {pocketColor}pocket 2,3,5,7,11,13,17,19,23,29 or 31{clearColor}, {betColor}+{value} {clearColor}Chips"
+        "name": "素数",
+        "description": "ボールが\n{pocketColor}2,3,5,7,11,13,17,19,23,29,31{clearColor}\nのいずれかに落ちた時、\n{betColor}+{value} {clearColor}チップ"
     },
     {
         "code": "Item.SLOT_FOUR_DISCARD",
         "version": "0.1.0",
-        "name": "Abjicere Four",
-        "description": "When the ball lands in a {pocketColor}pocket containing number 4{clearColor}, gain +{value} Discards"
+        "name": "ディスカード・フォー",
+        "description": "ボールが{pocketColor}4を含むポケット{clearColor}に落ちた時、\n+{value} ディスカードを得る"
     },
     {
         "code": "Item.STACK_SLOT_TWO",
         "version": "0.1.0",
-        "name": "Struere Two",
-        "description": "When a ball lands in a {pocketColor}pocket containing number 2{clearColor}, {betColor}+{value} {clearColor}Chips permanently",
-        "activeDescription": "When a ball lands in a {pocketColor}pocket containing number 2{clearColor}, {betColor}+{value} {clearColor}Chips permanently\n---\n({betColor}+{currentValue} {clearColor}Chips)"
+        "name": "スタック・ツー",
+        "description": "ボールが{pocketColor}2を含むポケット{clearColor}に落ちた時、\n得られるチップが{betColor}+{value} {clearColor}増加",
+        "activeDescription": "ボールが{pocketColor}2を含むポケット{clearColor}に落ちた時、\n得られるチップが{betColor}+{value} {clearColor}増加\n---\n({betColor}+{currentValue} {clearColor}チップ)"
     },
     {
         "code": "Item.SLOT_SEVEN_COIN",
         "version": "0.1.0",
-        "name": "Felix Seven",
-        "description": "When the ball lands in a {pocketColor}pocket containing number 7{clearColor}, gain {coinColor}{value} Coin{clearColor}"
+        "name": "ラッキーセブン",
+        "description": "ボールが{pocketColor}7を含むポケット{clearColor}に落ちた時、\n{coinColor}{value} コイン{clearColor}を得る"
     },
     {
         "code": "Item.NEGLECT_MAX_UPGRADE",
         "version": "0.1.0",
-        "name": "Behind the Throne",
-        "description": "When the highest level token is not used for a round, gain {scoreColor}{percentageValue} more Score{clearColor} permanently",
-        "activeDescription": "When the highest level token is not used for a round, gain {scoreColor}{percentageValue} more Score{clearColor} permanently\n---\n(Current Stack : {scoreColor}{currentPercentageValue}{clearColor})\n(Not Used : {effectActive})"
+        "name": "王位の影",
+        "description": "一番高いレベルのトークンが使われなかったら、\n得られる追加スコアが {scoreColor}{percentageValue} {clearColor}増加",
+        "activeDescription": "一番高いレベルのトークンが使われなかったら、\n得られる追加スコアが {scoreColor}{percentageValue} {clearColor}増加\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})\n(Not Used : {effectActive})"
     },
     {
         "code": "Item.SLOT_MOST_FIXED",
         "version": "0.1.0",
-        "name": "Favorite Pocket",
-        "description": "Most frequent number on the wheel will always be offered in the shop"
+        "name": "大好きなポケット",
+        "description": "ホイールにある一番多い数字のポケットが\nショップに常に出現するようになる"
     },
     {
         "code": "Item.STRAIGHT_UP_BALL_VALUE",
         "version": "0.1.0",
-        "name": "StraightUp Ball Value",
-        "description": "When winning a StraightUp Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "ストレートアップ強化",
+        "description": "ストレートアップベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.SPLIT_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Split Ball Value",
-        "description": "When winning a Split Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "スプリット強化",
+        "description": "スプリットベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.STREET_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Street Ball Value",
-        "description": "When winning a Street Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "ストリート強化",
+        "description": "ストリートベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.CORNER_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Corner Ball Value",
-        "description": "When winning a Corner Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "コーナー強化",
+        "description": "コーナーベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.LINE_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Line Ball Value",
-        "description": "When winning a Line Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "ライン強化",
+        "description": "ラインベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.COLUMN_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Column Ball Value",
-        "description": "When winning a Column Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "カラム強化",
+        "description": "カラムベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.DOZEN_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Dozen Ball Value",
-        "description": "When winning a Dozen Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "ダズン強化",
+        "description": "ダズンベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.HIGHLOW_BALL_VALUE",
         "version": "0.1.0",
-        "name": "High/Low Ball Value",
-        "description": "When winning a High/Low Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "ハイ・ロー強化",
+        "description": "ハイ・ローベットを当てたら、{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.EVENODD_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Even/Odd Ball Value",
-        "description": "When winning a Even/Odd Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "イーブンオッド強化",
+        "description": "イーブンオッドベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.COLOR_BALL_VALUE",
         "version": "0.1.0",
-        "name": "Color Ball Value",
-        "description": "When winning a Color Bet, {ballColor}+{value} Points{clearColor}"
+        "name": "カラー強化",
+        "description": "カラーベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.STRAIGHT_UP_SOLO",
         "version": "0.1.0",
-        "name": "StraightUp Solo",
-        "description": "{betColor}+{value} {clearColor}Chips on StraightUp Bet. Increase it by {betColor}+{value}{clearColor}, when StraightUp Bet is winned on the pocket which you have only one",
-        "activeDescription": "{betColor}+{currentValue} {clearColor}Chips on StraightUp Bet. Increase it by {betColor}+{value}{clearColor}, when StraightUp Bet is winned on the pocket which you have only one"
+        "name": "ソロ・ストレートアップ",
+        "description": "ストレートアップベットで{betColor}+{value} {clearColor}チップ\n一つしかポケットがない数字で当てたら{betColor}+{value}{clearColor}増加",
+        "activeDescription": "ストレートアップベットで{betColor}+{currentValue} {clearColor}チップ\n一つしかポケットがない数字で当てたら\n{betColor}+{value}{clearColor}増加"
     },
     {
         "code": "Item.SPLIT_COUNT",
@@ -865,13 +865,13 @@
     {
         "code": "Item.LINE_OVERLAP",
         "version": "0.1.0",
-        "name": "Corner Distance",
-        "description": "{betColor}+{multiplierValue} {clearColor}Chips to overlapping pockets, if there are adjacent line bets"
+        "name": "ライン・オーバーラップ",
+        "description": "重複するポケットに{betColor}+{multiplierValue} {clearColor}チップ"
     },
     {
         "code": "Item.DOZEN_DOZEN",
         "version": "0.1.0",
-        "name": "Dozen dozen",
+        "name": "ダズンダズン",
         "description": "{betColor}+{multiplierValue} {clearColor}Chips to Dozen Bet, if the number of pockets which Dozen Bet placed {berColor}{clearColor}Chips is 12, 24, and 36"
     },
     {
@@ -907,26 +907,26 @@
     {
         "code": "Item.ICE_INITIAL_FREEZE",
         "version": "0.1.0",
-        "name": "Early Winter",
-        "description": "When an {freezeColor}Ice Bet{clearColor} is placed, Choose addition random pocket and {freezeColor}freeze{clearColor} nearby pockets"
+        "name": "早めの冬",
+        "description": "{freezeColor}Ice Bet{clearColor}が置かれたら、\nランダムなポケットを選び\nその付近のポケットを{freezeColor}凍らせる{clearColor}"
     },
     {
         "code": "Item.FLASH_DURATION",
         "version": "0.1.0",
-        "name": "Double Flash",
-        "description": "Flash Bet is retained for one more spin"
+        "name": "ダブルフラッシュ",
+        "description": "フラッシュベットでもう一度回せる"
     },
     {
         "code": "Item.GOLD_DOUBLE_VALUE_HALF",
         "version": "0.1.0",
-        "name": "Midas",
-        "description": "Change every bets into {coinColor}Golden{clearColor} Bet"
+        "name": "ミダス",
+        "description": "全ベットを{coinColor}ゴールデン{clearColor}にする"
     },
     {
         "code": "Item.ECHO_ONE_MORE",
         "version": "0.1.0",
-        "name": "Longer Echo",
-        "description": "Echo Bet effect lasts one more round"
+        "name": "ロングエコー",
+        "description": "エコーの効果がもう1ラウンド続く"
     },
     {
         "code": "Item.POCKET_NO_OVERLAP",
@@ -937,39 +937,39 @@
     {
         "code": "Item.POCKET_PRECHANGE",
         "version": "0.1.0",
-        "name": "Harbinger Ball",
-        "description": "Pocket Ball changes pockets before score calculation"
+        "name": "前兆",
+        "description": "ポケットボールのポケット変更が\nスコア計算前に発動する"
     },
     {
         "code": "Item.HEART_MULTIPLIER",
         "version": "0.1.0",
-        "name": "Growing Love",
-        "description": "When Heart Ball ability activate, all Heart Balls gain {ballColor}{value} Points{clearColor} for that round",
-        "activeDescription": "When Heart Ball ability activate, all Heart Balls gain {ballColor}{value} Points{clearColor} for that round\n---\n(Current Stack : {ballColor}{currentValue} Points{clearColor})"
+        "name": "育まれる愛",
+        "description": "ハートボールが発動した時、\nラウンドで全てのハートボールが\n{ballColor}{value} ポイント{clearColor}を得る",
+        "activeDescription": "ハートボールが発動した時、\nラウンドで全てのハートボールが\n{ballColor}{value} ポイント{clearColor}を得る\n---\n(Current Stack : {ballColor}{currentValue} ポイント{clearColor})"
     },
     {
         "code": "Item.HEART_DISCARD_REFUND",
         "version": "0.1.0",
-        "name": "Love and Hate",
-        "description": "Gain 1 discard when you draw Heart Ball after discarding"
+        "name": "愛と嫌悪",
+        "description": "ディスカード後にハートボールを引くと\nディスカード+1を得る"
     },
     {
         "code": "Item.WAVE_DOUBLE",
         "version": "0.1.0",
-        "name": "Aftershock",
-        "description": "Wave Ball's base Points are increased once more per spin"
+        "name": "アフターショック",
+        "description": "ウェーブボールの基礎ポイントが\n回転ごとにもう1回増加する"
     },
     {
         "code": "Item.WAVE_BET",
         "version": "0.1.0",
-        "name": "Wave Bet",
-        "description": "Wave Ball also increases {betColor}Chips{clearColor} of bet it won permanently"
+        "name": "ウェーブベット",
+        "description": "ウェーブボールは、\n当たったベットの{betColor}チップ{clearColor}を\n増加させる"
     },
     {
         "code": "Item.REPEAT_PREREPEAT",
         "version": "0.1.0",
-        "name": "Repeat Repeat",
-        "description": "Repeat Ball repeated by Repeat Ball effect gain {ballColor}{value} Points{clearColor}"
+        "name": "リピートリピート",
+        "description": "リピートボールによってリピートされた\nリピートボールは\n{ballColor}{value}ポイント{clearColor}を得る"
     },
     {
         "code": "Item.REPEAT_ADD_POINT",
