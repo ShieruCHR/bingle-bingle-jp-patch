@@ -599,7 +599,7 @@
         "version": "0.1.0",
         "name": "コイントークン",
         "shortName": "コイン",
-        "description": "ディスカードされた時、\nレベルの半分の枚数分\n{coinColor}コイン{clearColor}を得る。\n{annotationColor}(切り上げ){clearColor}、ディスカードされた時に{cautionColor}フラジャイル{clearColor}になる。"
+        "description": "ディスカードされた時、\nレベルの半分の枚数分\n{coinColor}コイン{clearColor}を得る。\n{annotationColor}(切り上げ){clearColor}\nディスカードされた時に{cautionColor}フラジャイル{clearColor}になる。"
     },
     {
         "code": "Perk.SOFTWOOD",
