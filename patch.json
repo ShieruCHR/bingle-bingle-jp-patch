@@ -1533,7 +1533,7 @@
         "version": "0.1.0",
         "name": "フラジャイル レガシー",
         "condition": "{targetConditionCount} トークンを破壊する",
-        "description": "Add {percentageValue} of {ballColor}points{clearColor} and {betColor}{clearColor}Chips from each destroyed token"
+        "description": "破壊されたトークンごとに\n{percentageValue}の{ballColor}ポイント{clearColor}と{betColor}チップ{clearColor}を得る"
     },
     {
         "code": "Quest.FRAGILE_LEGACY",
@@ -1541,7 +1541,7 @@
         "name": "フラジャイル レガシー",
         "condition": "{targetConditionCount} トークンを破壊する\n{annotationColor}(破壊回数 : {currentConditionCount} / {targetConditionCount}){clearColor}",
         "description": "破壊されたトークンごとに{percentageValue}の{ballColor}ポイント{clearColor}と{betColor}チップ{clearColor}を得る",
-        "activeDescription": "破壊されたトークンごとに{percentageValue}の{ballColor}ポイント{clearColor}と{betColor}チップ{clearColor}を得る\n({ballColor}{currentValue} ポイント{clearColor})\n({betColor}{currentValue2} {clearColor}チップ)"
+        "activeDescription": "破壊されたトークンごとに\n{percentageValue}の{ballColor}ポイント{clearColor}と{betColor}チップ{clearColor}を得る\n({ballColor}{currentValue} ポイント{clearColor})\n({betColor}{currentValue2} {clearColor}チップ)"
     },
     {
         "code": "Class.ARCHER",
@@ -1746,9 +1746,9 @@
         "code": "Keyword.ICE_BET",
         "version": "0.1.0",
         "activeName": "{freezeColor}アイス(X){clearColor}",
-        "activeDescription": "ベットを追加するか当てると、\nこのベットに影響しない近くのx個のポケットを\n凍結させる\n{annotationColor}(追加のベットポケットはランダムに選択される){clearColor}",
+        "activeDescription": "ベットを追加するか当てると、\nこのベットに影響しない近くのポケットX個を\n凍結させる\n{annotationColor}(追加のベットポケットはランダムに選択される){clearColor}",
         "name": "{freezeColor}アイス{clearColor}",
-        "description": "ベットを追加するか当てると、\nこのベットに影響しない近くのx個のポケットを\n凍結させる"
+        "description": "ベットを追加するか当てると、\nこのベットに影響しない近くのポケットを\n凍結させる"
     },
     {
         "code": "Ui.QUEUED_TEXT",
