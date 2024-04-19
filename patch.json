@@ -1722,33 +1722,33 @@
         "code": "Keyword.ECHO_BET",
         "version": "0.1.0",
         "activeName": "{echoColor}エコー(X){clearColor}",
-        "activeDescription": "Add normal version of same bet that worth X times at the start of next round",
+        "activeDescription": "通常バージョンの同じベットをX回\nラウンドのはじめに追加する",
         "name": "{echoColor}エコー{clearColor}",
         "description": "At the start of next round add the normal version of same bet with different value"
     },
     {
         "code": "Keyword.FLASH_BET",
         "version": "0.1.0",
-        "activeName": "{flashColor}Flash(X){clearColor}",
-        "activeDescription": "Bet is {valueColor}Worth X times{clearColor}, bet is {cautionColor}removed after spin{clearColor}",
-        "name": "{flashColor}Flash{clearColor}",
-        "description": "Bet is worth more than the normal version, bet is {cautionColor}removed after spin{clearColor}"
+        "activeName": "{flashColor}フラッシュ(X){clearColor}",
+        "activeDescription": "ベットの効果{valueColor}X倍{clearColor}\nそのベットは回転後に{cautionColor}削除される{clearColor}",
+        "name": "{flashColor}フラッシュ{clearColor}",
+        "description": "通常よりも効果が高くなるが、\nそのベットは回転後に{cautionColor}削除される{clearColor}"
     },
     {
         "code": "Keyword.MIRROR_BET",
         "version": "0.1.0",
-        "activeName": "{mirrorColor}Mirror(X){clearColor}",
-        "activeDescription": "Increase the chips on one area X times the normal value, decrease the chips on the other",
-        "name": "{mirrorColor}Mirror{clearColor}",
-        "description": "Increase the chips on one area significantly, decrease the chips on the other"
+        "activeName": "{mirrorColor}ミラー(X){clearColor}",
+        "activeDescription": "一方のエリアのチップを\n通常のX倍に増やし、\nもう一方のエリアのチップを\n減らす",
+        "name": "{mirrorColor}ミラー{clearColor}",
+        "description": "片方のエリアのチップを大幅に増やし、\nもう片方を減らす"
     },
     {
         "code": "Keyword.ICE_BET",
         "version": "0.1.0",
-        "activeName": "{freezeColor}Ice(X){clearColor}",
-        "activeDescription": "When you add or win the bet, Freeze nearby x pockets, excluding pockets affected by this bet.\n{annotationColor}(Upon adding bet pocket is randomly selected){clearColor}",
-        "name": "{freezeColor}Ice{clearColor}",
-        "description": "When you add or win the bet, Freeze nearby pockets, excluding pockets affected by this bet."
+        "activeName": "{freezeColor}アイス(X){clearColor}",
+        "activeDescription": "ベットを追加するか当てると、\nこのベットに影響しない近くのx個のポケットを\n凍結させる\n{annotationColor}(追加のベットポケットはランダムに選択される){clearColor}",
+        "name": "{freezeColor}アイス{clearColor}",
+        "description": "ベットを追加するか当てると、\nこのベットに影響しない近くのx個のポケットを\n凍結させる"
     },
     {
         "code": "Ui.QUEUED_TEXT",
