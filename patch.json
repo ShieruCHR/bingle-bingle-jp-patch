@@ -1170,7 +1170,7 @@
         "code": "Round.MAX_SCORE_RESTRICTION",
         "version": "0.1.0",
         "name": "抑圧",
-        "description": "一度に{targetScoreColor}目標スコア{clearScore}の\n1/{value}しかスコアできない"
+        "description": "一度に{targetScoreColor}目標スコア{clearColor}の\n1/{value}しかスコアできない"
     },
     {
         "code": "Round.ONLY_INCREASING_SCORE",
