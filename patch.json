@@ -1047,9 +1047,9 @@
     {
         "code": "Item.TOKEN_IN_ORDER",
         "version": "0.1.0",
-        "name": "Ascending Order",
-        "description": "Gain {scoreColor}({percentageValue} x Token Level) more score{clearColor} when next sequential level token is used, starts at 0",
-        "activeDescription": "Gain {scoreColor}({percentageValue} x Token Level) more score{clearColor} when next sequential level token is used, starts at 0\n---\n(Current : {scoreColor}{currentPercentageValue}{clearColor})\n(Next Level: {currentValue})"
+        "name": "順番通り",
+        "description": "トークンレベルを1段階ずつ\n上げながら使うたびに\n{scoreColor}({percentageValue} x トークンレベル) の追加スコア{clearColor}を得る\nレベル0からスタート",
+        "activeDescription": "トークンレベルを1段階ずつ\n上げながら使うたびに\n{scoreColor}({percentageValue} x トークンレベル) の追加スコア{clearColor}を得る\nレベル0からスタート\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})\n(次のトークンレベル: {currentValue})"
     },
     {
         "code": "Item.BALL_DIVERSITY",
