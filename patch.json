@@ -847,19 +847,19 @@
     {
         "code": "Item.SPLIT_COUNT",
         "version": "0.1.0",
-        "name": "Split Count",
+        "name": "スプリット カウント",
         "description": "{betColor}+ count of both numbers x {multiplierValue} {clearColor}Chips to Split Bet, when the both nubers of a split bet have the same count"
     },
     {
         "code": "Item.STREET_CONNECTED",
         "version": "0.1.0",
-        "name": "Street Connected",
-        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Street Bet, for each adjacent street bets"
+        "name": "ストリート コネクテッド",
+        "description": "隣接するストリートベットに対して\n{betColor}+{multiplierValue} {clearColor}チップ"
     },
     {
         "code": "Item.CORNER_DISTANCE",
         "version": "0.1.0",
-        "name": "Corner Distance",
+        "name": "コーナーディスタンス",
         "description": "{betColor}+{multiplierValue} {clearColor}Chips to Corner Bet, if chips from Corner Bet are placed to 4 or more pockets, and there are at least {value} pockets between them"
     },
     {
@@ -872,43 +872,43 @@
         "code": "Item.DOZEN_DOZEN",
         "version": "0.1.0",
         "name": "ダズンダズン",
-        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Dozen Bet, if the number of pockets which Dozen Bet placed {berColor}{clearColor}Chips is 12, 24, and 36"
+        "description": "ダズンベットが置かれたポケットの数が\n12, 24, 36のいずれかなら\nベットに{betColor}+{multiplierValue} {clearColor}チップ"
     },
     {
         "code": "Item.COLUMN_LINKED",
         "version": "0.1.0",
-        "name": "Column Linked",
-        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Column Bet, if the pockets on which Column Bet placed chips are all adjacent to each other"
+        "name": "カラム・リンク",
+        "description": "カラムベットが隣接している場合\nベットに{betColor}+{multiplierValue} {clearColor}チップ"
     },
     {
         "code": "Item.EVENODD_EVENODD",
         "version": "0.1.0",
-        "name": "EvenOdd EvenOdd",
-        "description": "{betColor}+{multiplierValue} {clearColor}Chips to Even/Odd Bet, if pockets affected by even bet is even or affected by odd bet is odd"
+        "name": "イーブンオッド イーブンオッド",
+        "description": "イーブンベットで影響されるポケットの数が\n偶数の場合 または\nオッドベットで影響されるポケットの数が\n奇数の場合\nベットに{betColor}+{multiplierValue} {clearColor}チップ"
     },
     {
         "code": "Item.HIGHLOW_DIFFERENCE",
         "version": "0.1.0",
-        "name": "HighLow Difference",
-        "description": "{betColor}+ difference between highest and lowest number x {multiplierValue} {clearColor}Chips"
+        "name": "ハイロー ディファレンス",
+        "description": "{betColor}+ 最大値と最小値の差 x {multiplierValue} {clearColor}\nチップを与える"
     },
     {
         "code": "Item.COLOR_SINGLE",
         "version": "0.1.0",
-        "name": "Hold My Pocket",
-        "description": "If the landed pocket is the only one of its color, {scoreColor}Score x{multiplierValue}{clearColor}"
+        "name": "我が道を行く",
+        "description": "落ちたポケットの色が\nホイール上の唯一の色だったら\n{scoreColor}スコア x{multiplierValue}{clearColor}"
     },
     {
         "code": "Item.MIRROR_ONLY_MORE",
         "version": "0.1.0",
-        "name": "Mirror only more",
-        "description": "Wnen a Mirror Bet is placed, place your {betColor}{clearColor}Chips on the area with more pockets"
+        "name": "鏡よ鏡",
+        "description": "ミラーベットは、\nポケットの多い方に{betColor}チップ{clearColor}が置かれる"
     },
     {
         "code": "Item.ICE_INITIAL_FREEZE",
         "version": "0.1.0",
         "name": "早めの冬",
-        "description": "{freezeColor}Ice Bet{clearColor}が置かれたら、\nランダムなポケットを選び\nその付近のポケットを{freezeColor}凍らせる{clearColor}"
+        "description": "{freezeColor}アイスベット{clearColor}が置かれたら、\nランダムなポケットを選び\nその付近のポケットを{freezeColor}凍らせる{clearColor}"
     },
     {
         "code": "Item.FLASH_DURATION",
