@@ -1399,13 +1399,13 @@
     {
         "code": "Reward.REWARD_MORE_GOLD",
         "version": "0.1.0",
-        "name": "お金ディスペンサー",
+        "name": "ゴールドディスペンサー",
         "description": "各ラウンドで{coinColor}{value} コイン{clearColor}を得る"
     },
     {
         "code": "Item.REWARD_MORE_GOLD",
         "version": "0.1.0",
-        "name": "お金ディスペンサー",
+        "name": "ゴールドディスペンサー",
         "description": "各ラウンドで{coinColor}{value} コイン{clearColor}を得る"
     },
     {
