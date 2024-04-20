@@ -775,7 +775,7 @@
         "code": "Item.SLOT_MOST_FIXED",
         "version": "0.1.0",
         "name": "大好きなポケット",
-        "description": "ホイールにある一番多い数字のポケットが\nショップに常に出現するようになる"
+        "description": "ホイールにある\n一番多い数字のポケットが\nショップに常に出現するようになる"
     },
     {
         "code": "Item.STRAIGHT_UP_BALL_VALUE",
