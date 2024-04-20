@@ -599,7 +599,7 @@
         "version": "0.1.0",
         "name": "コイントークン",
         "shortName": "コイン",
-        "description": "ディスカードされた時、\nレベルの半分の枚数分\n{coinColor}コイン{clearColor}を得る。\n{annotationColor}(切り上げ){clearColor}\nディスカードされた時に{cautionColor}フラジャイル{clearColor}になる。"
+        "description": "ディスカードされた時、\nレベルの半分の枚数分\n{coinColor}コイン{clearColor}を得る。\n{annotationColor}(切り上げ){clearColor}\nディスカードされた時に\n{cautionColor}フラジャイル{clearColor}になる。"
     },
     {
         "code": "Perk.SOFTWOOD",
@@ -1099,8 +1099,8 @@
         "code": "Round.MOST_SLOT_FREEZE",
         "version": "0.1.0",
         "name": "真冬",
-        "description": "最も多く持っているポケットの\n数字を含むポケットを\n{freezeColor}凍らせる{clearColor}",
-        "difficultDescription": "1番目と2番目に多く持っているポケットの\n数字を含むポケットを\n{freezeColor}凍らせる{clearColor}"
+        "description": "最も多く持っているポケットの\n数字を含む全てのポケットを\n{freezeColor}凍らせる{clearColor}",
+        "difficultDescription": "1番目と2番目に多く持っているポケットの\n数字を含む全てのポケットを\n{freezeColor}凍らせる{clearColor}"
     },
     {
         "code": "Round.BET_FREEZE",
@@ -1804,7 +1804,7 @@
         "discard": "ディスカード",
         "destroyed": "破壊",
         "discardButton": "ディスカード",
-        "quest": "Quest",
+        "quest": "クエスト",
         "ballPoint": "基礎ポイント",
         "betChip": "チップ"
     },
