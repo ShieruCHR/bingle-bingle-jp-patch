@@ -60,8 +60,8 @@
         "version": "0.1.0",
         "name": "ポケットボール",
         "shortName": "ポケットボール",
-        "description": "Roll a ball that can change the pocket it lands in\n{cautionColor}Fragile{clearColor} after a few uses",
-        "activeDescription": "First roll is registered, After that {valueColor}change pockets{clearColor} to the registered pocket\n{cautionColor}Fragile{clearColor} after {levelValue2} use(s)\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "ボールが落ちたポケットを変化させる\n数回使うと{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "最初のロールでポケットを\"登録\"し、\n落ちたポケットをそのポケットに\n{valueColor}変化{clearColor}させる\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.TARGET",
