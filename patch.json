@@ -1016,14 +1016,14 @@
     {
         "code": "Item.LARGE_ALL_POCKET",
         "version": "0.1.0",
-        "name": "Betting Fraud",
-        "description": "Large ball can earn chips from same bet in different pocket as {betColor}{percentageValue} value{clearColor}"
+        "name": "賭博詐欺",
+        "description": "ラージボールは\n別ポケットの同じベットから\n{betColor}{percentageValue}{clearColor} チップを得られる"
     },
     {
         "code": "Item.LARGE_OVERLAP",
         "version": "0.1.0",
-        "name": "Too Big to be Called",
-        "description": "If Large Ball earn chips from at least two bets that does not affect same pocket at all, Gain {ballColor}{value} Points{clearColor}"
+        "name": "呼ぶには大きすぎる",
+        "description": "ラージボールが\n2つのベットからチップを獲得して、\nそれが同じポケットに全く影響しない場合、\n{ballColor}{value} ポイント{clearColor}を得る"
     },
     {
         "code": "Item.FROZEN_ALREADY",
