@@ -768,8 +768,8 @@
         "code": "Item.NEGLECT_MAX_UPGRADE",
         "version": "0.1.0",
         "name": "王位の影",
-        "description": "一番高いレベルのトークンが使われなかったら、\n得られる追加スコアが {scoreColor}{percentageValue} {clearColor}増加",
-        "activeDescription": "一番高いレベルのトークンが使われなかったら、\n得られる追加スコアが {scoreColor}{percentageValue} {clearColor}増加\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})\n(Not Used : {effectActive})"
+        "description": "一番高いレベルのトークンが\n使われなかったら、\n得られる追加スコアが {scoreColor}{percentageValue} {clearColor}増加",
+        "activeDescription": "一番高いレベルのトークンが\n使われなかったら、\n得られる追加スコアが {scoreColor}{percentageValue} {clearColor}増加\n---\n(現在 : {scoreColor}{currentPercentageValue}{clearColor})\n(Not Used : {effectActive})"
     },
     {
         "code": "Item.SLOT_MOST_FIXED",
@@ -1473,15 +1473,15 @@
         "version": "0.1.0",
         "name": "ラウンドロビン",
         "condition": "ディスカードを使わずに\n{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする",
-        "description": "このラウンドで使われた違うトークンごとに {scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずにラウンドをクリアした場合、{valueColor}{value} 個の一番低いレベルのトークン{clearColor}がアップグレードされる"
+        "description": "このラウンドで使われた\n違うトークンごとに\n{scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずに\nラウンドをクリアした場合、\n{valueColor}{value} 個の一番低いレベルのトークン{clearColor}が\nアップグレードされる"
     },
     {
         "code": "Quest.ROUND_ROBIN",
         "version": "0.1.0",
         "name": "ラウンドロビン",
         "condition": "ディスカードを使わずに\n{roundColor}{targetConditionCount} ラウンド{clearColor}をクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(アクティブ : {conditionMet}){clearColor}",
-        "description": "このラウンドで使われた違うトークンごとに {scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずにラウンドをクリアした場合、\n{valueColor}{value} 個の一番低いレベルのトークン{clearColor}がアップグレードされる",
-        "activeDescription": "このラウンドで使われた違うトークンごとに {scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずにラウンドをクリアした場合、\n{valueColor}{value} 個の一番低いレベルのトークン{clearColor}がアップグレードされる\n---\n{annotationColor}(Token Used : {effectActive}){clearColor}\n(Current : {scoreColor}{currentPercentageValue}{clearColor})\n{annotationColor}(Upgrade : {effectActive2}){clearColor}"
+        "description": "このラウンドで使われた\n違うトークンごとに\n{scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずに\nラウンドをクリアした場合、\n{valueColor}{value} 個の一番低いレベルのトークン{clearColor}が\nアップグレードされる",
+        "activeDescription": "このラウンドで使われた\n違うトークンごとに\n{scoreColor}{percentageValue} の追加スコア{clearColor}を得る\nディスカードせずに\nラウンドをクリアした場合、\n{valueColor}{value} 個の一番低いレベルのトークン{clearColor}が\nアップグレードされる\n---\n{annotationColor}(Token Used : {effectActive}){clearColor}\n(Current : {scoreColor}{currentPercentageValue}{clearColor})\n{annotationColor}(Upgrade : {effectActive2}){clearColor}"
     },
     {
         "code": "Reward.QUEST_SNOWDROP",
