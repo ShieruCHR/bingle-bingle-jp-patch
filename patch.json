@@ -656,9 +656,9 @@
     {
         "code": "Item.DIVERSE_BET_MULTIPLIER",
         "version": "0.1.0",
-        "name": "Bet Diversity",
-        "description": "From the second unique bet onwards, gain {scoreColor}{percentageValue} extra score{clearColor}.",
-        "activeDescription": "From the second unique bet onwards, gain {scoreColor}{percentageValue} extra score{clearColor}.\n---\n(Current Bonus: {scoreColor}{currentPercentageValue}{clearColor})"
+        "name": "ベットの多様性",
+        "description": "2種類目のベット以降、\n1種類につき{scoreColor}{percentageValue} 追加スコア{clearColor}を得る",
+        "activeDescription": "2種類目のベット以降、\n1種類につき{scoreColor}{percentageValue} 追加スコア{clearColor}を得る\n---\n(現在のボーナス: {scoreColor}{currentPercentageValue}{clearColor})"
     },
     {
         "code": "Item.REDUCE_PER_PLAY_TOKEN",
