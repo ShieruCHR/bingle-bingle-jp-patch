@@ -974,13 +974,13 @@
     {
         "code": "Item.REPEAT_ADD_POINT",
         "version": "0.1.0",
-        "name": "Get Over here!",
-        "description": "Bets placed while Repeat Ball effect is active gain {betColor}{value} base Chips{clearColor}"
+        "name": "おいでよ！",
+        "description": "リピートボールが発動しているときに\nベットされたら\nベットに{betColor}{value} チップ{clearColor}を与える"
     },
     {
         "code": "Item.SUPER_FINAL_TOKEN",
         "version": "0.1.0",
-        "name": "Super Hero",
+        "name": "スーパーヒーロー",
         "description": "スーパーボールが\n残りディスカードが0かつ\n残りラウンドトークン1で使われたら\n{scoreColor}{percentageValue} 追加スコア{clearColor}を得る"
     },
     {
