@@ -1848,7 +1848,7 @@
         "code": "Ui.OPTION",
         "version": "0.1.0",
         "resume": "再開",
-        "restart": "リスタート",
+        "restart": "はじめから",
         "options": "設定",
         "exit": "終了",
         "masterVolume": "主音量",
