@@ -1175,9 +1175,9 @@
     {
         "code": "Round.ONLY_INCREASING_SCORE",
         "version": "0.1.0",
-        "name": "Tyranny",
-        "description": "After each spin, half of pockets matching the number where the balls have landed will be converted into a green 0 pocket",
-        "difficultDescription": "After each spin, pockets matching the number where the balls have landed will be converted into a green 0 pocket"
+        "name": "独裁者",
+        "description": "スピン後にボールが落ちたポケットと\n数字が同じポケットのうち半分が\nグリーンの0番ポケットになる",
+        "difficultDescription": "スピン後にボールが落ちたポケットと\n数字が同じポケットが\nグリーンの0番ポケットになる"
     },
     {
         "code": "Round.SCORE_ADD_RESTRICTION",
