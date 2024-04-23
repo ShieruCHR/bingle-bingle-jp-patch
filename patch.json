@@ -1017,7 +1017,7 @@
         "code": "Item.LARGE_ALL_POCKET",
         "version": "0.1.0",
         "name": "賭博詐欺",
-        "description": "ラージボールは\n別ポケットの同じベットから\n{betColor}{percentageValue}{clearColor} チップを得られる"
+        "description": "ラージボールは\n別ポケットが同じベットでも\n{betColor}{percentageValue}{clearColor} チップを得られる"
     },
     {
         "code": "Item.LARGE_OVERLAP",
@@ -1582,117 +1582,117 @@
     {
         "code": "HouseEdge.BASE",
         "version": "0.1.0",
-        "name": "Pizza",
-        "description": "For every 5 pockets with same number, that number pocket cost 1 coin more\n\n{targetScoreColor}Target score increased{clearColor} and gain {coinColor}+1 coin{clearColor} every round\n{annotationColor}(This effect stacks upon reaching House Edge 100% and 200%){clearColor}\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "ピザ",
+        "description": "同じ数字を持つ5ポケットごとに\nその番号のポケットは1コイン高くなる\n\n{targetScoreColor}目標スコアが上昇{clearColor}し、\n毎ラウンド{coinColor}+1 コイン{clearColor}を得る\n{annotationColor}(This effect stacks upon reaching ハウスエッジ 100% and 200%){clearColor}\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.ZERO_POCKET_ADD",
         "version": "0.1.0",
-        "name": "Zero Verde",
-        "description": "Randomly add 0 pocket every two round{targetScoreColor}\n\nHouse Edge 20%{clearColor}"
+        "name": "ゼロ・ヴェルデ",
+        "description": "2ラウンドごとに、ランダムに\n0番ポケットを追加する{targetScoreColor}\n\nハウスエッジ 20%{clearColor}"
     },
     {
         "code": "HouseEdge.QUEST_DIFFICULTY",
         "version": "0.1.0",
-        "name": "Quest Varoni",
-        "description": "Quest conditions get harder\n\n{targetScoreColor}House Edge 20%{clearColor}"
+        "name": "クエストヴァローニ",
+        "description": "クエストの難易度が上昇する\n\n{targetScoreColor}ハウスエッジ 20%{clearColor}"
     },
     {
         "code": "HouseEdge.UNLUCKY",
         "version": "0.1.0",
-        "name": "Unlucky Martini",
-        "description": "Player become unlucky from stage 3\n\n{targetScoreColor}House Edge 30%{clearColor}"
+        "name": "アンラッキーマティーニ",
+        "description": "ステージ3から運が悪くなる\n\n{targetScoreColor}ハウスエッジ 30%{clearColor}"
     },
     {
         "code": "HouseEdge.TOKEN_MORE",
         "version": "0.1.0",
-        "name": "Floodwater Tonic",
-        "description": "Start game with one more basic token\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "洪水トニック",
+        "description": "ベーシックトークンをもう一つ持って\nゲームを開始する\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.DISCARD_LESS",
         "version": "0.1.0",
-        "name": "Discard Tonic",
-        "description": "Player have one less discard every round\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "ディスカードトニック",
+        "description": "ディスカードの回数 -1\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.TOKEN_DISENHANCE",
         "version": "0.1.0",
-        "name": "Dwindling Rose Drink",
-        "description": "After every round, random token's base chips and points decrease\n{annotationColor}(Changing ball or bet reset debuff){clearColor}\n\n{targetScoreColor}House Edge 20%{clearColor}"
+        "name": "失われゆくバラの酒",
+        "description": "ラウンド終了ごとに、\nランダムなトークンの基本チップと\nポイントが減少する\n{annotationColor}(Changing ball or bet reset debuff){clearColor}\n\n{targetScoreColor}ハウスエッジ 20%{clearColor}"
     },
     {
         "code": "HouseEdge.ITEM_EXPENSIVE",
         "version": "0.1.0",
-        "name": "On the Coins",
-        "description": "Balls and Special Bets cost 1 more coin\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "ゴールドを求めて",
+        "description": "ボールと特殊ベットの価格\n+1 コイン\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.TOKEN_BASIC",
         "version": "0.1.0",
-        "name": "Wood Gimlet",
-        "description": "Add temporary fragile token every round\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "ウッドギムレット",
+        "description": "毎ラウンド\n一時フラジャイルトークンを得る\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.REROLL_EXPENSIVE",
         "version": "0.1.0",
-        "name": "Reroll Bellini",
-        "description": "Rerolls cost 1 more coin\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "リロール・ベリーニ",
+        "description": "リロールのコスト +1\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.COIN_LESS",
         "version": "0.1.0",
-        "name": "Coinless Martini",
-        "description": "At boss stage Gain 2 less coin from round reward\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "コインレス マティーニ",
+        "description": "ボスステージのラウンド報酬\n-2 コイン\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.BOSS_SNIPE",
         "version": "0.1.0",
-        "name": "Sazerac Snipe",
-        "description": "Stage 3 and Stage 4 bosses are more likely to counter you\n\n{targetScoreColor}House Edge 20%{clearColor}"
+        "name": "サゼラック スナイプ",
+        "description": "ステージ3, 4のボスは\n狙い撃ちをしてくる可能性が\n高くなる\n\n{targetScoreColor}ハウスエッジ 20%{clearColor}"
     },
     {
         "code": "HouseEdge.BOSS_ENHANCE",
         "version": "0.1.0",
-        "name": "Boss Kir",
-        "description": "Bosses have stronger ability\n\n{targetScoreColor}House Edge 30%{clearColor}"
+        "name": "ボス・キール",
+        "description": "ボスの能力が強化される\n\n{targetScoreColor}ハウスエッジ 30%{clearColor}"
     },
     {
         "code": "HouseEdge.BOSS_MULTIPLE",
         "version": "0.1.0",
-        "name": "Double Mimosa",
-        "description": "Bosses also have ability of previous boss\n\n{targetScoreColor}House Edge 30%{clearColor}"
+        "name": "ダブル・ミモザ",
+        "description": "一つ前のボスの能力も\n発動する\n\n{targetScoreColor}ハウスエッジ 30%{clearColor}"
     },
     {
         "code": "HouseEdge.TOKEN_LOCK",
         "version": "0.1.0",
-        "name": "Sealing Hipflask",
-        "description": "Half of the tokens you own will be randomly locked in the shop, locked tokens cannot be selected or upgraded\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "密封ヒップフラスコ",
+        "description": "所持するトークンの半分が\nショップでランダムにロックされる\nロックされたトークンは\n選択・アップグレード不可\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.ITEM_REMOVAL",
         "version": "0.1.0",
-        "name": "Molotov Cocktail",
-        "description": "Before proceeding to next stage, choose 1 from 3 items you have to remove permanently\n\n{targetScoreColor}House Edge 20%{clearColor}",
-        "title": "Remove Item"
+        "name": "火炎瓶",
+        "description": "次のステージに進む前に\n3つのアイテムのうち\n選択した一つを\n永久に失う\n\n{targetScoreColor}ハウスエッジ 20%{clearColor}",
+        "title": "アイテム削除"
     },
     {
         "code": "HouseEdge.WIN_STREAK_FIRST",
         "version": "0.1.0",
-        "name": "Star Whisky",
-        "description": "Failed to clear while this is in effect, reduce Max House Edge by 10%\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "スターウィスキー",
+        "description": "これが発動中にクリアできなかったら\n最大ハウスエッジ -10%\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.WIN_STREAK_SECOND",
         "version": "0.1.0",
-        "name": "Double Star Whisky",
-        "description": "Failed to clear while this is in effect, reduce Max House Edge by 10%\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "ダブルスターウィスキー",
+        "description": "これが発動中にクリアできなかったら\n最大ハウスエッジ -10%\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.WIN_STREAK_THIRD",
         "version": "0.1.0",
-        "name": "Triple Star Daiquiri",
-        "description": "Failed to clear while this is in effect, reduce Max House Edge by 10%\n\n{targetScoreColor}House Edge 10%{clearColor}"
+        "name": "トリプルスターダイキリ",
+        "description": "これが発動中にクリアできなかったら\n最大ハウスエッジ -10%\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "Keyword.FRAGILE",
