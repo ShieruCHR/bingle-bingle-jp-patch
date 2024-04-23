@@ -1777,7 +1777,7 @@
         "start": "ゲーム開始",
         "unlock": "アンロック",
         "highScore": "ハイスコア",
-        "maxRound": "Max Challenge Round"
+        "maxRound": "最大チャレンジラウンド"
     },
     {
         "code": "Ui.BETLAYOUT",
