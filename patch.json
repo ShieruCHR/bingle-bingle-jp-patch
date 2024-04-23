@@ -1411,17 +1411,17 @@
     {
         "code": "Reward.QUEST_NATURAL_SELECTION",
         "version": "0.1.0",
-        "name": "Natural Selection",
+        "name": "自然淘汰",
         "condition": "ラウンドで\n最初に使ったトークンが\"登録\"され、\n{roundColor}{targetConditionCount} ラウンド{clearColor}を\n登録されたトークンのみでクリアする",
-        "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor}, this change is permanent"
+        "description": "登録されたトークンのコピーを\n{value}個作成する\nそのトークンのスコアが{valueColor}x{multiplierValue}{clearColor}\nその他のトークンは{cautionColor}x{multiplierValue2}{clearColor}になる\nこの変更は永続"
     },
     {
         "code": "Quest.NATURAL_SELECTION",
         "version": "0.1.0",
-        "name": "Natural Selection",
+        "name": "自然淘汰",
         "condition": "ラウンドで\n最初に使ったトークンが\"登録\"され、\n{roundColor}{targetConditionCount} ラウンド{clearColor}を\n登録されたトークンのみでクリアする\n{annotationColor}(ラウンド : {currentConditionCount} / {targetConditionCount})\n(Used Token : {conditionMet})",
-        "description": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently",
-        "activeDescription": "Copy and add {value} registered tokens, Registered Tokens have {valueColor}x{multiplierValue} value{clearColor}, the other tokens have {cautionColor}x{multiplierValue2} value{clearColor} permanently"
+        "description": "登録されたトークンのコピーを\n{value}個作成する\nそのトークンのスコアが{valueColor}x{multiplierValue}{clearColor}\nその他のトークンは永久に{cautionColor}x{multiplierValue2}{clearColor}になる",
+        "activeDescription": "登録されたトークンのコピーを\n{value}個作成する\nそのトークンのスコアが{valueColor}x{multiplierValue}{clearColor}\nその他のトークンは永久に{cautionColor}x{multiplierValue2}{clearColor}になる"
     },
     {
         "code": "Reward.QUEST_MONOCHROME",
