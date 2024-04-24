@@ -1556,7 +1556,7 @@
         "code": "Class.TRICKSTER",
         "version": "0.1.0",
         "name": "トリックスター",
-        "description": "ショップで{valueColor}3 つのマークアイテム{clearColor}を購入すると\n{valueColor}ランダムな効果{clearColor}を付与する\n未使用の{valueColor}ラウンドトークン{clearColor}を3ラウンドまで{valueColor}引き継げる{clearColor}",
+        "description": "ショップで\n{valueColor}3つのマークアイテム{clearColor}を\n購入すると\n{valueColor}ランダムな効果{clearColor}を付与する\n未使用の{valueColor}ラウンドトークン{clearColor}を\n3ラウンドまで{valueColor}引き継げる{clearColor}",
         "goldAbilityName": "未使用ディスカード",
         "goldAbilityDescription": "ラウンド終了時、未使用のディスカード2回につき\n{coinColor}1 コイン{clearColor}を得る",
         "modifierName": "Modifier",
