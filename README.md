@@ -1,10 +1,10 @@
-# Bingle Bingle Japanese Translation Patch
+# Bingle Bingle Japanese Localization Patch
 
 日本語版は[こちら](README-ja.md)を参照してください。
 
 **WARNING: THIS PROJECT IS WORK-IN-PROGRESS.**
 
-This is repository of **unofficial** Bingle Bingle Japanese translation patch.  
+This is repository of **unofficial** Bingle Bingle Japanese localization patch.  
 There's no warranty and liablity. Use at your own risk.
 
 You can download latest patch from Releases. No Releases? Well... yeah, you know.
