@@ -5,7 +5,7 @@
         "name": "ノーマルボール",
         "shortName": "ノーマルボール",
         "description": "ボールを回す",
-        "activeDescription": "ボールを回す\n({ballColor}{levelValue} ポイント{clearColor})"
+        "activeDescription": "ボールを回す\nレベルにつき5ポイント\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.MULTI",
@@ -13,7 +13,7 @@
         "name": "マルチボール",
         "shortName": "マルチボール",
         "description": "複数個のボールを回す",
-        "activeDescription": "{valueColor}{levelValue2} 個のボール{clearColor}を回す\n({ballColor}{levelValue} ポイント{clearColor})"
+        "activeDescription": "{valueColor}{abilityValue} 個のボール{clearColor}を回す\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.SUPER",
@@ -21,7 +21,7 @@
         "name": "スーパーボール",
         "shortName": "スーパーボール",
         "description": "スコアの高いボールを回す",
-        "activeDescription": "スコアの高いボールを回す\n({ballColor}{levelValue} ポイント{clearColor})"
+        "activeDescription": "スコアが{abilityMultiplierValue}倍高い\nボールを回す\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.REPEAT",
@@ -29,7 +29,7 @@
         "name": "リピートボール",
         "shortName": "リピートボール",
         "description": "回した{valueColor}次のボール{clearColor}を\n同じポケットに入れる",
-        "activeDescription": "回した{valueColor}次の{levelValue2}個のボール{clearColor}を\n同じポケットに入れる\n({ballColor}{levelValue} ポイント{clearColor})"
+        "activeDescription": "回した{valueColor}次の{abilityValue}個のボール{clearColor}を\n同じポケットに入れる\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.ICE",
@@ -37,7 +37,7 @@
         "name": "フローズンボール",
         "shortName": "フローズンボール",
         "description": "近くのベットされていない\nポケットを{freezeColor}凍らせる{clearColor}",
-        "activeDescription": "近くのベットされていない\n{freezeColor}{levelValue2}個のポケットを凍らせる{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})"
+        "activeDescription": "近くのベットされていない\n{freezeColor}{abilityValue}個のポケットを凍らせる{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.HEART",
@@ -45,7 +45,7 @@
         "name": "ハートボール",
         "shortName": "ハートボール",
         "description": "ベットが当たらなかったら\n{valueColor}ラウンドトークンを取り戻す{clearColor}\n数回発動すると{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "ベットが当たらなかったら\n{valueColor}ラウンドトークンを取り戻す{clearColor}\n{levelValue2}回発動すると{cautionColor}フラジャイル{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(残り {currentValue}){clearColor}"
+        "activeDescription": "ベットが当たらなかったら\n{valueColor}ラウンドトークンを取り戻す{clearColor}\n{abilityValue}回発動すると{cautionColor}フラジャイル{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(残り {currentValue}){clearColor}"
     },
     {
         "code": "TokenSide.LARGE",
@@ -53,7 +53,7 @@
         "name": "ラージボール",
         "shortName": "ラージボール",
         "description": "{valueColor}複数のポケット{clearColor}に影響を与える\n巨大なボールを回す",
-        "activeDescription": "{valueColor}{levelValue2}個のポケット{clearColor}に影響を与える\n巨大なボールを回す\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(同じベットには複数回当たらない){clearColor}"
+        "activeDescription": "{valueColor}{abilityValue}個のポケット{clearColor}に影響を与える\n巨大なボールを回す\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}(同じベットには複数回当たらない){clearColor}"
     },
     {
         "code": "TokenSide.POCKET",
@@ -61,7 +61,7 @@
         "name": "ポケットボール",
         "shortName": "ポケットボール",
         "description": "ボールが落ちたポケットを変化させる\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "最初のロールでポケットを\"登録\"し、\n落ちたポケットをそのポケットに\n{valueColor}変化{clearColor}させる\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
+        "activeDescription": "最初のロールでポケットを\"登録\"し、\n落ちたポケットをそのポケットに\n{valueColor}変化{clearColor}させる\n{abilityValue}回使うと{cautionColor}フラジャイル{clearColor}\n({ballColor}{levelValue} ポイント{clearColor})\n{annotationColor}({currentValue} left){clearColor}"
     },
     {
         "code": "TokenSide.TARGET",
@@ -69,7 +69,7 @@
         "name": "ターゲットボール",
         "shortName": "ターゲットボール",
         "description": "ボールを回す前に、\nこのボールが落ちる\nポケットの範囲を決める",
-        "activeDescription": "ボールを回す前に選んだ\n{pocketColor}{levelValue2}個のポケット{clearColor}の範囲に\nボールが落ちる\n({ballColor}{levelValue} ポイント{clearColor})"
+        "activeDescription": "ボールを回す前に選んだ\n{pocketColor}{abilityValue}個のポケット{clearColor}の範囲に\nボールが落ちる\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.WAVE",
@@ -77,23 +77,23 @@
         "name": "ウェーブボール",
         "shortName": "ウェーブボール",
         "description": "ボールを回すたびに\n{ballColor}基礎ポイント{clearColor}が上昇する",
-        "activeDescription": "ボールを回すたびに、\n自身の{ballColor}基礎ポイントを\n{levelValue2}点{clearColor}上昇させる。\n({ballColor}{levelValue} ポイント{clearColor})"
+        "activeDescription": "ボールを回すたびに、\n自身の{ballColor}基礎ポイントを\n{abilityValue}点{clearColor}上昇させる。\n({ballColor}{levelValue} ポイント{clearColor})"
     },
     {
         "code": "TokenSide.STRAIGHTUP",
         "version": "0.1.0",
-        "name": "ストレートアップ",
-        "shortName": "ストレートアップ",
+        "name": "ストレート",
+        "shortName": "ストレート",
         "description": "1つの数字にベット",
-        "activeDescription": "1つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1つの数字にベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.SPLIT",
         "version": "0.1.0",
         "name": "スプリットベット",
         "shortName": "スプリット",
-        "description": "2つの数字にベット",
-        "activeDescription": "2つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "2つの隣接した数字にベット",
+        "activeDescription": "2つの隣接した数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.STREET",
@@ -101,7 +101,7 @@
         "name": "ストリート",
         "shortName": "ストリート",
         "description": "横に並んだ\n3つの数字にベット",
-        "activeDescription": "横に並んだ3つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ3つの数字にベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.CORNER",
@@ -109,7 +109,7 @@
         "name": "コーナー",
         "shortName": "コーナー",
         "description": "四角形になるよう\n4つの数字にベット",
-        "activeDescription": "四角形になるよう\n4つの数字にベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "四角形になるよう\n4つの数字にベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.LINE",
@@ -117,7 +117,7 @@
         "name": "ライン",
         "shortName": "ライン",
         "description": "横に並んだ6つの数字\n（隣り合う2行）にベット",
-        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.COLUMN",
@@ -125,7 +125,7 @@
         "name": "カラム",
         "shortName": "カラム",
         "description": "縦方向に1列ベット",
-        "activeDescription": "縦方向にベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "縦方向にベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.DOZEN",
@@ -133,7 +133,7 @@
         "name": "ダズン",
         "shortName": "ダズン",
         "description": "12個の数字の\nブロックにベット",
-        "activeDescription": "12個の数字の\nブロックにベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "12個の数字の\nブロックにベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.HIGHORLOW",
@@ -141,7 +141,7 @@
         "name": "ハイ・ロー",
         "shortName": "ハイ・ロー",
         "description": "1~18または19~36の\nどちらかにベット",
-        "activeDescription": "1~18または19~36の\nどちらかにベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1~18または19~36の\nどちらかにベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.EVENORODD",
@@ -149,7 +149,7 @@
         "name": "イーブンオッド",
         "shortName": "イーブンオッド",
         "description": "偶数か奇数どちらかにベット",
-        "activeDescription": "偶数か奇数どちらかにベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "偶数か奇数どちらかにベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.COLOR",
@@ -157,103 +157,103 @@
         "name": "カラー",
         "shortName": "カラー",
         "description": "赤または黒のポケットにベット",
-        "activeDescription": "赤または黒のポケットにベット\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "赤または黒のポケットにベット\nアビリティレベルにつき\n10チップ\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_STRAIGHTUP",
         "version": "0.1.0",
-        "name": "ゴールデン ストレートアップ",
-        "shortName": "G.ストレートアップ",
-        "description": "1つの数字にベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "1つの数字にベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "name": "ゴールデン ストレート",
+        "shortName": "G.ストレート",
+        "description": "1つの数字にベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "1つの数字にベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_SPLIT",
         "version": "0.1.0",
         "name": "ゴールデン スプリット",
         "shortName": "G.スプリット",
-        "description": "2つの数字にベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "2つの数字にベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "2つの隣接した数字にベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "2つの隣接した数字にベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_STREET",
         "version": "0.1.0",
         "name": "ゴールデン ストリート",
         "shortName": "G.ストリート",
-        "description": "横に並んだ\n3つの数字にベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "横に並んだ\n3つの数字にベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "横に並んだ\n3つの数字にベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "横に並んだ\n3つの数字にベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_CORNER",
         "version": "0.1.0",
         "name": "ゴールデン コーナー",
         "shortName": "G.コーナー",
-        "description": "四角形になるよう\n4つの数字にベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "四角形になるよう\n4つの数字にベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "四角形になるよう\n4つの数字にベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "四角形になるよう\n4つの数字にベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_LINE",
         "version": "0.1.0",
         "name": "ゴールデン ライン",
         "shortName": "G.ライン",
-        "description": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_COLUMN",
         "version": "0.1.0",
         "name": "ゴールデン カラム",
         "shortName": "G.カラム",
-        "description": "縦方向に1列ベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "縦方向に1列ベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "縦方向に1列ベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "縦方向に1列ベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_DOZEN",
         "version": "0.1.0",
         "name": "ゴールデン ダズン",
         "shortName": "G.ダズン",
-        "description": "12個の数字の\nブロックにベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "12個の数字の\nブロックにベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "12個の数字の\nブロックにベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "12個の数字の\nブロックにベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_HIGHORLOW",
         "version": "0.1.0",
         "name": "ゴールデン ハイ・ロー",
         "shortName": "G.ハイロー",
-        "description": "1~18または19~36の\nどちらかにベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "1~18または19~36の\nどちらかにベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "1~18または19~36の\nどちらかにベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "1~18または19~36の\nどちらかにベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_EVENORODD",
         "version": "0.1.0",
         "name": "ゴールデン イーブンオッド",
         "shortName": "G.イーブンオッド",
-        "description": "偶数か奇数どちらかにベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "偶数か奇数どちらかにベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "偶数か奇数どちらかにベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "偶数か奇数どちらかにベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.GOLD_COLOR",
         "version": "0.1.0",
         "name": "ゴールデン カラー",
         "shortName": "G.カラー",
-        "description": "赤または黒のポケットにベット\n{coinColor}ゴールデン{clearColor}\n数回使うと{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "赤または黒のポケットにベット\n{coinColor}ゴールデン{clearColor}\n{levelValue2}回使うと{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)\n{annotationColor}({currentValue} left){clearColor}"
+        "description": "赤または黒のポケットにベット\n{coinColor}ゴールデン{clearColor}\n{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "赤または黒のポケットにベット\n{coinColor}ゴールデン({abilityValue}){clearColor}\n{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_STRAIGHTUP",
         "version": "0.1.0",
-        "name": "アイス ストレートアップ",
-        "shortName": "I.ストレートアップ",
+        "name": "アイス ストレート",
+        "shortName": "I.ストレート",
         "description": "1つの数字にベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "1つの数字にベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1つの数字にベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_SPLIT",
         "version": "0.1.0",
         "name": "アイス スプリット",
         "shortName": "I.スプリット",
-        "description": "2つの数字にベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "2つの数字にベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "2つの隣接した数字にベット\n{freezeColor}アイス{clearColor}",
+        "activeDescription": "2つの隣接した数字にベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_STREET",
@@ -261,7 +261,7 @@
         "name": "アイス ストリート",
         "shortName": "I.ストリート",
         "description": "横に並んだ\n3つの数字にベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "横に並んだ\n3つの数字にベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ\n3つの数字にベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_CORNER",
@@ -269,7 +269,7 @@
         "name": "アイス コーナー",
         "shortName": "I.コーナー",
         "description": "四角形になるよう\n4つの数字にベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "四角形になるよう\n4つの数字にベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "四角形になるよう\n4つの数字にベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_LINE",
@@ -277,7 +277,7 @@
         "name": "アイス ライン",
         "shortName": "I.ライン",
         "description": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_COLUMN",
@@ -285,7 +285,7 @@
         "name": "アイス カラム",
         "shortName": "I.カラム",
         "description": "縦方向に1列ベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "縦方向に1列ベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "縦方向に1列ベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_DOZEN",
@@ -293,7 +293,7 @@
         "name": "アイス ダズン",
         "shortName": "I.ダズン",
         "description": "12個の数字の\nブロックにベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "12個の数字の\nブロックにベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "12個の数字の\nブロックにベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_HIGHORLOW",
@@ -301,7 +301,7 @@
         "name": "アイス ハイ・ロー",
         "shortName": "I.ハイ・ロー",
         "description": "1~18または19~36の\nどちらかにベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "1~18または19~36の\nどちらかにベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1~18または19~36の\nどちらかにベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_EVENORODD",
@@ -309,7 +309,7 @@
         "name": "アイス イーブンオッド",
         "shortName": "I.イーブンオッド",
         "description": "偶数か奇数どちらかにベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "偶数か奇数どちらかにベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "偶数か奇数どちらかにベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ICE_COLOR",
@@ -317,23 +317,23 @@
         "name": "アイス カラー",
         "shortName": "I.カラー",
         "description": "赤または黒のポケットにベット\n{freezeColor}アイス{clearColor}",
-        "activeDescription": "赤または黒のポケットにベット\n{freezeColor}アイス({levelValue2}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "赤または黒のポケットにベット\n{freezeColor}アイス({abilityValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_STRAIGHTUP",
         "version": "0.1.0",
-        "name": "エコー ストレートアップ",
-        "shortName": "E.ストレートアップ",
+        "name": "エコー ストレート",
+        "shortName": "E.ストレート",
         "description": "1つの数字にベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "1つの数字にベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1つの数字にベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_SPLIT",
         "version": "0.1.0",
         "name": "エコー スプリット",
         "shortName": "E.スプリット",
-        "description": "2つの数字にベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "2つの数字にベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "2つの隣接した数字にベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
+        "activeDescription": "2つの隣接した数字にベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_STREET",
@@ -341,7 +341,7 @@
         "name": "エコー ストリート",
         "shortName": "E.ストリート",
         "description": "横に並んだ\n3つの数字にベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "横に並んだ\n3つの数字にベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ\n3つの数字にベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_CORNER",
@@ -349,7 +349,7 @@
         "name": "エコー コーナー",
         "shortName": "E.コーナー",
         "description": "四角形になるよう\n4つの数字にベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "四角形になるよう\n4つの数字にベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "四角形になるよう\n4つの数字にベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_LINE",
@@ -357,7 +357,7 @@
         "name": "エコー ライン",
         "shortName": "E.ライン",
         "description": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_COLUMN",
@@ -365,7 +365,7 @@
         "name": "エコー カラム",
         "shortName": "E.カラム",
         "description": "縦方向に1列ベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "縦方向に1列ベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "縦方向に1列ベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_DOZEN",
@@ -373,7 +373,7 @@
         "name": "エコー ダズン",
         "shortName": "E.ダズン",
         "description": "12個の数字の\nブロックにベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "12個の数字の\nブロックにベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "12個の数字の\nブロックにベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_HIGHORLOW",
@@ -381,7 +381,7 @@
         "name": "エコー ハイ・ロー",
         "shortName": "E.ハイロー",
         "description": "1~18または19~36の\nどちらかにベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "1~18または19~36の\nどちらかにベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1~18または19~36の\nどちらかにベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_EVENORODD",
@@ -389,7 +389,7 @@
         "name": "エコー イーブンオッド",
         "shortName": "E.イーブンオッド",
         "description": "偶数か奇数どちらかにベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "偶数か奇数どちらかにベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "偶数か奇数どちらかにベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.ECHO_COLOR",
@@ -397,23 +397,23 @@
         "name": "エコー カラー",
         "shortName": "E.カラー",
         "description": "赤または黒のポケットにベット\n{echoColor}エコー{clearColor}、{cautionColor}フラジャイル{clearColor}",
-        "activeDescription": "赤または黒のポケットにベット\n{echoColor}エコー(x{levelMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "赤または黒のポケットにベット\n{echoColor}エコー(x{abilityMultiplierValue}){clearColor}、{cautionColor}フラジャイル{clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_STRAIGHTUP",
         "version": "0.1.0",
-        "name": "フラッシュ ストレートアップ",
-        "shortName": "F.ストレートアップ",
+        "name": "フラッシュ ストレート",
+        "shortName": "F.ストレート",
         "description": "1つの数字にベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "1つの数字にベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1つの数字にベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_SPLIT",
         "version": "0.1.0",
         "name": "フラッシュ スプリット",
         "shortName": "F.スプリット",
-        "description": "2つの数字にベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "2つの数字にベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "description": "2つの隣接した数字にベット\n{flashColor}フラッシュ{clearColor}",
+        "activeDescription": "2つの隣接した数字にベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_STREET",
@@ -421,7 +421,7 @@
         "name": "フラッシュ ストリート",
         "shortName": "F.ストリート",
         "description": "横に並んだ\n3つの数字にベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "横に並んだ\n3つの数字にベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ\n3つの数字にベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_CORNER",
@@ -429,7 +429,7 @@
         "name": "フラッシュ コーナー",
         "shortName": "F.コーナー",
         "description": "四角形になるよう\n4つの数字にベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "四角形になるよう\n4つの数字にベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "四角形になるよう\n4つの数字にベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_LINE",
@@ -437,7 +437,7 @@
         "name": "フラッシュ ライン",
         "shortName": "F.ライン",
         "description": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）にベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_COLUMN",
@@ -445,7 +445,7 @@
         "name": "フラッシュ カラム",
         "shortName": "F.カラム",
         "description": "縦方向に1列ベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "縦方向に1列ベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "縦方向に1列ベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_DOZEN",
@@ -453,7 +453,7 @@
         "name": "フラッシュ ダズン",
         "shortName": "F.ダズン",
         "description": "12個の数字の\nブロックにベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "12個の数字の\nブロックにベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "12個の数字の\nブロックにベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_HIGHORLOW",
@@ -461,7 +461,7 @@
         "name": "フラッシュ ハイ・ロー",
         "shortName": "F.ハイロー",
         "description": "1~18または19~36の\nどちらかにベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "1~18または19~36の\nどちらかにベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1~18または19~36の\nどちらかにベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_EVENORODD",
@@ -469,7 +469,7 @@
         "name": "フラッシュ イーブンオッド",
         "shortName": "F.イーブンオッド",
         "description": "偶数か奇数どちらかにベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "偶数か奇数どちらかにベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "偶数か奇数どちらかにベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.FLASH_COLOR",
@@ -477,15 +477,15 @@
         "name": "フラッシュ カラー",
         "shortName": "F.カラー",
         "description": "赤または黒のポケットにベット\n{flashColor}フラッシュ{clearColor}",
-        "activeDescription": "赤または黒のポケットにベット\n{flashColor}フラッシュ(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "赤または黒のポケットにベット\n{flashColor}フラッシュ(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_STRAIGHTUP",
         "version": "0.1.0",
-        "name": "ミラー ストレートアップ",
-        "shortName": "M.ストレートアップ",
+        "name": "ミラー ストレート",
+        "shortName": "M.ストレート",
         "description": "1つの数字を2回選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "1つの数字を2回選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1つの数字を2回選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_SPLIT",
@@ -493,7 +493,7 @@
         "name": "ミラー スプリット",
         "shortName": "M.スプリット",
         "description": "2つの数字を2回選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "2つの数字を2回選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "2つの数字を2回選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_STREET",
@@ -501,7 +501,7 @@
         "name": "ミラー ストリート",
         "shortName": "M.ストリート",
         "description": "横に並んだ3つの数字を\n2回選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "横に並んだ3つの数字を\n2回選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ3つの数字を\n2回選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_CORNER",
@@ -509,7 +509,7 @@
         "name": "ミラー コーナー",
         "shortName": "M.コーナー",
         "description": "四角形になるよう\n4つの数字を\n2回選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "四角形になるよう\n4つの数字を\n2回選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "四角形になるよう\n4つの数字を\n2回選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_LINE",
@@ -517,7 +517,7 @@
         "name": "ミラー ライン",
         "shortName": "M.ライン",
         "description": "横に並んだ6つの数字\n（隣り合う2行）を\n2回選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）を\n2回選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "横に並んだ6つの数字\n（隣り合う2行）を\n2回選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_COLUMN",
@@ -525,7 +525,7 @@
         "name": "ミラー カラム",
         "shortName": "M.カラム",
         "description": "縦方向1列を\n2回選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "縦方向1列を\n2回選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "縦方向1列を\n2回選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_DOZEN",
@@ -533,7 +533,7 @@
         "name": "ミラー ダズン",
         "shortName": "M.ダズン",
         "description": "12個の数字のブロックを\n2回選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "12個の数字のブロックを\n2回選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "12個の数字のブロックを\n2回選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_HIGHORLOW",
@@ -541,7 +541,7 @@
         "name": "ミラー ハイ・ロー",
         "shortName": "M.ハイロー",
         "description": "1~18、19~36を\n両方選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "1~18、19~36を\n両方選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "1~18、19~36を\n両方選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_EVENORODD",
@@ -549,7 +549,7 @@
         "name": "ミラー イーブンオッド",
         "shortName": "M.イーブンオッド",
         "description": "偶数と奇数を\n両方選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "偶数と奇数を\n両方選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "偶数と奇数を\n両方選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "TokenSide.MIRROR_COLOR",
@@ -557,7 +557,7 @@
         "name": "ミラー カラー",
         "shortName": "M.カラー",
         "description": "赤と黒を\n両方選んでベット\n{mirrorColor}ミラー{clearColor}",
-        "activeDescription": "赤と黒を\n両方選んでベット\n{mirrorColor}ミラー(x{levelMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
+        "activeDescription": "赤と黒を\n両方選んでベット\n{mirrorColor}ミラー(x{abilityMultiplierValue}){clearColor}\n({betColor}{levelValue} {clearColor}チップ)"
     },
     {
         "code": "Perk.ALPHA",
@@ -624,7 +624,7 @@
         "code": "Item.NO_DISCARD_BALL_VALUE",
         "version": "0.1.0",
         "name": "もう戻れない",
-        "description": "ディスカードが\n残っていないとき、\nボールに{ballColor}+{value}点{clearColor}を与える"
+        "description": "ディスカードが\n残っていないとき、\n{ballColor}+{value}ポイント{clearColor}"
     },
     {
         "code": "Item.ICED_BET_VALUE",
@@ -657,8 +657,8 @@
         "code": "Item.DIVERSE_BET_MULTIPLIER",
         "version": "0.1.0",
         "name": "ベットの多様性",
-        "description": "2種類目のベット以降、\n1種類につき{scoreColor}{percentageValue} 追加スコア{clearColor}を得る",
-        "activeDescription": "2種類目のベット以降、\n1種類につき{scoreColor}{percentageValue} 追加スコア{clearColor}を得る\n---\n(現在のボーナス: {scoreColor}{currentPercentageValue}{clearColor})"
+        "description": "2種類目のベット以降、\n違うアビリティや種類のベット\n1種類につき{scoreColor}{percentageValue} 追加スコア{clearColor}を得る",
+        "activeDescription": "2種類目のベット以降、\n違うアビリティや種類のベット\n1種類につき{scoreColor}{percentageValue} 追加スコア{clearColor}を得る\n---\n(現在のボーナス: {scoreColor}{currentPercentageValue}{clearColor})"
     },
     {
         "code": "Item.REDUCE_PER_PLAY_TOKEN",
@@ -703,7 +703,7 @@
         "code": "Item.SLOT_EIGHT_DOUBLE",
         "version": "0.1.0",
         "name": "8ボール",
-        "description": "ボールが{pocketColor}8{clearColor}のポケットに落ちた時、\n次のボールをもう一度回す"
+        "description": "ボールが{pocketColor}8{clearColor}のポケットに落ちた時、\n次のボールは追加のボールを得る"
     },
     {
         "code": "Item.REDUCE_PER_MOST_SLOT",
@@ -780,8 +780,8 @@
     {
         "code": "Item.STRAIGHT_UP_BALL_VALUE",
         "version": "0.1.0",
-        "name": "ストレートアップ強化",
-        "description": "ストレートアップベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
+        "name": "ストレート強化",
+        "description": "ストレートベットを当てたら、\n{ballColor}+{value} ポイント{clearColor}"
     },
     {
         "code": "Item.SPLIT_BALL_VALUE",
@@ -840,9 +840,9 @@
     {
         "code": "Item.STRAIGHT_UP_SOLO",
         "version": "0.1.0",
-        "name": "ソロ・ストレートアップ",
-        "description": "ストレートアップベットで{betColor}+{value} {clearColor}チップ\n一つしかポケットがない数字で当てたら{betColor}+{value}{clearColor}増加",
-        "activeDescription": "ストレートアップベットで{betColor}+{currentValue} {clearColor}チップ\n一つしかポケットがない数字で当てたら\n{betColor}+{value}{clearColor}増加"
+        "name": "ソロ・ストレート",
+        "description": "ストレートベットで{betColor}+{value} {clearColor}チップ\n一つしかポケットがない数字で当てたら{betColor}+{value}{clearColor}増加",
+        "activeDescription": "ストレートベットで{betColor}+{currentValue} {clearColor}チップ\n一つしかポケットがない数字で当てたら\n{betColor}+{value}{clearColor}増加"
     },
     {
         "code": "Item.SPLIT_COUNT",
@@ -963,7 +963,8 @@
         "code": "Item.WAVE_BET",
         "version": "0.1.0",
         "name": "ウェーブベット",
-        "description": "ウェーブボールは、\n当たったベットの{betColor}チップ{clearColor}を\n増加させる"
+        "description": "Wave Ball permanently increases the same amount of {betColor}Chips{clearColor} of bet it won as the point increase of the Wave Ball",
+        "_translator_comment": "よくわかりませんでした"
     },
     {
         "code": "Item.REPEAT_PREREPEAT",
@@ -1069,19 +1070,85 @@
         "code": "ItemBox.NORMAL",
         "version": "0.1.0",
         "name": "ノーマルアイテムボックス",
-        "description": "3個のうち1つのアイテムを選ぶ\nほとんどがノーマルアイテム"
+        "description": "3個のノーマルアイテムうち\n1つのアイテムを選ぶ"
     },
     {
         "code": "ItemBox.RARE",
         "version": "0.1.0",
         "name": "レアアイテムボックス",
-        "description": "3個のうち1つのアイテムを選ぶ\nほとんどがレアアイテム"
+        "description": "3個のレアアイテムのうち\n1つのアイテムを選ぶ"
     },
     {
         "code": "ItemBox.UNIQUE",
         "version": "0.1.0",
         "name": "ユニークアイテムボックス",
-        "description": "3個のうち1つのアイテムを選ぶ\nほとんどがユニークアイテム"
+        "description": "3個のユニークアイテムうち\n1つのアイテムを選ぶ"
+    },
+    {
+        "code": "ItemBox.POINT",
+        "version": "0.1.0",
+        "name": "ポイントギフト",
+        "description": "{ballColor}ポイント{clearColor}関連のアイテムを得る"
+    },
+    {
+        "code": "ItemBox.CHIP",
+        "version": "0.1.0",
+        "name": "チップギフト",
+        "description": "{betColor}チップ{clearColor}関連のアイテムを得る"
+    },
+    {
+        "code": "ItemBox.SCORE",
+        "version": "0.1.0",
+        "name": "スコアギフト",
+        "description": "{scoreColor}スコア{clearColor}関連のアイテムを得る"
+    },
+    {
+        "code": "Goods.BALL_UPGRADE",
+        "version": "0.1.0",
+        "name": "Ball Ability Upgrade",
+        "description": "Upgrade the ability of the ball"
+    },
+    {
+        "code": "Goods.BET_UPGRADE",
+        "version": "0.1.0",
+        "name": "Bet Ability Upgrade",
+        "description": "Upgrade the ability of the bet"
+    },
+    {
+        "code": "BetAbility.NORMAL",
+        "version": "0.1.0",
+        "name": "Normal Bet",
+        "description": "Set bet to normal bet"
+    },
+    {
+        "code": "BetAbility.GOLD",
+        "version": "0.1.0",
+        "name": "Gold Bet",
+        "description": "Change bet's ability to Gold bet"
+    },
+    {
+        "code": "BetAbility.ICE",
+        "version": "0.1.0",
+        "name": "Ice Bet",
+        "description": "Change bet's ability to Ice bet"
+    },
+    {
+        "code": "BetAbility.ECHO",
+        "version": "0.1.0",
+        "name": "Echo Bet",
+        "description": "Change bet's ability to Echo bet"
+    },
+    {
+        "code": "BetAbility.FLASH",
+        "version": "0.1.0",
+        "name": "Flash Bet",
+        "description": "Change bet's ability to Flash bet"
+    },
+    {
+        "code": "BetAbility.MIRROR",
+        "version": "0.1.0",
+        "name": "Mirror Bet",
+        "description": "Change bet's ability to Mirror bet"
     },
     {
         "code": "Round.NORMAL",
@@ -1200,7 +1267,7 @@
         "firstRoundSecondBall": "さて、\n{ballColor}ボール{clearColor}をもう一度回してみよう。",
         "firstShopCalculation": "ラウンドごとに、何枚かの{coinColor}コイン{clearColor}を得てショップを訪れる。\n{coinColor}コイン{clearColor}はトークンやホイールをアップグレードするために使用できる。",
         "firstShopBall": "特殊な能力を持った\nこの{ballColor}ボール{clearColor}を購入しよう。",
-        "firstShopSelect": "新しい{ballColor}ボール{clearColor}を適用するトークンを選択しよう。",
+        "firstShopSelect": "新しい{ballColor}ボール{clearColor}を適用するトークンを選択しよう。\nラウンド中、トークンはランダムにドローされる。",
         "firstShopUpgrade": "トークンの{ballColor}基礎ポイント{clearColor}と{betColor}チップ{clearColor}を増やすために、\nトークンをアップグレードすることもできる。",
         "firstShopNextRound": "買い物が終わったら、このボタンを押して\n次のラウンドに向かおう。",
         "secondRoundBet": "置かれた{betColor}チップ{clearColor}は\nラウンドが終わるまで有効だから、\n基本的には最初にベットしたほうがいい。",
@@ -1208,13 +1275,17 @@
         "secondRoundBall": "さて、じゃあ新しい{ballColor}ボール{clearColor}を\n使ってみよう。",
         "secondShopPocket": "{pocketColor}ポケット{clearColor}を購入して、\nホイールをアップグレードすることができる。",
         "secondShopPocketSelect": "ホイールの{pocketColor}ポケット{clearColor}を一つ選択して、\n新しいものに置き換えよう。",
-        "secondShopUpgrade": "トークンが一定のレベルに到達すると、\n能力も強化される。",
+        "secondShopUpgrade": "これを購入すると、\nボールの能力を強化できる。",
+        "secondShopUpgradeSelect": "トークンを選択すると、\nそのトークンのボールが\nアップグレードされ、\n能力が強化される。",
         "secondShopBet": "また、ショップにベットが売っていたら、トークンに適用することもできる。",
-        "secondShopReroll": "ほしい商品が売っていなかったら、\n{coinColor}2コイン{clearColor}でショップをリロールできる。",
+        "thirdShopReroll": "ほしい商品が売っていなかったら、\n{coinColor}2コイン{clearColor}でショップをリロールできる。",
         "thirdRoundToken": "{targetScoreColor}目標スコア{clearColor}到達前にこのラウンドトークンがなくなったら、君の負けだ。",
         "thirdShopItem": "ショップにはアイテムも並ぶ。\nアイテムの能力を使って、ゲームを有利に進めよう。",
         "thirdShopItemInformation": "アイテムの種類はたくさんある。\nアイテムを組み合わせて、強力なビルドを作ることができる。",
         "thirdShopLock": "欲しいアイテムを買うだけの{coinColor}コイン{clearColor}がなければ、\nショップをロックすることで\n次のラウンドに持ち越すことができる。",
+        "fourthShopFeatured": "各ショップには、通常よりも安い\n割引アイテムがある。\nただし、ロックやリロールはできないから\nほしいならこのショップで買わないといけない。",
+        "fourthShopLoan": "欲しいアイテムを買うための\n{coinColor}Coins{clearColor}が足りなければ、\n融資を受けて後で返すこともできる。",
+        "fourthShopLoanInformation": "融資は最大{coinColor}3 コイン{clearColor}まで\n受けられる。\n融資された1コインにつき、\n{cautionColor}2 コイン{clearColor}で\n返さなければならない。",
         "shopGoldInformation": "覚えておいてほしい。ショップを立ち去ると、{coinColor}コイン{clearColor}は失われる。\nつまり、次のラウンドに{coinColor}コイン{clearColor}を持ち越すことはできない。",
         "playTokenInformation": "{targetScoreColor}目標スコア{clearColor}到達前にラウンドトークンがなくなると、君は敗北する。\nだから、少なくとも最後のトークンではボールを使ってほしい。"
     },
@@ -1234,6 +1305,12 @@
         "version": "0.1.0",
         "name": "トリックスター クラスをアンロック",
         "description": "Masks everywhere, collect 3 for a gift"
+    },
+    {
+        "code": "Achievement.BARD",
+        "version": "0.1.0",
+        "name": "バード クラスをアンロック",
+        "description": "歌を歌おう、みんなで一緒に。"
     },
     {
         "code": "Achievement.THIEF",
@@ -1336,7 +1413,7 @@
         "code": "Item.BONUS_RANDOM_RARE_ITEM",
         "version": "0.1.0",
         "name": "ランダムボックス",
-        "description": "{valueColor}レア アイテム{clearColor}を得る\n最初の3ラウンドで得られるスコアが\n{cautionColor}{percentageValue} 少なくなる{clearColor}"
+        "description": "{valueColor}ユニーク アイテム{clearColor}を得る\n最初の3ラウンドで得られるスコアが\n{cautionColor}{percentageValue} 少なくなる{clearColor}"
     },
     {
         "code": "Reward.REWARD_MORE_PLAY_TOKEN",
@@ -1564,6 +1641,18 @@
         "unlockDescription": "最初のクラスで最終ラウンドに到達する"
     },
     {
+        "code": "Class.BARD",
+        "version": "0.1.0",
+        "name": "バード",
+        "description": "You can select a badge by clicking on it. After selected badge is {valueColor}activated 3 times{clearColor}, next activation of selected item will have {valueColor}double the effect{clearColor}",
+        "activeDescription": "You can select a badge by clicking on it. After selected badge is {valueColor}activated 3 times{clearColor}, next activation of selected item will have {valueColor}double the effect{clearColor}\n({annotationColor}Current Stack: {currentValue}{clearColor})",
+        "goldAbilityName": "Medly",
+        "goldAbilityDescription": "You earn {coinColor}1 coin{clearColor} for every 2 activations of a selected item while at round\nEarn {coinColor}4 coins{clearColor} at first shop",
+        "modifierName": "Modifier",
+        "modifierDescription": "-2 coins",
+        "unlockDescription": "Reach the final round with second Class"
+    },
+    {
         "code": "Class.THIEF",
         "version": "0.1.0",
         "name": "Thief",
@@ -1667,7 +1756,7 @@
         "code": "HouseEdge.TOKEN_LOCK",
         "version": "0.1.0",
         "name": "密封ヒップフラスコ",
-        "description": "所持するトークンの半分が\nショップでランダムにロックされる\nロックされたトークンは\n選択・アップグレード不可\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
+        "description": "所持するトークン1つが\nショップでランダムにロックされる\nロックされたトークンは\n選択・アップグレード不可\n\n{targetScoreColor}ハウスエッジ 10%{clearColor}"
     },
     {
         "code": "HouseEdge.ITEM_REMOVAL",
@@ -1711,12 +1800,12 @@
         "activeDescription": "凍結されたポケットには\nボールが落ちなくなる"
     },
     {
-        "code": "Keyword.GOLDEN_BET",
+        "code": "Keyword.GOLD_BET",
         "version": "0.1.0",
         "activeName": "{coinColor}ゴールデン{clearColor}",
-        "activeDescription": "ベットが当たると、\n{coinColor}1 コイン{clearColor}を一度だけ得る。\n{annotationColor}(当たったベットは通常に戻る){clearColor}",
+        "activeDescription": "ベットが当たると、\n{coinColor}1 コイン{clearColor}を得る。\n{annotationColor}(ベットはX回当たると通常に戻る){clearColor}",
         "name": "{coinColor}ゴールデン{clearColor}",
-        "description": "ベットが当たると、\n{coinColor}1 コイン{clearColor}を一度だけ得る。\n{annotationColor}(当たったベットは通常に戻る){clearColor}"
+        "description": "ベットが当たると、\n{coinColor}1 コイン{clearColor}を得る。\n{annotationColor}(当たったベットは通常に戻る){clearColor}"
     },
     {
         "code": "Keyword.ECHO_BET",
@@ -1738,9 +1827,9 @@
         "code": "Keyword.MIRROR_BET",
         "version": "0.1.0",
         "activeName": "{mirrorColor}ミラー(X){clearColor}",
-        "activeDescription": "一方のエリアのチップを\n通常のX倍に増やし、\nもう一方のエリアのチップを\n減らす",
+        "activeDescription": "一方のエリアのチップを\n通常のX倍に増やし、\nもう一方のエリアのチップを\n減らす\n{annotationColor}(増える/減るエリアはランダム){clearColor}",
         "name": "{mirrorColor}ミラー{clearColor}",
-        "description": "片方のエリアのチップを大幅に増やし、\nもう片方を減らす"
+        "description": "片方のエリアのチップを大幅に増やし、\nもう片方を減らす\n{annotationColor}(増える/減るエリアはランダム){clearColor}"
     },
     {
         "code": "Keyword.ICE_BET",
@@ -1749,6 +1838,11 @@
         "activeDescription": "ベットを追加するか当てると、\nこのベットに影響しない近くのポケットX個を\n凍結させる\n{annotationColor}(追加のベットポケットはランダムに選択される){clearColor}",
         "name": "{freezeColor}アイス{clearColor}",
         "description": "ベットを追加するか当てると、\nこのベットに影響しない近くのポケットを\n凍結させる"
+    },
+    {
+        "code": "Game.SHOP_LOAN",
+        "version": "0.1.0",
+        "name": "融資の払い戻し"
     },
     {
         "code": "Ui.QUEUED_TEXT",
@@ -1819,7 +1913,10 @@
         "bet": "ベット",
         "ball": "ボール",
         "perk": "パーク",
-        "item": "アイテム",
+        "item": "バッジ",
+        "betAbility": "アビリティ",
+        "upgrade": "アップグレード",
+        "itemBox": "ボックス",
         "roundGoldName": "クリア報酬",
         "total": "合計"
     },
