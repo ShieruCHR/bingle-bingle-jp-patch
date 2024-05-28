@@ -1636,7 +1636,7 @@
         "description": "ショップで\n{valueColor}3つのマークアイテム{clearColor}を\n購入すると\n{valueColor}ランダムな効果{clearColor}を付与する\n未使用の{valueColor}ラウンドトークン{clearColor}を\n3ラウンドまで{valueColor}引き継げる{clearColor}",
         "goldAbilityName": "未使用ディスカード",
         "goldAbilityDescription": "ラウンド終了時、未使用のディスカード2回につき\n{coinColor}1 コイン{clearColor}を得る",
-        "modifierName": "Modifier",
+        "modifierName": "ルール変更",
         "modifierDescription": "-1 ラウンドトークン\n+3 ディスカード",
         "unlockDescription": "最初のクラスで最終ラウンドに到達する"
     },
@@ -1644,13 +1644,13 @@
         "code": "Class.BARD",
         "version": "0.1.0",
         "name": "バード",
-        "description": "You can select a badge by clicking on it. After selected badge is {valueColor}activated 3 times{clearColor}, next activation of selected item will have {valueColor}double the effect{clearColor}",
-        "activeDescription": "You can select a badge by clicking on it. After selected badge is {valueColor}activated 3 times{clearColor}, next activation of selected item will have {valueColor}double the effect{clearColor}\n({annotationColor}Current Stack: {currentValue}{clearColor})",
-        "goldAbilityName": "Medly",
-        "goldAbilityDescription": "You earn {coinColor}1 coin{clearColor} for every 2 activations of a selected item while at round\nEarn {coinColor}4 coins{clearColor} at first shop",
-        "modifierName": "Modifier",
-        "modifierDescription": "-2 coins",
-        "unlockDescription": "Reach the final round with second Class"
+        "description": "バッジをクリックで選択する。\n選択したバッジが{valueColor}3回発動したら{clearColor}\nそのアイテムの次の発動では\n{valueColor}効果が2倍になる{clearColor}",
+        "activeDescription": "バッジをクリックで選択する。\n選択したバッジが{valueColor}3回発動したら{clearColor}\nそのアイテムの次の発動では\n{valueColor}効果が2倍になる{clearColor}\n({annotationColor}Current Stack: {currentValue}{clearColor})",
+        "goldAbilityName": "メドレー",
+        "goldAbilityDescription": "ラウンド中に\n選択したアイテムが\n2回発動するたびに\n{coinColor}1コイン{clearColor}を得る\n最初のショップでは\n{coinColor}4コイン{clearColor}を得る",
+        "modifierName": "ルール変更",
+        "modifierDescription": "-2 コイン",
+        "unlockDescription": "2つ目のクラスで最終ラウンドに到達する"
     },
     {
         "code": "Class.THIEF",
